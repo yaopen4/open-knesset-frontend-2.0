@@ -1,3 +1,5 @@
+"use client"
+
 import { Landmark, LayoutDashboard, Users, FileText, Vote, Gavel, Settings, LifeBuoy, Info, Database, BookCheck, UsersRound, Scale, Search, Code } from 'lucide-react'
 import {
   SidebarContent,
@@ -9,8 +11,25 @@ import {
   SidebarSeparator,
 } from '@/components/ui/sidebar'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
+const menuItems = [
+    { href: "/", icon: LayoutDashboard, label: "דאשבורד", tooltip: "דאשבורד" },
+    { href: "/about", icon: Info, label: "אודות כנסת פתוחה", tooltip: "אודות כנסת פתוחה" },
+    { href: "/knesset-data", icon: Database, label: "נתוני כנסת", tooltip: "נתוני כנסת" },
+    { href: "/mks", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
+    { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
+    { href: "/committees", icon: Gavel, label: "ועדות", tooltip: "ועדות" },
+    { href: "/plenums", icon: Vote, label: "מליאות והצבעות", tooltip: "מליאות והצבעות" },
+    { href: "/laws", icon: BookCheck, label: "חוקים", tooltip: "חוקים" },
+    { href: "/lobbyists", icon: UsersRound, label: "לוביסטים", tooltip: "לוביסטים" },
+    { href: "/search", icon: Search, label: "חיפוש מתקדם", tooltip: "חיפוש מתקדם" },
+    { href: "/developers", icon: Code, label: "למפתחים", tooltip: "למפתחים" },
+]
 
 export default function AppSidebarContent() {
+  const pathname = usePathname()
+
   return (
     <>
       <SidebarHeader>
@@ -21,94 +40,16 @@ export default function AppSidebarContent() {
       </SidebarHeader>
       <SidebarContent className="p-2">
         <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild isActive tooltip="דאשבורד">
-              <Link href="/">
-                <LayoutDashboard />
-                <span>דאשבורד</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="אודות כנסת פתוחה">
-              <Link href="/about">
-                <Info />
-                <span>אודות כנסת פתוחה</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="נתוני כנסת">
-              <Link href="/knesset-data">
-                <Database />
-                <span>נתוני כנסת</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="ח״כים וסיעות">
-              <Link href="/mks">
-                <Users />
-                <span>ח״כים וסיעות</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="הצעות חוק">
-              <Link href="/bills">
-                <FileText />
-                <span>הצעות חוק</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="ועדות">
-              <Link href="/committees">
-                <Gavel />
-                <span>ועדות</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="מליאות והצבעות">
-              <Link href="/plenums">
-                <Vote />
-                <span>מליאות והצבעות</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="חוקים">
-              <Link href="/laws">
-                <BookCheck />
-                <span>חוקים</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="לוביסטים">
-              <Link href="/lobbyists">
-                <UsersRound />
-                <span>לוביסטים</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="חיפוש מתקדם">
-              <Link href="/search">
-                <Search />
-                <span>חיפוש מתקדם</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="למפתחים">
-              <Link href="/developers">
-                <Code />
-                <span>למפתחים</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
+          {menuItems.map((item) => (
+            <SidebarMenuItem key={item.href}>
+              <SidebarMenuButton asChild isActive={pathname === item.href} tooltip={item.tooltip}>
+                <Link href={item.href}>
+                  <item.icon />
+                  <span>{item.label}</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          ))}
         </SidebarMenu>
       </SidebarContent>
       <SidebarFooter>
