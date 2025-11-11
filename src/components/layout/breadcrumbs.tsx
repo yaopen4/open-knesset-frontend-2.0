@@ -16,7 +16,7 @@ const breadcrumbNameMap: { [key: string]: string } = {
   '/lobbyists': 'לוביסטים',
   '/search': 'חיפוש מתקדם',
   '/developers': 'למפתחים',
-  '/knesset-data': 'נתוני כנסת היסטוריים',
+  '/members': 'נתוני כנסת היסטוריים',
 };
 
 const Breadcrumbs = ({ className }: { className?: string }) => {
@@ -33,7 +33,7 @@ const Breadcrumbs = ({ className }: { className?: string }) => {
     const isLast = index === pathSegments.length - 1;
     
     let label = breadcrumbNameMap[href] || segment;
-    if (href.startsWith('/knesset-data/')) {
+    if (href.startsWith('/members/')) {
         const knessetNumber = segment;
         label = `הכנסת ה-${knessetNumber}`;
     }

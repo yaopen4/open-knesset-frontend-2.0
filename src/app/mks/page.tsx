@@ -1,4 +1,4 @@
-import KnessetDataDisplay from "@/components/knesset-data/knesset-data-display";
+import MembersList from "@/components/members/members-list";
 
 export default function MKsPage() {
   return (
@@ -9,7 +9,7 @@ export default function MKsPage() {
           כאן תוכלו למצוא נתונים מפורטים על הרכב כל הכנסות בישראל, מהכנסת הראשונה ועד היום.
         </p>
       </div>
-      <KnessetDataDisplay />
+      <MembersList />
     </div>
   );
 }
