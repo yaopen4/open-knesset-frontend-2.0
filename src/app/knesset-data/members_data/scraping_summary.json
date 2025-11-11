@@ -1,0 +1,181 @@
+{
+  "extracted_data": [
+    {
+      "knesset": 1,
+      "url": "https://oknesset.org/members/knesset-1.html",
+      "total_members": 133,
+      "total_parties": 13,
+      "file": "knesset_data/knesset_1.json"
+    },
+    {
+      "knesset": 2,
+      "url": "https://oknesset.org/members/knesset-2.html",
+      "total_members": 147,
+      "total_parties": 18,
+      "file": "knesset_data/knesset_2.json"
+    },
+    {
+      "knesset": 3,
+      "url": "https://oknesset.org/members/knesset-3.html",
+      "total_members": 164,
+      "total_parties": 15,
+      "file": "knesset_data/knesset_3.json"
+    },
+    {
+      "knesset": 4,
+      "url": "https://oknesset.org/members/knesset-4.html",
+      "total_members": 146,
+      "total_parties": 15,
+      "file": "knesset_data/knesset_4.json"
+    },
+    {
+      "knesset": 5,
+      "url": "https://oknesset.org/members/knesset-5.html",
+      "total_members": 179,
+      "total_parties": 16,
+      "file": "knesset_data/knesset_5.json"
+    },
+    {
+      "knesset": 6,
+      "url": "https://oknesset.org/members/knesset-6.html",
+      "total_members": 265,
+      "total_parties": 22,
+      "file": "knesset_data/knesset_6.json"
+    },
+    {
+      "knesset": 7,
+      "url": "https://oknesset.org/members/knesset-7.html",
+      "total_members": 140,
+      "total_parties": 18,
+      "file": "knesset_data/knesset_7.json"
+    },
+    {
+      "knesset": 8,
+      "url": "https://oknesset.org/members/knesset-8.html",
+      "total_members": 175,
+      "total_parties": 25,
+      "file": "knesset_data/knesset_8.json"
+    },
+    {
+      "knesset": 9,
+      "url": "https://oknesset.org/members/knesset-9.html",
+      "total_members": 190,
+      "total_parties": 36,
+      "file": "knesset_data/knesset_9.json"
+    },
+    {
+      "knesset": 10,
+      "url": "https://oknesset.org/members/knesset-10.html",
+      "total_members": 137,
+      "total_parties": 15,
+      "file": "knesset_data/knesset_10.json"
+    },
+    {
+      "knesset": 11,
+      "url": "https://oknesset.org/members/knesset-11.html",
+      "total_members": 148,
+      "total_parties": 21,
+      "file": "knesset_data/knesset_11.json"
+    },
+    {
+      "knesset": 12,
+      "url": "https://oknesset.org/members/knesset-12.html",
+      "total_members": 191,
+      "total_parties": 24,
+      "file": "knesset_data/knesset_12.json"
+    },
+    {
+      "knesset": 13,
+      "url": "https://oknesset.org/members/knesset-13.html",
+      "total_members": 150,
+      "total_parties": 21,
+      "file": "knesset_data/knesset_13.json"
+    },
+    {
+      "knesset": 14,
+      "url": "https://oknesset.org/members/knesset-14.html",
+      "total_members": 210,
+      "total_parties": 31,
+      "file": "knesset_data/knesset_14.json"
+    },
+    {
+      "knesset": 15,
+      "url": "https://oknesset.org/members/knesset-15.html",
+      "total_members": 193,
+      "total_parties": 27,
+      "file": "knesset_data/knesset_15.json"
+    },
+    {
+      "knesset": 16,
+      "url": "https://oknesset.org/members/knesset-16.html",
+      "total_members": 256,
+      "total_parties": 34,
+      "file": "knesset_data/knesset_16.json"
+    },
+    {
+      "knesset": 17,
+      "url": "https://oknesset.org/members/knesset-17.html",
+      "total_members": 181,
+      "total_parties": 22,
+      "file": "knesset_data/knesset_17.json"
+    },
+    {
+      "knesset": 18,
+      "url": "https://oknesset.org/members/knesset-18.html",
+      "total_members": 158,
+      "total_parties": 18,
+      "file": "knesset_data/knesset_18.json"
+    },
+    {
+      "knesset": 19,
+      "url": "https://oknesset.org/members/knesset-19.html",
+      "total_members": 167,
+      "total_parties": 17,
+      "file": "knesset_data/knesset_19.json"
+    },
+    {
+      "knesset": 20,
+      "url": "https://oknesset.org/members/knesset-20.html",
+      "total_members": 184,
+      "total_parties": 17,
+      "file": "knesset_data/knesset_20.json"
+    },
+    {
+      "knesset": 21,
+      "url": "https://oknesset.org/members/knesset-21.html",
+      "total_members": 141,
+      "total_parties": 18,
+      "file": "knesset_data/knesset_21.json"
+    },
+    {
+      "knesset": 22,
+      "url": "https://oknesset.org/members/knesset-22.html",
+      "total_members": 148,
+      "total_parties": 17,
+      "file": "knesset_data/knesset_22.json"
+    },
+    {
+      "knesset": 23,
+      "url": "https://oknesset.org/members/knesset-23.html",
+      "total_members": 236,
+      "total_parties": 26,
+      "file": "knesset_data/knesset_23.json"
+    },
+    {
+      "knesset": 24,
+      "url": "https://oknesset.org/members/knesset-24.html",
+      "total_members": 181,
+      "total_parties": 27,
+      "file": "knesset_data/knesset_24.json"
+    },
+    {
+      "knesset": 25,
+      "url": "https://oknesset.org/members/knesset-25.html",
+      "total_members": 166,
+      "total_parties": 15,
+      "file": "knesset_data/knesset_25.json"
+    }
+  ],
+  "failed_pages": [],
+  "data_quality_notes": "The scraping script extracts Name, Party, and Image URL. Profile URLs are included in 'additional_info'. Position and Contact information are not available on the summary pages and would require individual member profile page scraping."
+}

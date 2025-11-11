@@ -1,0 +1,1895 @@
+{
+  "knesset_number": 9,
+  "parties": [
+    {
+      "party_name": "מערך",
+      "members": [
+        {
+          "name": "פרס שמעון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/104.html"
+          }
+        },
+        {
+          "name": "שריד יוסי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/126.html"
+          }
+        },
+        {
+          "name": "ברעם עוזי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/27.html"
+          }
+        },
+        {
+          "name": "אבן אבא",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/236.html"
+          }
+        },
+        {
+          "name": "אלון יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/682.html"
+          }
+        },
+        {
+          "name": "אמוראי עדיאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/261.html"
+          }
+        },
+        {
+          "name": "אמיר יעקב-ז'אק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/262.html"
+          }
+        },
+        {
+          "name": "ארבלי-אלמוזלינו שושנה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/269.html"
+          }
+        },
+        {
+          "name": "אשל תמר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/280.html"
+          }
+        },
+        {
+          "name": "בר-לב חיים",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/311.html"
+          }
+        },
+        {
+          "name": "גולומב דוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/332.html"
+          }
+        },
+        {
+          "name": "גרוסמן חייקה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/347.html"
+          }
+        },
+        {
+          "name": "דיין משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/688.html"
+          }
+        },
+        {
+          "name": "הדר עמוס",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/374.html"
+          }
+        },
+        {
+          "name": "הכהן מנחם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/377.html"
+          }
+        },
+        {
+          "name": "הלל שלמה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/380.html"
+          }
+        },
+        {
+          "name": "הרליץ אסתר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/388.html"
+          }
+        },
+        {
+          "name": "זכאי יחזקאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/411.html"
+          }
+        },
+        {
+          "name": "חריש מיכאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/149.html"
+          }
+        },
+        {
+          "name": "חשאי יהודה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/425.html"
+          }
+        },
+        {
+          "name": "ידלין אהרן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/181.html"
+          }
+        },
+        {
+          "name": "יעקבי גד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/193.html"
+          }
+        },
+        {
+          "name": "כץ זאב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2410.html"
+          }
+        },
+        {
+          "name": "כץ-עוז אברהם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2413.html"
+          }
+        },
+        {
+          "name": "מויאל אליהו",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/496.html"
+          }
+        },
+        {
+          "name": "משל ירוחם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/514.html"
+          }
+        },
+        {
+          "name": "נבון יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/687.html"
+          }
+        },
+        {
+          "name": "נמיר אורה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/158.html"
+          }
+        },
+        {
+          "name": "עמאר משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2525.html"
+          }
+        },
+        {
+          "name": "עמית מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2527.html"
+          }
+        },
+        {
+          "name": "פדר נפתלי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2530.html"
+          }
+        },
+        {
+          "name": "צדוק חיים יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2565.html"
+          }
+        },
+        {
+          "name": "רבין יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/168.html"
+          }
+        },
+        {
+          "name": "רבינוביץ יהושע",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/611.html"
+          }
+        },
+        {
+          "name": "רוזוליו דניאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/614.html"
+          }
+        },
+        {
+          "name": "רון אמרי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/618.html"
+          }
+        },
+        {
+          "name": "שחל משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/118.html"
+          }
+        },
+        {
+          "name": "שפייזר אליהו",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/661.html"
+          }
+        },
+        {
+          "name": "תלמי מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/677.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "הליכוד",
+      "members": [
+        {
+          "name": "ארנס משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/278.html"
+          }
+        },
+        {
+          "name": "שרון אריאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/125.html"
+          }
+        },
+        {
+          "name": "לוי דוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/72.html"
+          }
+        },
+        {
+          "name": "מילוא רוני",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/155.html"
+          }
+        },
+        {
+          "name": "קצב משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/110.html"
+          }
+        },
+        {
+          "name": "אולמרט אהוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/3.html"
+          }
+        },
+        {
+          "name": "ארידור יורם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/274.html"
+          }
+        },
+        {
+          "name": "ארליך שמחה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/275.html"
+          }
+        },
+        {
+          "name": "בגין מנחם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/692.html"
+          }
+        },
+        {
+          "name": "בדיאן אליקים-גוסטב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/283.html"
+          }
+        },
+        {
+          "name": "ברמן יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/317.html"
+          }
+        },
+        {
+          "name": "גרופר פסח",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/348.html"
+          }
+        },
+        {
+          "name": "דורון שרה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/359.html"
+          }
+        },
+        {
+          "name": "דקל מיכאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/368.html"
+          }
+        },
+        {
+          "name": "הורביץ יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/375.html"
+          }
+        },
+        {
+          "name": "ויצמן עזר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/690.html"
+          }
+        },
+        {
+          "name": "זיידל הלל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/408.html"
+          }
+        },
+        {
+          "name": "יצחקי יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2385.html"
+          }
+        },
+        {
+          "name": "כהן גאולה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2392.html"
+          }
+        },
+        {
+          "name": "כהן יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2394.html"
+          }
+        },
+        {
+          "name": "כהן-אבידב מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/450.html"
+          }
+        },
+        {
+          "name": "כהן-אורגד יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/451.html"
+          }
+        },
+        {
+          "name": "כץ אברהם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2409.html"
+          }
+        },
+        {
+          "name": "לבני איתן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2419.html"
+          }
+        },
+        {
+          "name": "לין אמנון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2437.html"
+          }
+        },
+        {
+          "name": "מודעי יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2451.html"
+          }
+        },
+        {
+          "name": "מרון משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2469.html"
+          }
+        },
+        {
+          "name": "נוף עקיבא",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/516.html"
+          }
+        },
+        {
+          "name": "נסים משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/159.html"
+          }
+        },
+        {
+          "name": "נסראלדין אמל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2490.html"
+          }
+        },
+        {
+          "name": "סבידור מנחם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2497.html"
+          }
+        },
+        {
+          "name": "פלומין יחזקאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/569.html"
+          }
+        },
+        {
+          "name": "פרץ יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/582.html"
+          }
+        },
+        {
+          "name": "פת גדעון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/164.html"
+          }
+        },
+        {
+          "name": "צפורי-הנדין מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/592.html"
+          }
+        },
+        {
+          "name": "קופמן חיים",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/166.html"
+          }
+        },
+        {
+          "name": "קורפו חיים",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/598.html"
+          }
+        },
+        {
+          "name": "רום יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/617.html"
+          }
+        },
+        {
+          "name": "רכטמן שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/626.html"
+          }
+        },
+        {
+          "name": "שובל זלמן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/637.html"
+          }
+        },
+        {
+          "name": "שוסטק אליעזר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/638.html"
+          }
+        },
+        {
+          "name": "שטרן דוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/644.html"
+          }
+        },
+        {
+          "name": "שילנסקי דב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/173.html"
+          }
+        },
+        {
+          "name": "שמיר יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/175.html"
+          }
+        },
+        {
+          "name": "שמיר משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/656.html"
+          }
+        },
+        {
+          "name": "שריר אברהם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/670.html"
+          }
+        },
+        {
+          "name": "תמיר יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/678.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "שלומציון",
+      "members": [
+        {
+          "name": "שרון אריאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/125.html"
+          }
+        },
+        {
+          "name": "יצחקי יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2385.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "התנועה הדמוקרטית לשינוי",
+      "members": [
+        {
+          "name": "רובינשטיין אמנון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/113.html"
+          }
+        },
+        {
+          "name": "אלגרבלי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/252.html"
+          }
+        },
+        {
+          "name": "אליהו שלמה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/256.html"
+          }
+        },
+        {
+          "name": "אסעד שפיק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/265.html"
+          }
+        },
+        {
+          "name": "גולומב דוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/332.html"
+          }
+        },
+        {
+          "name": "הלוי בנימין",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/379.html"
+          }
+        },
+        {
+          "name": "וירשובסקי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/396.html"
+          }
+        },
+        {
+          "name": "ורטהיימר זאב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/399.html"
+          }
+        },
+        {
+          "name": "זורע מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2333.html"
+          }
+        },
+        {
+          "name": "טולידאנו שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2364.html"
+          }
+        },
+        {
+          "name": "יגורי אסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/182.html"
+          }
+        },
+        {
+          "name": "ידין יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/184.html"
+          }
+        },
+        {
+          "name": "נוף עקיבא",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/516.html"
+          }
+        },
+        {
+          "name": "עטשי זיידאן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2523.html"
+          }
+        },
+        {
+          "name": "עמית מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2527.html"
+          }
+        },
+        {
+          "name": "תמיר שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/679.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "תנועה לשינוי ויוזמה",
+      "members": [
+        {
+          "name": "רובינשטיין אמנון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/113.html"
+          }
+        },
+        {
+          "name": "גולומב דוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/332.html"
+          }
+        },
+        {
+          "name": "וירשובסקי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/396.html"
+          }
+        },
+        {
+          "name": "ורטהיימר זאב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/399.html"
+          }
+        },
+        {
+          "name": "טולידאנו שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2364.html"
+          }
+        },
+        {
+          "name": "עטשי זיידאן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2523.html"
+          }
+        },
+        {
+          "name": "עמית מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2527.html"
+          }
+        },
+        {
+          "name": "תמיר יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/678.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "שינוי - מפלגת המרכז",
+      "members": [
+        {
+          "name": "רובינשטיין אמנון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/113.html"
+          }
+        },
+        {
+          "name": "וירשובסקי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/396.html"
+          }
+        },
+        {
+          "name": "ורטהיימר זאב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/399.html"
+          }
+        },
+        {
+          "name": "טולידאנו שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2364.html"
+          }
+        },
+        {
+          "name": "לוי סטלה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2426.html"
+          }
+        },
+        {
+          "name": "עטשי זיידאן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2523.html"
+          }
+        },
+        {
+          "name": "תמיר יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/678.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "מפלגה דתית לאומית",
+      "members": [
+        {
+          "name": "דרוקמן חיים",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/202.html"
+          }
+        },
+        {
+          "name": "אבוחצירא אהרן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/178.html"
+          }
+        },
+        {
+          "name": "אבטבי אליעזר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/234.html"
+          }
+        },
+        {
+          "name": "בורג יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/288.html"
+          }
+        },
+        {
+          "name": "בן-מאיר יהודה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/300.html"
+          }
+        },
+        {
+          "name": "גלס דוד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/343.html"
+          }
+        },
+        {
+          "name": "המר זבולון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/44.html"
+          }
+        },
+        {
+          "name": "ורהפטיג זרח",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/398.html"
+          }
+        },
+        {
+          "name": "מלמד אברהם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/508.html"
+          }
+        },
+        {
+          "name": "רובין בן-ציון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/612.html"
+          }
+        },
+        {
+          "name": "שטרן-קטן שרה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/646.html"
+          }
+        },
+        {
+          "name": "שינמן פנחס",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/649.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "הרשימה הערבית המאוחדת",
+      "members": [
+        {
+          "name": "אבו-רביעה חמאד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/180.html"
+          }
+        },
+        {
+          "name": "אלזועבי סיף-אלדין",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/251.html"
+          }
+        },
+        {
+          "name": "מועדי ג'בר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/497.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "מחנה של\"י",
+      "members": [
+        {
+          "name": "אבנרי אורי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/238.html"
+          }
+        },
+        {
+          "name": "אליאב אריה לובה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/255.html"
+          }
+        },
+        {
+          "name": "מרציאנו סעדיה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2473.html"
+          }
+        },
+        {
+          "name": "פעיל מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/572.html"
+          }
+        },
+        {
+          "name": "צאדק חאג'-יחיא וליד",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/106.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "אגודת ישראל",
+      "members": [
+        {
+          "name": "אברמוביץ יהודה-מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/241.html"
+          }
+        },
+        {
+          "name": "גרוס שלמה-יעקב",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/346.html"
+          }
+        },
+        {
+          "name": "לורינץ שלמה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/481.html"
+          }
+        },
+        {
+          "name": "פרוש מנחם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/686.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "התנועה הדמוקרטית",
+      "members": [
+        {
+          "name": "אלגרבלי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/252.html"
+          }
+        },
+        {
+          "name": "אליהו שלמה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/256.html"
+          }
+        },
+        {
+          "name": "אסעד שפיק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/265.html"
+          }
+        },
+        {
+          "name": "הלוי בנימין",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/379.html"
+          }
+        },
+        {
+          "name": "ידין יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/184.html"
+          }
+        },
+        {
+          "name": "נוף עקיבא",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/516.html"
+          }
+        },
+        {
+          "name": "תמיר שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/679.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ מרדכי אלגרבלי",
+      "members": [
+        {
+          "name": "אלגרבלי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/252.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "מפלגת האיחוד לקידום ולחינוך החברה בישראל",
+      "members": [
+        {
+          "name": "אלגרבלי מרדכי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/252.html"
+          }
+        },
+        {
+          "name": "מרציאנו סעדיה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2473.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "ר\"ץ",
+      "members": [
+        {
+          "name": "אלוני שולמית",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/132.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "אחווה",
+      "members": [
+        {
+          "name": "אליהו שלמה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/256.html"
+          }
+        },
+        {
+          "name": "אסעד שפיק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/265.html"
+          }
+        },
+        {
+          "name": "נוף עקיבא",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/516.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "תל\"ם - התנועה להתחדשות ממלכתית",
+      "members": [
+        {
+          "name": "אסעד שפיק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/265.html"
+          }
+        },
+        {
+          "name": "דיין משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/688.html"
+          }
+        },
+        {
+          "name": "הורביץ יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/375.html"
+          }
+        },
+        {
+          "name": "שובל זלמן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/637.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חזית דמוקרטית לשלום ושוויון",
+      "members": [
+        {
+          "name": "ביטון צ'רלי",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/292.html"
+          }
+        },
+        {
+          "name": "וילנר מאיר",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/395.html"
+          }
+        },
+        {
+          "name": "זיאד תופיק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/147.html"
+          }
+        },
+        {
+          "name": "טובי תופיק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2363.html"
+          }
+        },
+        {
+          "name": "לבנבראון אברהם",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2418.html"
+          }
+        },
+        {
+          "name": "מוויס חנא",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2452.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ משה דיין",
+      "members": [
+        {
+          "name": "דיין משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/688.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "ליברלים עצמאיים",
+      "members": [
+        {
+          "name": "האוזנר גדעון",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/373.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "רפ\"י - הרשימה הממלכתית",
+      "members": [
+        {
+          "name": "הורביץ יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/375.html"
+          }
+        },
+        {
+          "name": "פרץ יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/582.html"
+          }
+        },
+        {
+          "name": "שובל זלמן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/637.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ בנימין הלוי",
+      "members": [
+        {
+          "name": "הלוי בנימין",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/379.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "יעד",
+      "members": [
+        {
+          "name": "יגורי אסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/182.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ יגאל ידין",
+      "members": [
+        {
+          "name": "ידין יגאל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/184.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ יצחק יצחקי",
+      "members": [
+        {
+          "name": "יצחקי יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2385.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "ישראל אחת",
+      "members": [
+        {
+          "name": "יצחקי יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2385.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "תחייה - בנא\"י",
+      "members": [
+        {
+          "name": "כהן גאולה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2392.html"
+          }
+        },
+        {
+          "name": "שמיר משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/656.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "בנא\"י",
+      "members": [
+        {
+          "name": "כהן גאולה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2392.html"
+          }
+        },
+        {
+          "name": "שמיר משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/656.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "פועלי אגודת ישראל",
+      "members": [
+        {
+          "name": "כהנא קלמן",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2404.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ סעדיה מרציאנו",
+      "members": [
+        {
+          "name": "מרציאנו סעדיה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2473.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "שוויון בישראל-פנתרים",
+      "members": [
+        {
+          "name": "מרציאנו סעדיה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2473.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "פלאטו שרון",
+      "members": [
+        {
+          "name": "פלאטו-שרון שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2537.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "פיתוח ושלום",
+      "members": [
+        {
+          "name": "פלאטו-שרון שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/2537.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "רשימה ממלכתית",
+      "members": [
+        {
+          "name": "פרץ יצחק",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/582.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ משה שמיר",
+      "members": [
+        {
+          "name": "שמיר משה",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/656.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ יוסף תמיר",
+      "members": [
+        {
+          "name": "תמיר יוסף",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/678.html"
+          }
+        }
+      ]
+    },
+    {
+      "party_name": "חה\"כ שמואל תמיר",
+      "members": [
+        {
+          "name": "תמיר שמואל",
+          "position": null,
+          "contact": null,
+          "image_url": null,
+          "additional_info": {
+            "profile_url": "https://oknesset.orgmembers/679.html"
+          }
+        }
+      ]
+    }
+  ]
+}
