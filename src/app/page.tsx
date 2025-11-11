@@ -37,7 +37,7 @@ export default function AboutPage() {
             src="/drowing.png"
             alt="The Knesset building"
             width={800}
-            height={300}
+            height={200}
             className="mx-auto rounded-lg object-cover shadow-lg"
             data-ai-hint="government building"
           />
