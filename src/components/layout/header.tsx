@@ -54,7 +54,7 @@ export default function Header() {
         />
       </div>
 
-      <div className="flex items-center gap-1 sm:gap-2">
+      <div className="flex items-center gap-0">
         <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
           <Link href="#" aria-label="GitHub">
             <GithubIcon />
