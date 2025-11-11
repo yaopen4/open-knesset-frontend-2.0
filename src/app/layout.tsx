@@ -4,7 +4,7 @@ import { SidebarProvider } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Sidebar } from '@/components/ui/sidebar';
+import { Sidebar, SidebarInset } from '@/components/ui/sidebar';
 import SidebarContent from '@/components/layout/sidebar-content';
 import Header from '@/components/layout/header';
 import Breadcrumbs from '@/components/layout/breadcrumbs';
@@ -29,7 +29,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={cn("font-body antialiased min-h-screen flex")}>
+      <body className={cn("font-body antialiased")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -39,13 +39,13 @@ export default function RootLayout({
             <Sidebar side="right" collapsible="icon">
               <SidebarContent />
             </Sidebar>
-            <div className="flex flex-1 flex-col">
+            <SidebarInset>
               <Header />
               <main className="flex-1 overflow-y-auto bg-background p-4 sm:p-6 lg:p-8">
                 <Breadcrumbs />
                 {children}
               </main>
-            </div>
+            </SidebarInset>
           </SidebarProvider>
           <Toaster />
         </ThemeProvider>
