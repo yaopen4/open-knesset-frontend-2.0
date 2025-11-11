@@ -46,9 +46,6 @@ export default function RootLayout({
                   <Breadcrumbs />
                   {children}
                 </main>
-                <footer className="bg-primary py-2 text-center text-primary-foreground">
-                  <p>© הסדנא לידע ציבורי (ע"ר) 2025</p>
-                </footer>
               </div>
             </SidebarInset>
           </SidebarProvider>
