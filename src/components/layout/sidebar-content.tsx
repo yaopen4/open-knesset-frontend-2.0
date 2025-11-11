@@ -35,7 +35,7 @@ export default function AppSidebarContent() {
       <SidebarHeader>
         <Link href="/" className="flex items-center gap-2">
           <Landmark className="size-7 text-primary" />
-          <h2 className="font-headline text-xl font-semibold">כנסת פתוחה</h2>
+          <h2 className="font-headline text-xl font-semibold group-data-[state=collapsed]:hidden">כנסת פתוחה</h2>
         </Link>
       </SidebarHeader>
       <SidebarContent className="p-2">
