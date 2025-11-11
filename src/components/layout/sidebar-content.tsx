@@ -1,12 +1,14 @@
 "use client"
 
-import { Landmark, Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard } from 'lucide-react'
+import { Landmark, Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard, ChevronsRightLeft } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
+  SidebarFooter,
+  useSidebar,
 } from '@/components/ui/sidebar'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -26,6 +28,7 @@ const menuItems = [
 
 export default function AppSidebarContent() {
   const pathname = usePathname()
+  const { toggleSidebar, state } = useSidebar()
 
   return (
     <>
@@ -49,6 +52,16 @@ export default function AppSidebarContent() {
           ))}
         </SidebarMenu>
       </SidebarContent>
+      <SidebarFooter className="p-2 mt-auto">
+        <SidebarMenu>
+            <SidebarMenuItem>
+                <SidebarMenuButton onClick={toggleSidebar} tooltip={state === 'expanded' ? 'כווץ' : 'הרחב'}>
+                    <ChevronsRightLeft />
+                    <span>{state === 'expanded' ? 'כווץ תפריט' : ''}</span>
+                </SidebarMenuButton>
+            </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarFooter>
     </>
   )
 }
