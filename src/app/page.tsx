@@ -33,12 +33,12 @@ export default function AboutPage() {
     <div className="flex min-h-full flex-col">
       <div className="flex-grow pb-16">
         <div className="mx-auto w-full max-w-4xl space-y-8 px-4 py-12 text-center md:py-16">
-          <div className="mx-auto w-full max-w-2xl">
+          <div className="mx-auto w-full max-w-md">
             <Image
               src="/drowing.png"
               alt="The Knesset building"
-              width={800}
-              height={200}
+              width={400}
+              height={100}
               className="w-full rounded-lg object-cover shadow-lg"
               data-ai-hint="government building"
             />
@@ -93,9 +93,6 @@ export default function AboutPage() {
 
         </div>
       </div>
-      <footer className="bg-primary py-2 text-center text-primary-foreground">
-        <p>© הסדנא לידע ציבורי (ע"ר) 2025</p>
-      </footer>
     </div>
   );
 }
