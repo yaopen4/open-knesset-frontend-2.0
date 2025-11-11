@@ -34,7 +34,7 @@ export default function AboutPage() {
       <div className="flex-grow pb-16">
         <div className="mx-auto w-full max-w-4xl space-y-8 px-4 py-12 text-center md:py-16">
           <Image
-            src="/Knesset drowing.png"
+            src="/Knesset%20drowing.png"
             alt="The Knesset building"
             width={800}
             height={300}
