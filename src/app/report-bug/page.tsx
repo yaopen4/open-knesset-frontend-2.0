@@ -70,30 +70,30 @@ export default function ReportBugPage() {
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="name">שם</Label>
-                <Input
-                  id="name"
-                  placeholder="ישראל ישראלי"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">דוא״ל</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="israel@example.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                 <p className="text-xs text-muted-foreground">
-                  למקרה שנצטרך ליצור קשר לקבלת פרטים נוספים.
-                </p>
-              </div>
+                <div className="space-y-2">
+                  <Label htmlFor="name">שם</Label>
+                  <Input
+                    id="name"
+                    placeholder="ישראל ישראלי"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email">דוא״ל</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="israel@example.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                   <p className="text-xs text-muted-foreground">
+                    נא למלא למקרה שנצטרך ליצור קשר לקבלת פרטים נוספים.
+                  </p>
+                </div>
             </div>
             <div className="flex justify-end">
               <Button type="submit">
