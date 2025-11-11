@@ -1,4 +1,4 @@
-import { Landmark, LayoutDashboard, Users, FileText, Vote, Gavel, Settings, LifeBuoy } from 'lucide-react'
+import { Landmark, LayoutDashboard, Users, FileText, Vote, Gavel, Settings, LifeBuoy, Info, Database, BookCheck, UsersRound, Scale, Search, Code } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
@@ -22,18 +22,34 @@ export default function AppSidebarContent() {
       <SidebarContent className="p-2">
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild isActive tooltip="לוח מחוונים">
+            <SidebarMenuButton asChild isActive tooltip="דאשבורד">
               <Link href="#">
                 <LayoutDashboard />
-                <span>לוח מחוונים</span>
+                <span>דאשבורד</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="חברי כנסת">
+            <SidebarMenuButton asChild tooltip="אודות כנסת פתוחה">
+              <Link href="#">
+                <Info />
+                <span>אודות כנסת פתוחה</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="נתוני כנסת">
+              <Link href="#">
+                <Database />
+                <span>נתוני כנסת</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="ח״כים וסיעות">
               <Link href="#">
                 <Users />
-                <span>חברי כנסת</span>
+                <span>ח״כים וסיעות</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -54,10 +70,42 @@ export default function AppSidebarContent() {
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="הצבעות">
+            <SidebarMenuButton asChild tooltip="מליאות והצבעות">
               <Link href="#">
                 <Vote />
-                <span>הצבעות</span>
+                <span>מליאות והצבעות</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="חוקים">
+              <Link href="#">
+                <BookCheck />
+                <span>חוקים</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="לוביסטים">
+              <Link href="#">
+                <UsersRound />
+                <span>לוביסטים</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="חיפוש מתקדם">
+              <Link href="#">
+                <Search />
+                <span>חיפוש מתקדם</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="למפתחים">
+              <Link href="#">
+                <Code />
+                <span>למפתחים</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
