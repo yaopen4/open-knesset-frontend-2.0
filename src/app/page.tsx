@@ -33,14 +33,16 @@ export default function AboutPage() {
     <div className="flex min-h-full flex-col">
       <div className="flex-grow pb-16">
         <div className="mx-auto w-full max-w-4xl space-y-8 px-4 py-12 text-center md:py-16">
-          <Image
-            src="/drowing.png"
-            alt="The Knesset building"
-            width={800}
-            height={200}
-            className="mx-auto rounded-lg object-cover shadow-lg"
-            data-ai-hint="government building"
-          />
+          <div className="mx-auto w-full max-w-2xl">
+            <Image
+              src="/drowing.png"
+              alt="The Knesset building"
+              width={800}
+              height={200}
+              className="w-full rounded-lg object-cover shadow-lg"
+              data-ai-hint="government building"
+            />
+          </div>
 
           <div className="space-y-4">
             <h1 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl">
