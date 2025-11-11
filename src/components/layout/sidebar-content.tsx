@@ -15,11 +15,11 @@ import { usePathname } from 'next/navigation'
 
 const menuItems = [
     { href: "/", icon: Home, label: "ראשי", tooltip: "ראשי" },
-    { href: "/dashboard", icon: LayoutDashboard, label: "היום בכנסת", tooltip: "היום בכנסת" },
-    { href: "/mks", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
+    { href: "/current-knesset", icon: LayoutDashboard, label: "הכנסת הנוכחית", tooltip: "הכנסת הנוכחית" },
+    { href: "/members", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
     { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
     { href: "/committees", icon: Gavel, label: "ועדות", tooltip: "ועדות" },
-    { href: "/plenums", icon: Vote, label: "מליאות והצבעות", tooltip: "מליאות והצבעות" },
+    { href: "/votes", icon: Vote, label: "מליאות והצבעות", tooltip: "מליאות והצבעות" },
     { href: "/laws", icon: BookCheck, label: "חוקים", tooltip: "חוקים" },
     { href: "/lobbyists", icon: UsersRound, label: "לוביסטים", tooltip: "לוביסטים" },
     { href: "/search", icon: Search, label: "חיפוש מתקדם", tooltip: "חיפוש מתקדם" },
@@ -42,7 +42,7 @@ export default function AppSidebarContent() {
         <SidebarMenu>
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.href}>
-              <SidebarMenuButton asChild isActive={pathname === item.href || (item.href === '/mks' && pathname.startsWith('/knesset-data'))} tooltip={item.tooltip}>
+              <SidebarMenuButton asChild isActive={pathname.startsWith(item.href) && item.href !== '/'} tooltip={item.tooltip}>
                 <Link href={item.href}>
                   <item.icon />
                   <span>{item.label}</span>

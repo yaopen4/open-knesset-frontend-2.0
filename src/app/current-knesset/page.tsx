@@ -1,6 +1,6 @@
 import StatsCards from "@/components/dashboard/stats-cards"
 
-export default function DashboardPage() {
+export default function CurrentKnessetPage() {
   return (
     <div className="mx-auto grid w-full max-w-[1200px] gap-8">
       <div className="flex items-center justify-between">

@@ -13,7 +13,7 @@ import { usePathname } from 'next/navigation'
 
 const menuItems = [
     { href: "/", icon: Home, label: "ראשי", tooltip: "ראשי" },
-    { href: "/dashboard", icon: LayoutDashboard, label: "היום בכנסת", tooltip: "היום בכנסת" },
+    { href: "/dashboard", icon: LayoutDashboard, label: "הכנסת הנוכחית", tooltip: "הכנסת הנוכחית" },
     { href: "/mks", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
     { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
     { href: "/committees", icon: Gavel, label: "ועדות", tooltip: "ועדות" },

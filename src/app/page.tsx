@@ -9,7 +9,7 @@ const features = [
   {
     title: 'חברי הכנסת והמפלגות',
     icon: Users,
-    href: '/mks',
+    href: '/members',
   },
   {
     title: 'ועדות הכנסת',

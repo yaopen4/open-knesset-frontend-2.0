@@ -7,16 +7,15 @@ import { cn } from '@/lib/utils';
 
 const breadcrumbNameMap: { [key: string]: string } = {
   '/': 'ראשי',
-  '/dashboard': 'היום בכנסת',
-  '/mks': 'ח״כים וסיעות',
+  '/current-knesset': 'הכנסת הנוכחית',
+  '/members': 'ח״כים וסיעות',
   '/bills': 'הצעות חוק',
   '/committees': 'ועדות',
-  '/plenums': 'מליאות והצבעות',
+  '/votes': 'מליאות והצבעות',
   '/laws': 'חוקים',
   '/lobbyists': 'לוביסטים',
   '/search': 'חיפוש מתקדם',
   '/developers': 'למפתחים',
-  '/knesset-data': 'נתוני כנסת היסטוריים',
 };
 
 const Breadcrumbs = ({ className }: { className?: string }) => {
@@ -33,7 +32,7 @@ const Breadcrumbs = ({ className }: { className?: string }) => {
     const isLast = index === pathSegments.length - 1;
     
     let label = breadcrumbNameMap[href] || segment;
-    if (href.startsWith('/knesset-data/')) {
+    if (href.startsWith('/members/')) {
         const knessetNumber = segment;
         label = `הכנסת ה-${knessetNumber}`;
     }

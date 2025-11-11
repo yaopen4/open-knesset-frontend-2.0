@@ -30,7 +30,7 @@ export default async function KnessetDataDisplay() {
   return (
     <div className="flex flex-col gap-4">
       {knessetList.map((knesset) => (
-        <Link href={`/knesset-data/${knesset.knesset}`} key={knesset.knesset}>
+        <Link href={`/members/${knesset.knesset}`} key={knesset.knesset}>
           <Card className="h-full transform transition-transform hover:-translate-y-1 hover:shadow-lg">
             <CardHeader>
               <CardTitle className="font-headline text-xl">הכנסת ה-{knesset.knesset}</CardTitle>

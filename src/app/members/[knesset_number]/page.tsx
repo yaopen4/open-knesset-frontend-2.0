@@ -36,7 +36,7 @@ interface KnessetPageParams {
 }
 
 async function getKnessetData(knessetNumber: string): Promise<KnessetData | null> {
-  const dataDir = path.join(process.cwd(), 'src', 'app', 'members', 'members_data');
+  const dataDir = path.join(process.cwd(), 'src', 'app', 'knesset-data', 'members_data');
   const filePath = path.join(dataDir, `knesset_${knessetNumber}.json`);
   
   try {
@@ -104,7 +104,7 @@ export default async function KnessetPage({ params }: KnessetPageParams) {
 }
 
 export async function generateStaticParams() {
-  const dataDir = path.join(process.cwd(), 'src', 'app', 'members', 'members_data');
+  const dataDir = path.join(process.cwd(), 'src', 'app', 'knesset-data', 'members_data');
   const summaryPath = path.join(dataDir, 'scraping_summary.json');
   
   try {
