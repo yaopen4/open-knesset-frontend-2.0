@@ -14,6 +14,8 @@ import { Input } from '@/components/ui/input'
 import { SidebarTrigger } from '@/components/ui/sidebar'
 import Link from 'next/link'
 import { Moon, Sun } from "lucide-react"
+import { DonateDialog } from '@/components/donate-dialog'
+import { Dialog, DialogTrigger } from '@/components/ui/dialog'
 
 function ThemeToggleButton() {
   const { setTheme, theme } = useTheme()
@@ -66,11 +68,15 @@ export default function Header() {
             <Bug className="h-5 w-5" />
           </Link>
         </Button>
-        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
-          <Link href="#" aria-label="Donate">
-            <CircleDollarSign className="h-5 w-5" />
-          </Link>
-        </Button>
+        
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" aria-label="Donate">
+              <CircleDollarSign className="h-5 w-5" />
+            </Button>
+          </DialogTrigger>
+          <DonateDialog />
+        </Dialog>
 
         <ThemeToggleButton />
 
