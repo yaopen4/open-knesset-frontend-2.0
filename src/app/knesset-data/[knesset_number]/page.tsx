@@ -49,8 +49,7 @@ async function getKnessetData(knessetNumber: string): Promise<KnessetData | null
 }
 
 const partyColors = [
-  'bg-sky-200', 'bg-red-200', 'bg-green-200', 'bg-yellow-200', 'bg-purple-200',
-  'bg-pink-200', 'bg-indigo-200', 'bg-teal-200', 'bg-orange-200', 'bg-lime-200'
+  'bg-muted', 'bg-secondary'
 ];
 
 const getPartyColor = (index: number) => {
@@ -75,7 +74,7 @@ export default async function KnessetPage({ params }: KnessetPageParams) {
         {sortedParties.map((party, index) => (
           <AccordionItem value={party.party_name} key={`${knesset_number}-${party.party_name}-${index}`} className="border rounded-md bg-card">
             <AccordionTrigger className={`px-4 py-3 text-base ${getPartyColor(index)}`}>
-              <span>{party.party_name} ({party.members.length} חברים)</span>
+              <span className="text-card-foreground">{party.party_name} ({party.members.length} חברים)</span>
             </AccordionTrigger>
             <AccordionContent className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {party.members.map((member, memberIndex) => (
