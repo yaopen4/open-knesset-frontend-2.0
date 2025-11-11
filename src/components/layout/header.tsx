@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Search, Bug, CircleDollarSign, Globe, Github } from 'lucide-react'
@@ -61,7 +62,7 @@ export default function Header() {
           </Link>
         </Button>
         <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
-          <Link href="#" aria-label="Report a bug">
+          <Link href="/report-bug" aria-label="Report a bug">
             <Bug className="h-5 w-5" />
           </Link>
         </Button>

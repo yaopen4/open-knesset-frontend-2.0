@@ -1,3 +1,4 @@
+
 "use client";
 
 import { usePathname } from 'next/navigation';
@@ -16,6 +17,7 @@ const breadcrumbNameMap: { [key: string]: string } = {
   '/lobbyists': 'לוביסטים',
   '/search': 'חיפוש מתקדם',
   '/developers': 'למפתחים',
+  '/report-bug': 'דיווח על תקלה',
 };
 
 const Breadcrumbs = ({ className }: { className?: string }) => {
