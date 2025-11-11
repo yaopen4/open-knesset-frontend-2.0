@@ -20,7 +20,7 @@ export function DonateDialog() {
         <DialogTitle className="font-headline text-4xl font-bold">
           כיצד לתרום?
         </DialogTitle>
-        <DialogDescription className="text-lg">
+        <DialogDescription className="text-lg text-right">
           אנחנו זקוקים לתמיכה של הקהילה כדי להמשיך ולפעול למען ממשל פתוח יותר. היו אבירי שקיפות והצטרפו בתמיכה חודשית.
         </DialogDescription>
       </DialogHeader>
@@ -37,7 +37,7 @@ export function DonateDialog() {
             ))}
              <div className="relative">
                 <span className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground">₪</span>
-                <Input type="number" placeholder="סכום אחר" className="h-full text-lg pr-7" />
+                <Input type="number" placeholder="סכום אחר" className="h-full text-lg pr-7 text-right" />
             </div>
           </div>
           <Button asChild size="lg" className="w-full text-xl py-7 mt-auto">
