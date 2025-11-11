@@ -15,7 +15,7 @@ const donationAmounts = [50, 100, 250, 500, 1000];
 
 export function DonateDialog() {
   return (
-    <DialogContent className="max-w-4xl w-[95vw] sm:w-full p-6 sm:p-8">
+    <DialogContent className="max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8">
       <DialogHeader className="text-right mb-6">
         <DialogTitle className="font-headline text-3xl md:text-4xl font-bold text-right">
           כיצד לתרום?
