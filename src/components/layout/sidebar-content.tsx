@@ -42,7 +42,7 @@ export default function AppSidebarContent() {
         <SidebarMenu>
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.href}>
-              <SidebarMenuButton asChild isActive={pathname === item.href || (item.href === '/mks' && pathname.startsWith('/members'))} tooltip={item.tooltip}>
+              <SidebarMenuButton asChild isActive={pathname === item.href || (item.href === '/mks' && pathname.startsWith('/knesset-data'))} tooltip={item.tooltip}>
                 <Link href={item.href}>
                   <item.icon />
                   <span>{item.label}</span>
