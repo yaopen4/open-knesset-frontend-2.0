@@ -31,7 +31,7 @@ const features = [
 export default function AboutPage() {
   return (
     <div className="flex min-h-full flex-col">
-      <div className="flex-grow">
+      <div className="flex-grow pb-16">
         <div className="mx-auto w-full max-w-4xl space-y-8 px-4 py-12 text-center md:py-16">
           <Image
             src="https://picsum.photos/seed/knesset/800/300"
@@ -95,7 +95,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <footer className="mt-auto bg-primary py-4 text-center text-primary-foreground">
+      <footer className="fixed inset-x-0 bottom-0 z-10 bg-primary py-4 text-center text-primary-foreground">
         <p>© הסדנא לידע ציבורי (ע"ר) 2025</p>
       </footer>
     </div>
