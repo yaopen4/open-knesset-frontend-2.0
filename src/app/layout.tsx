@@ -12,6 +12,9 @@ import Breadcrumbs from '@/components/layout/breadcrumbs';
 export const metadata: Metadata = {
   title: 'Open Knesset Revamp',
   description: 'Israeli parliamentary data, demystified.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
