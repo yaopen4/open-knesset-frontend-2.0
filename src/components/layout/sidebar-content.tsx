@@ -1,6 +1,6 @@
 "use client"
 
-import { Landmark, LayoutDashboard, Users, FileText, Vote, Gavel, Info, Database, BookCheck, UsersRound, Search, Code } from 'lucide-react'
+import { Landmark, Home, Users, FileText, Vote, Gavel, Database, BookCheck, UsersRound, Search, Code, LayoutDashboard } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
@@ -12,8 +12,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const menuItems = [
-    { href: "/", icon: LayoutDashboard, label: "דאשבורד", tooltip: "דאשבורד" },
-    { href: "/about", icon: Info, label: "אודות כנסת פתוחה", tooltip: "אודות כנסת פתוחה" },
+    { href: "/", icon: Home, label: "ראשי", tooltip: "ראשי" },
+    { href: "/dashboard", icon: LayoutDashboard, label: "היום בכנסת", tooltip: "היום בכנסת" },
     { href: "/knesset-data", icon: Database, label: "נתוני כנסת", tooltip: "נתוני כנסת" },
     { href: "/mks", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
     { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
