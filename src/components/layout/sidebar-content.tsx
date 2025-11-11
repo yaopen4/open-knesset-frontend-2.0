@@ -1,14 +1,12 @@
 "use client"
 
-import { Landmark, LayoutDashboard, Users, FileText, Vote, Gavel, Settings, LifeBuoy, Info, Database, BookCheck, UsersRound, Scale, Search, Code } from 'lucide-react'
+import { Landmark, LayoutDashboard, Users, FileText, Vote, Gavel, Info, Database, BookCheck, UsersRound, Search, Code } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
-  SidebarFooter,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-  SidebarSeparator,
 } from '@/components/ui/sidebar'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -52,27 +50,6 @@ export default function AppSidebarContent() {
           ))}
         </SidebarMenu>
       </SidebarContent>
-      <SidebarFooter>
-        <SidebarSeparator />
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="עזרה">
-              <Link href="#">
-                <LifeBuoy />
-                <span>עזרה</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="הגדרות">
-              <Link href="#">
-                <Settings />
-                <span>הגדרות</span>
-              </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarFooter>
     </>
   )
 }
