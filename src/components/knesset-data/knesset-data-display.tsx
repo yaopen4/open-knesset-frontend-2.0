@@ -28,7 +28,7 @@ export default async function KnessetDataDisplay() {
   const knessetList = await getKnessetSummary();
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div className="flex flex-col gap-4">
       {knessetList.map((knesset) => (
         <Link href={`/knesset-data/${knesset.knesset}`} key={knesset.knesset}>
           <Card className="h-full transform transition-transform hover:-translate-y-1 hover:shadow-lg">
