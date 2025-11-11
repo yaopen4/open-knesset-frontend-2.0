@@ -95,7 +95,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <footer className="fixed inset-x-0 bottom-0 z-10 bg-primary py-4 text-center text-primary-foreground">
+      <footer className="mt-auto bg-primary py-2 text-center text-primary-foreground">
         <p>© הסדנא לידע ציבורי (ע"ר) 2025</p>
       </footer>
     </div>
