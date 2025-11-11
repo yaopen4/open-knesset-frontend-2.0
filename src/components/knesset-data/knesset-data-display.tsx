@@ -1,29 +1,15 @@
 import fs from 'fs';
 import path from 'path';
-import { Accordion } from '@/components/ui/accordion';
-import KnessetMembers from './knesset-members';
+import Link from 'next/link';
+import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
-interface Member {
-  name: string;
-  position: string | null;
-  contact: string | null;
-  image_url: string | null;
-  additional_info: {
-    profile_url: string;
-  };
+interface KnessetInfo {
+  knesset: number;
+  total_members: number;
+  total_parties: number;
 }
 
-interface Party {
-  party_name: string;
-  members: Member[];
-}
-
-interface KnessetData {
-  knesset_number: number;
-  parties: Party[];
-}
-
-async function getKnessetData(): Promise<KnessetData[]> {
+async function getKnessetSummary(): Promise<KnessetInfo[]> {
   const dataDir = path.join(process.cwd(), 'src', 'app', 'knesset-data', 'members_data');
   const summaryPath = path.join(dataDir, 'scraping_summary.json');
   
@@ -31,21 +17,7 @@ async function getKnessetData(): Promise<KnessetData[]> {
     const summaryContent = await fs.promises.readFile(summaryPath, 'utf-8');
     const summary = JSON.parse(summaryContent);
 
-    const knessetDataPromises = summary.extracted_data
-      .sort((a: any, b: any) => b.knesset - a.knesset) // Sort descending by Knesset number
-      .map(async (knessetInfo: any) => {
-        const filePath = path.join(dataDir, `knesset_${knessetInfo.knesset}.json`);
-        try {
-          const fileContent = await fs.promises.readFile(filePath, 'utf-8');
-          return JSON.parse(fileContent);
-        } catch (error) {
-          console.error(`Error reading or parsing ${filePath}:`, error);
-          return null;
-        }
-      });
-
-    const knessetData = await Promise.all(knessetDataPromises);
-    return knessetData.filter((data): data is KnessetData => data !== null);
+    return summary.extracted_data.sort((a: any, b: any) => b.knesset - a.knesset); // Sort descending
   } catch (error) {
     console.error(`Error reading or parsing summary file ${summaryPath}:`, error);
     return [];
@@ -53,15 +25,23 @@ async function getKnessetData(): Promise<KnessetData[]> {
 }
 
 export default async function KnessetDataDisplay() {
-  const allKnessetData = await getKnessetData();
+  const knessetList = await getKnessetSummary();
 
   return (
-    <div className="w-full">
-      <Accordion type="single" collapsible className="w-full space-y-4">
-        {allKnessetData.map((knesset) => (
-          <KnessetMembers key={knesset.knesset_number} knessetData={knesset} />
-        ))}
-      </Accordion>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      {knessetList.map((knesset) => (
+        <Link href={`/knesset-data/${knesset.knesset}`} key={knesset.knesset}>
+          <Card className="h-full transform transition-transform hover:-translate-y-1 hover:shadow-lg">
+            <CardHeader>
+              <CardTitle className="font-headline text-xl">הכנסת ה-{knesset.knesset}</CardTitle>
+              <CardDescription>
+                <p>{knesset.total_parties} סיעות</p>
+                <p>{knesset.total_members} חברים</p>
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </Link>
+      ))}
     </div>
   );
 }
