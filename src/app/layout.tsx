@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Sidebar } from '@/components/ui/sidebar';
 import SidebarContent from '@/components/layout/sidebar-content';
 import Header from '@/components/layout/header';
+import Breadcrumbs from '@/components/layout/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Open Knesset Revamp',
@@ -38,6 +39,7 @@ export default function RootLayout({
             <div className="flex flex-1 flex-col">
               <Header />
               <main className="flex-1 overflow-y-auto bg-background p-4 sm:p-6 lg:p-8">
+                <Breadcrumbs />
                 {children}
               </main>
             </div>

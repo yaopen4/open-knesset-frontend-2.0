@@ -8,9 +8,6 @@ import {
 } from "@/components/ui/accordion"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { User } from "lucide-react"
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
 
 interface Member {
   name: string;
@@ -70,16 +67,7 @@ export default async function KnessetPage({ params }: KnessetPageParams) {
   const sortedParties = [...parties].sort((a, b) => b.members.length - a.members.length);
 
   return (
-    <div className="mx-auto grid w-full max-w-[1200px] gap-8">
-      <div className='flex items-center gap-2'>
-         <Button asChild variant="outline" size="icon">
-            <Link href="/mks">
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </Button>
-        <h1 className="font-headline text-3xl font-bold">הכנסת ה-{knesset_number}</h1>
-      </div>
-      
+    <div className="mx-auto grid w-full max-w-[1200px] gap-8">      
       <Accordion type="multiple" className="w-full space-y-2">
         {sortedParties.map((party, index) => (
           <AccordionItem value={party.party_name} key={`${knesset_number}-${party.party_name}-${index}`} className="border rounded-md bg-card">
