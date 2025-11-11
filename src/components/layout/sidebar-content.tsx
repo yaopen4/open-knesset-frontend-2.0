@@ -1,6 +1,6 @@
 "use client"
 
-import { Landmark, Home, Users, FileText, Vote, Gavel, Database, BookCheck, UsersRound, Search, Code, LayoutDashboard } from 'lucide-react'
+import { Landmark, Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
@@ -14,7 +14,6 @@ import { usePathname } from 'next/navigation'
 const menuItems = [
     { href: "/", icon: Home, label: "ראשי", tooltip: "ראשי" },
     { href: "/dashboard", icon: LayoutDashboard, label: "היום בכנסת", tooltip: "היום בכנסת" },
-    { href: "/knesset-data", icon: Database, label: "נתוני כנסת", tooltip: "נתוני כנסת" },
     { href: "/mks", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
     { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
     { href: "/committees", icon: Gavel, label: "ועדות", tooltip: "ועדות" },
@@ -40,7 +39,7 @@ export default function AppSidebarContent() {
         <SidebarMenu>
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.href}>
-              <SidebarMenuButton asChild isActive={pathname === item.href} tooltip={item.tooltip}>
+              <SidebarMenuButton asChild isActive={pathname === item.href || (item.href === '/mks' && pathname.startsWith('/knesset-data'))} tooltip={item.tooltip}>
                 <Link href={item.href}>
                   <item.icon />
                   <span>{item.label}</span>

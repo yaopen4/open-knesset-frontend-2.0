@@ -8,6 +8,9 @@ import {
 } from "@/components/ui/accordion"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { User } from "lucide-react"
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
 
 interface Member {
   name: string;
@@ -68,13 +71,22 @@ export default async function KnessetPage({ params }: KnessetPageParams) {
 
   return (
     <div className="mx-auto grid w-full max-w-[1200px] gap-8">
-      <h1 className="font-headline text-3xl font-bold">הכנסת ה-{knesset_number}</h1>
+      <div className='flex items-center gap-2'>
+         <Button asChild variant="outline" size="icon">
+            <Link href="/mks">
+              <ChevronRight className="h-4 w-4" />
+            </Link>
+          </Button>
+        <h1 className="font-headline text-3xl font-bold">הכנסת ה-{knesset_number}</h1>
+      </div>
       
       <Accordion type="multiple" className="w-full space-y-2">
         {sortedParties.map((party, index) => (
           <AccordionItem value={party.party_name} key={`${knesset_number}-${party.party_name}-${index}`} className="border rounded-md bg-card">
-            <AccordionTrigger className={`px-4 py-3 text-base ${getPartyColor(index)}`}>
-              <span className="text-card-foreground">{party.party_name} ({party.members.length} חברים)</span>
+            <AccordionTrigger className={`w-full px-4 py-3 text-base ${getPartyColor(index)}`}>
+              <div className="flex-1 text-right text-card-foreground">
+                {party.party_name} ({party.members.length} חברים)
+              </div>
             </AccordionTrigger>
             <AccordionContent className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {party.members.map((member, memberIndex) => (
