@@ -1,4 +1,3 @@
-import PartyDistributionChart from "@/components/dashboard/party-distribution-chart"
 import StatsCards from "@/components/dashboard/stats-cards"
 
 export default function Home() {
@@ -8,9 +7,6 @@ export default function Home() {
         <h1 className="font-headline text-3xl font-bold">דאשבורד</h1>
       </div>
       <StatsCards />
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
-        <PartyDistributionChart className="lg:col-span-5" />
-      </div>
     </div>
   )
 }
