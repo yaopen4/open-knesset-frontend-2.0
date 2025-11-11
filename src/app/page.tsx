@@ -95,7 +95,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <footer className="fixed bottom-0 right-0 w-[calc(100%-var(--sidebar-width))] bg-primary py-2 text-center text-primary-foreground group-data-[collapsible=icon]/sidebar-wrapper:w-[calc(100%-var(--sidebar-width-icon))] md:group-data-[collapsible=offcanvas]/sidebar-wrapper:w-full">
+      <footer className="fixed bottom-0 left-0 w-[calc(100%-var(--sidebar-width))] bg-primary py-2 text-center text-primary-foreground group-data-[collapsible=icon]/sidebar-wrapper:w-[calc(100%-var(--sidebar-width-icon))] md:group-data-[collapsible=offcanvas]/sidebar-wrapper:w-full">
         <p>© הסדנא לידע ציבורי (ע"ר) 2025</p>
       </footer>
     </div>
