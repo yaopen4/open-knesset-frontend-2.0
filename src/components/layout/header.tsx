@@ -59,9 +59,9 @@ export default function Header() {
 
       <div className="flex items-center gap-0">
         <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
-          <Link href="#" aria-label="GitHub">
+          <a href="https://github.com/yaopen4/open-knesset-frontend-2.0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <GithubIcon />
-          </Link>
+          </a>
         </Button>
         <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
           <Link href="/report-bug" aria-label="Report a bug">
