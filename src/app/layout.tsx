@@ -40,11 +40,13 @@ export default function RootLayout({
               <SidebarContent />
             </Sidebar>
             <SidebarInset>
-              <Header />
-              <main className="flex-1 overflow-y-auto bg-background p-4 sm:p-6 lg:p-8">
-                <Breadcrumbs />
-                {children}
-              </main>
+              <div className="flex flex-col min-h-screen">
+                <Header />
+                <main className="flex-1 overflow-y-auto bg-background p-4 sm:p-6 lg:p-8">
+                  <Breadcrumbs />
+                  {children}
+                </main>
+              </div>
             </SidebarInset>
           </SidebarProvider>
           <Toaster />

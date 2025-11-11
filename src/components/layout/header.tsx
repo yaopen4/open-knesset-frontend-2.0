@@ -1,3 +1,4 @@
+
 "use client"
 
 import { Search, Bug, CircleDollarSign, Globe, Github } from 'lucide-react'
@@ -13,6 +14,8 @@ import { Input } from '@/components/ui/input'
 import { SidebarTrigger } from '@/components/ui/sidebar'
 import Link from 'next/link'
 import { Moon, Sun } from "lucide-react"
+import { DonateDialog } from '@/components/donate-dialog'
+import { Dialog, DialogTrigger } from '@/components/ui/dialog'
 
 function ThemeToggleButton() {
   const { setTheme, theme } = useTheme()
@@ -56,20 +59,24 @@ export default function Header() {
 
       <div className="flex items-center gap-0">
         <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
-          <Link href="#" aria-label="GitHub">
+          <a href="https://github.com/yaopen4/open-knesset-frontend-2.0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <GithubIcon />
-          </Link>
+          </a>
         </Button>
         <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
-          <Link href="#" aria-label="Report a bug">
+          <Link href="/report-bug" aria-label="Report a bug">
             <Bug className="h-5 w-5" />
           </Link>
         </Button>
-        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
-          <Link href="#" aria-label="Donate">
-            <CircleDollarSign className="h-5 w-5" />
-          </Link>
-        </Button>
+        
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" aria-label="Donate">
+              <CircleDollarSign className="h-5 w-5" />
+            </Button>
+          </DialogTrigger>
+          <DonateDialog />
+        </Dialog>
 
         <ThemeToggleButton />
 
