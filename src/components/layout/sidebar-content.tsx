@@ -14,9 +14,9 @@ export default function AppSidebarContent() {
   return (
     <>
       <SidebarHeader>
-        <Link href="#" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Landmark className="size-7 text-primary" />
-          <h2 className="font-headline text-xl font-semibold">Open Knesset</h2>
+          <h2 className="font-headline text-xl font-semibold">כנסת פתוחה</h2>
         </Link>
       </SidebarHeader>
       <SidebarContent className="p-2">
@@ -31,7 +31,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="אודות כנסת פתוחה">
-              <Link href="#">
+              <Link href="/about">
                 <Info />
                 <span>אודות כנסת פתוחה</span>
               </Link>
@@ -39,7 +39,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="נתוני כנסת">
-              <Link href="#">
+              <Link href="/knesset-data">
                 <Database />
                 <span>נתוני כנסת</span>
               </Link>
@@ -47,7 +47,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="ח״כים וסיעות">
-              <Link href="#">
+              <Link href="/mks">
                 <Users />
                 <span>ח״כים וסיעות</span>
               </Link>
@@ -63,7 +63,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="ועדות">
-              <Link href="#">
+              <Link href="/committees">
                 <Gavel />
                 <span>ועדות</span>
               </Link>
@@ -71,7 +71,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="מליאות והצבעות">
-              <Link href="#">
+              <Link href="/plenums">
                 <Vote />
                 <span>מליאות והצבעות</span>
               </Link>
@@ -79,7 +79,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="חוקים">
-              <Link href="#">
+              <Link href="/laws">
                 <BookCheck />
                 <span>חוקים</span>
               </Link>
@@ -87,7 +87,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="לוביסטים">
-              <Link href="#">
+              <Link href="/lobbyists">
                 <UsersRound />
                 <span>לוביסטים</span>
               </Link>
@@ -95,7 +95,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="חיפוש מתקדם">
-              <Link href="#">
+              <Link href="/search">
                 <Search />
                 <span>חיפוש מתקדם</span>
               </Link>
@@ -103,7 +103,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="למפתחים">
-              <Link href="#">
+              <Link href="/developers">
                 <Code />
                 <span>למפתחים</span>
               </Link>
