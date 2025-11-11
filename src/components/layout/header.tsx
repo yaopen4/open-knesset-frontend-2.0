@@ -88,7 +88,7 @@ export default function Header() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem>
+            <DropdownMenuItem className="hover:bg-[#1976D2] hover:text-white focus:bg-[#1976D2] focus:text-white">
               עברית
             </DropdownMenuItem>
           </DropdownMenuContent>
