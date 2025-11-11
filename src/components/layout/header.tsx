@@ -22,7 +22,7 @@ function ThemeToggleButton() {
       variant="ghost"
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="rounded-full hover:bg-transparent transition-transform hover:scale-110 hover:text-foreground"
+      className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground"
     >
       <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
@@ -55,17 +55,17 @@ export default function Header() {
       </div>
 
       <div className="flex items-center gap-1 sm:gap-2">
-        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-110 hover:text-foreground" asChild>
+        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
           <Link href="#" aria-label="GitHub">
             <GithubIcon />
           </Link>
         </Button>
-        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-110 hover:text-foreground" asChild>
+        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
           <Link href="#" aria-label="Report a bug">
             <Bug className="h-5 w-5" />
           </Link>
         </Button>
-        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-110 hover:text-foreground" asChild>
+        <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground" asChild>
           <Link href="#" aria-label="Donate">
             <CircleDollarSign className="h-5 w-5" />
           </Link>
@@ -75,7 +75,7 @@ export default function Header() {
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-110 hover:text-foreground">
+            <Button variant="ghost" size="icon" className="rounded-full hover:bg-transparent transition-transform hover:scale-125 hover:text-foreground">
               <Globe className="h-5 w-5" />
               <span className="sr-only">Change language</span>
             </Button>
