@@ -23,7 +23,7 @@ export default function AppSidebarContent() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild isActive tooltip="דאשבורד">
-              <Link href="#">
+              <Link href="/">
                 <LayoutDashboard />
                 <span>דאשבורד</span>
               </Link>
@@ -55,7 +55,7 @@ export default function AppSidebarContent() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="הצעות חוק">
-              <Link href="#">
+              <Link href="/bills">
                 <FileText />
                 <span>הצעות חוק</span>
               </Link>

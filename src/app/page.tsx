@@ -1,6 +1,5 @@
 import Header from "@/components/layout/header"
 import PartyDistributionChart from "@/components/dashboard/party-distribution-chart"
-import RecentBillsTable from "@/components/dashboard/recent-bills-table"
 import SidebarContent from "@/components/layout/sidebar-content"
 import StatsCards from "@/components/dashboard/stats-cards"
 import VotingActivityChart from "@/components/dashboard/voting-activity-chart"
@@ -24,7 +23,6 @@ export default function Home() {
               <VotingActivityChart className="lg:col-span-3" />
               <PartyDistributionChart className="lg:col-span-2" />
             </div>
-            <RecentBillsTable />
           </div>
         </main>      
       </div>
