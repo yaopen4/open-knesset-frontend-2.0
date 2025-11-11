@@ -15,12 +15,12 @@ const donationAmounts = [50, 100, 250, 500, 1000];
 
 export function DonateDialog() {
   return (
-    <DialogContent className="max-w-3xl p-8">
+    <DialogContent className="max-w-4xl w-[95vw] sm:w-full p-6 sm:p-8">
       <DialogHeader className="text-right mb-6">
-        <DialogTitle className="font-headline text-4xl font-bold">
+        <DialogTitle className="font-headline text-3xl md:text-4xl font-bold text-right">
           כיצד לתרום?
         </DialogTitle>
-        <DialogDescription className="text-lg text-right">
+        <DialogDescription className="text-base md:text-lg text-right">
           אנחנו זקוקים לתמיכה של הקהילה כדי להמשיך ולפעול למען ממשל פתוח יותר. היו אבירי שקיפות והצטרפו בתמיכה חודשית.
         </DialogDescription>
       </DialogHeader>
