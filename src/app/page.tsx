@@ -1,6 +1,5 @@
 import PartyDistributionChart from "@/components/dashboard/party-distribution-chart"
 import StatsCards from "@/components/dashboard/stats-cards"
-import VotingActivityChart from "@/components/dashboard/voting-activity-chart"
 
 export default function Home() {
   return (
@@ -10,8 +9,7 @@ export default function Home() {
       </div>
       <StatsCards />
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
-        <VotingActivityChart className="lg:col-span-3" />
-        <PartyDistributionChart className="lg:col-span-2" />
+        <PartyDistributionChart className="lg:col-span-5" />
       </div>
     </div>
   )
