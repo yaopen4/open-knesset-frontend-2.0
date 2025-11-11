@@ -36,7 +36,7 @@ export default function RootLayout({
           enableSystem
         >
           <SidebarProvider>
-            <Sidebar side="right">
+            <Sidebar side="right" collapsible="icon">
               <SidebarContent />
             </Sidebar>
             <div className="flex flex-1 flex-col">
