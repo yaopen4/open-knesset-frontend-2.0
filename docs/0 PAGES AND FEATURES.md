@@ -12,18 +12,13 @@
   '/developers': 'למפתחים',
   '/report-bug': 'דיווח על תקלה',
 
----
-
-## Dictionary 
-[o] - In progress
-[v] - Done
-
 --- 
 
 ## Home Page
 - [V] Displays the purpose of the "Open Knesset" site.
 - [V] Visual navigation cards for key features on the site.
 - [V] Describes the importance of the project and calls for community participation.
+- [V] added 'In Development' page. 
 
 ## Donations & Volunteering
 - [V] Donation dialog integrated in site header with jgive.com and bank transfer options.
@@ -34,14 +29,14 @@
 - [ ] Form validation and submission handling. 
 
 ## Current Knesset Dashboard
-- [o] Statistical data display (placeholder data currently, needs real API integration).
+- [ ] Statistical data display (placeholder data currently, needs real API integration).
 - [ ] Overview of current Knesset's activities with daily updated data.
 - [ ] Note last update date for each page. 
 
 ## For Developers
-- [ ] API access and authentication guide. 
-- [ ] Technical documentation for developers. 
-- [ ] Database structure and reference tables overview. 
+- [V] API access and authentication guide. 
+- [V] Technical documentation for developers. 
+- [V] Database structure and reference tables overview. 
 
 ## Members
 - [V] List of all Knessets (1-25) with member and party counts - STATIC.
@@ -59,12 +54,12 @@
 
 ## Laws
 - [ ] Link to the "Open Book of Laws". 
-- [ ] Embedded table from the official Knesset laws database sorted by date passed. 
+- [ ]  Laws table matches the one in 'https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawReshumot.aspx?t=LawReshumot&st=LawReshumot' 
 
 ## Bills
 - [V] Bills page with recent bills table component.
-- [o] Table structure exists with placeholder data, needs API integration.
-- [ ] Real-time bill proposal data from official Knesset database.
+- [ ] Bills table matches the one in 'https://main.knesset.gov.il/activity/legislation/laws/pages/lawsuggestionssearch.aspx?t=lawsuggestionssearch&st=currentknesset'
+- [ ] Daily sync data from official Knesset database.
 - [ ] Interactive dashboard with a timeline view of proposals. 
 
 ## Lobbyists
@@ -82,7 +77,7 @@
 - [ ] Detailed voting breakdown by MK. 
 
 ## Search
-- [V] Basic search page structure.
+- [ ] Basic search page structure.
 - [ ] Search functionality implementation.
 - [ ] Filter by committee or member. 
 - [ ] Link to the "Legislators Beta" tool. 
