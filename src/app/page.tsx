@@ -33,13 +33,13 @@ export default function AboutPage() {
   return (
     <div className="flex min-h-full flex-col">
       <div className="flex-grow pb-16">
-        <div className="mx-auto w-full max-w-4xl space-y-8 px-4 pt-6 pb-12 text-center md:pt-8 md:pb-16">
-          <div className="mx-auto w-full max-w-xs">
+        <div className="mx-auto w-full max-w-4xl space-y-8 px-4 pt-0 pb-12 text-center md:pb-16">
+          <div className="mx-auto w-full max-w-md -mt-4 md:-mt-6">
             <Image
               src="/drowing.png"
               alt="The Knesset building"
-              width={320}
-              height={80}
+              width={480}
+              height={120}
               className="w-full rounded-lg object-cover"
               data-ai-hint="government building"
             />

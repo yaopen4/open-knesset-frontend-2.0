@@ -1,6 +1,6 @@
 "use client"
 
-import { Landmark, Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard, ChevronsRightLeft } from 'lucide-react'
+import { Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard, ChevronsRightLeft } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
@@ -34,7 +34,13 @@ export default function AppSidebarContent() {
     <>
       <SidebarHeader>
         <Link href="/" className="flex items-center gap-2">
-          <Landmark className="size-7 text-primary" />
+          <img 
+            src="/favicon.ico" 
+            alt="כנסת פתוחה" 
+            width={28} 
+            height={28}
+            className="object-contain"
+          />
           <h2 className="font-headline text-xl font-semibold group-data-[state=collapsed]:hidden">כנסת פתוחה</h2>
         </Link>
       </SidebarHeader>
