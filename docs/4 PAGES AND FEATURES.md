@@ -1,24 +1,56 @@
-## Site Map
-V '/': 'ראשי',
-  '/current-knesset': 'הכנסת הנוכחית',
-  '/dashboard': 'הכנסת הנוכחית',
-  '/members': 'ח״כים וסיעות',
-  '/mks': 'ח״כים וסיעות',
-  '/members/[knesset_number]': 'חברי כנסת לפי כנסת',
-  '/members/person/[person_id]': 'פרופיל חבר כנסת',
-  '/knesset-data': 'נתוני כנסת',
-  '/knesset-data/[knesset_number]': 'נתוני כנסת לפי כנסת',
-  '/past-knessets': 'כל כנסות ישראל',
-  '/ministry': 'משרדים',
-  '/committees': 'ועדות',
-  '/bills': 'הצעות חוק',
-  '/votes': 'מליאות והצבעות',
-  '/plenums': 'מליאות והצבעות',
-  '/lobbyists': 'לוביסטים',
-  '/laws': 'חוקים',
-  '/search': 'חיפוש מתקדם',
-V '/developers': 'למפתחים',
-V '/report-bug': 'דיווח על תקלה',
+## Site Map (New Structure)
+
+### Primary Routes
+✅ '/': 'ראשי' (Home)
+✅ '/search': 'חיפוש מתקדם' (Advanced Search)
+✅ '/developers': 'למפתחים' (For Developers)
+✅ '/report-bug': 'דיווח על תקלה' (Report Bug)
+
+### Knesset Sessions
+🆕 '/knesset': 'רשימת כנסת' (Knesset Sessions Index)
+🆕 '/knesset/[knesset_number]': 'דף כנסת' (Knesset Hub Page)
+  - Sections:
+    - '#overview': סקירה כללית (Overview)
+    - '#timeline': ציר זמן (Timeline)
+    - '#parties': סיעות (Parties)
+    - '#members': חברי כנסת (Members - key positions)
+    - '#committees': ועדות (Committees)
+    - '#bills': הצעות חוק וחוקים (Bills & Laws)
+
+### Canonical Entity Routes (Global)
+🆕 '/mks': 'רשימת ח״כים' (MKs List)
+🆕 '/mks/[mk_id]': 'פרופיל ח״כ' (MK Profile)
+
+🆕 '/parties': 'רשימת סיעות' (Parties List)
+🆕 '/parties/[party_id]': 'פרופיל סיעה' (Party Profile)
+
+✅ '/bills': 'רשימת הצעות חוק' (Bills List)
+🆕 '/bills/[bill_id]': 'דף הצעת חוק' (Bill Detail)
+
+✅ '/committees': 'רשימת ועדות' (Committees List)
+🆕 '/committees/[committee_id]': 'דף ועדה' (Committee Detail)
+
+✅ '/laws': 'מאגר חוקים' (Laws Database)
+🆕 '/laws/[law_id]': 'דף חוק' (Law Detail)
+
+✅ '/votes': 'רשימת הצבעות' (Votes List)
+✅ '/plenums': 'מליאות והצבעות' (Plenums & Votes)
+
+### Deprecated/Removed Routes
+❌ '/current-knesset' → Redirects to '/knesset/25'
+❌ '/dashboard' → Redirects to '/knesset/25'
+❌ '/members/[knesset_number]' → Migrated to '/knesset/[knesset_number]#members'
+❌ '/members/person/[person_id]' → Migrated to '/mks/[mk_id]'
+❌ '/knesset-data' → Removed
+❌ '/knesset-data/[knesset_number]' → Migrated to '/knesset/[knesset_number]'
+❌ '/past-knessets' → Migrated to '/knesset'
+❌ '/ministry' → Deferred (future: '/ministries')
+❌ '/lobbyists' → Deferred
+
+### Legend
+✅ = Existing route (kept)
+🆕 = New route (to be created)
+❌ = Deprecated/removed route
 
 
 --- 

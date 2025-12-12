@@ -160,3 +160,81 @@ Functional testing, cross-browser and responsive testing
 
 API testing
 
+
+
+6. Site Structure & Routing
+
+Primary Navigation Structure:
+
+Home & Global Access:
+
+/ — ראשי (Home with current Knesset spotlight and global search)
+
+/search — חיפוש מתקדם (Unified advanced search)
+
+/developers — למפתחים (API documentation for developers)
+
+
+Knesset Sessions:
+
+/knesset — רשימת כנסת (Index of all Knesset sessions with search/filter)
+
+/knesset/[knesset_number] — דף כנסת (Single hub page for specific Knesset session)
+
+
+Canonical Entity Pages (Global, cross-session):
+
+/mks — רשימת ח״כים (Global MK list)
+
+/mks/[mk_id] — פרופיל ח״כ (Individual MK profile)
+
+/parties — רשימת סיעות (Global parties list)
+
+/parties/[party_id] — פרופיל סיעה (Party detail page)
+
+/bills — רשימת הצעות חוק (Global bills list)
+
+/bills/[bill_id] — דף הצעת חוק (Bill detail page)
+
+/committees — רשימת ועדות (Global committees list)
+
+/committees/[committee_id] — דף ועדה (Committee detail page)
+
+/laws — מאגר חוקים (Global laws database)
+
+/laws/[law_id] — דף חוק (Individual law page)
+
+
+Static Pages:
+
+/report-bug — דיווח על תקלה (Bug report form)
+
+/about, /privacy, /contact — Standard informational pages
+
+
+Knesset Hub Page Sections:
+
+Each Knesset session page (/knesset/[knesset_number]) serves as a comprehensive hub with anchor-navigable sections:
+
+#overview — Overview widgets (coalition summary, government, quick stats)
+
+#timeline — Timeline of key events (formation, reshuffles, dissolution)
+
+#parties — Parties list with coalition/opposition badges
+
+#members — MKs roster displaying key positions prominently
+
+#committees — Active committees in the session
+
+#bills — Bills introduced and laws passed during the session
+
+
+Routing Principles:
+
+Hub-based architecture: Each Knesset session has one comprehensive page
+
+Canonical entity URLs: All entities (MKs, parties, bills) have global, cross-session pages
+
+Anchor navigation: Within-page navigation using URL fragments for quick access
+
+ID-based routing: All entity routes use numeric IDs (slugs deferred to future phases)

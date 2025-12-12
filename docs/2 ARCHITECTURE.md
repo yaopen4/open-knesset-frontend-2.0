@@ -52,21 +52,49 @@ src/
 │   │   ├── fetch-historical-data.ts  # Historical data fetching utilities
 │   │   ├── knesset-data-fetcher.ts   # Unified knesset term data fetcher
 │   │   └── static-loader.ts   # Static data loading utilities
+│   ├── knesset-utils.ts       # Knesset-specific utilities
 │   └── utils.ts               # General utilities
 ├── hooks/
 │   ├── use-member.ts          # Member data hooks
 │   ├── use-bills.ts           # Bill data hooks
 │   ├── use-api.ts             # Generic API hooks
-│   ├── use-mobile.tsx          # Mobile detection hook
+│   ├── use-mobile.tsx         # Mobile detection hook
 │   └── use-toast.ts           # Toast notification hook
 ├── app/
-│   └── members/
-│       ├── person/
-│       │   └── [person_id]/
-│       │       └── page.tsx    # Unified member page (by PersonID)
-│       └── [knesset_number]/
-│           └── page.tsx        # Knesset-specific member list
+│   ├── knesset/
+│   │   ├── page.tsx           # Knesset sessions index
+│   │   └── [knesset_number]/
+│   │       └── page.tsx       # Knesset hub page (with sections)
+│   ├── mks/
+│   │   ├── page.tsx           # Global MKs list
+│   │   └── [mk_id]/
+│   │       └── page.tsx       # Individual MK profile
+│   ├── parties/
+│   │   ├── page.tsx           # Global parties list
+│   │   └── [party_id]/
+│   │       └── page.tsx       # Party detail page
+│   ├── bills/
+│   │   ├── page.tsx           # Global bills list
+│   │   └── [bill_id]/
+│   │       └── page.tsx       # Bill detail page
+│   ├── committees/
+│   │   ├── page.tsx           # Global committees list
+│   │   └── [committee_id]/
+│   │       └── page.tsx       # Committee detail page
+│   └── laws/
+│       ├── page.tsx           # Global laws list
+│       └── [law_id]/
+│           └── page.tsx       # Law detail page
 └── components/
+    ├── knesset/
+    │   ├── section-navigation.tsx  # Sticky anchor navigation
+    │   └── sections/
+    │       ├── overview-section.tsx
+    │       ├── timeline-section.tsx
+    │       ├── parties-section.tsx
+    │       ├── members-section.tsx
+    │       ├── committees-section.tsx
+    │       └── bills-section.tsx
     └── members/
         └── member-profile.tsx  # Member profile component
 ```
@@ -124,21 +152,68 @@ To fetch historical data and save as static files:
 
 The fetched data will be saved to `src/app/knesset-data/members_data/` as JSON files.
 
-## Member Page Routes
+## Routing Architecture
 
-### Unified Member Page
-- Route: `/members/person/[person_id]`
-- Example: `/members/person/532` (Yuli Edelstein)
-- File: `src/app/members/person/[person_id]/page.tsx`
-- Displays all terms, positions, committees, votes, bills
+### Hub-Based Knesset Pages
+
+The architecture centers around comprehensive Knesset session hub pages:
+
+**Knesset Index:**
+- Route: `/knesset`
+- File: `src/app/knesset/page.tsx`
+- Lists all Knesset sessions (1-25) with metadata
+- Search and filter capabilities
+
+**Knesset Hub Page:**
+- Route: `/knesset/[knesset_number]`
+- Example: `/knesset/25`
+- File: `src/app/knesset/[knesset_number]/page.tsx`
+- Comprehensive single-page hub for each Knesset session
+- Contains anchor-navigable sections:
+  - `#overview` - Coalition summary, government composition, statistics
+  - `#timeline` - Key events (formation, reshuffles, dissolution)
+  - `#parties` - Parties with coalition/opposition badges
+  - `#members` - MKs roster (emphasizing key positions)
+  - `#committees` - Active committees list
+  - `#bills` - Bills introduced and laws passed
+
+### Canonical Entity Routes
+
+All entities have global, cross-session pages accessible by ID:
+
+**Members (MKs):**
+- List: `/mks`
+- Detail: `/mks/[mk_id]`
+- Example: `/mks/532` (Yuli Edelstein)
+- File: `src/app/mks/[mk_id]/page.tsx`
 - Uses API endpoints: `membersApi.getById()` and `membersApi.getPositions()`
 
-### Knesset-Specific Member List
-- Route: `/members/[knesset_number]`
-- Example: `/members/25`
-- File: `src/app/members/[knesset_number]/page.tsx`
-- Lists all members for a specific Knesset term
-- **Note**: Currently uses static JSON files from `src/app/knesset-data/members_data/`. Migration to API is planned.
+**Parties:**
+- List: `/parties`
+- Detail: `/parties/[party_id]`
+- File: `src/app/parties/[party_id]/page.tsx`
+
+**Bills:**
+- List: `/bills`
+- Detail: `/bills/[bill_id]`
+- File: `src/app/bills/[bill_id]/page.tsx`
+
+**Committees:**
+- List: `/committees`
+- Detail: `/committees/[committee_id]`
+- File: `src/app/committees/[committee_id]/page.tsx`
+
+**Laws:**
+- List: `/laws`
+- Detail: `/laws/[law_id]`
+- File: `src/app/laws/[law_id]/page.tsx`
+
+### Routing Principles
+
+1. **ID-based URLs**: All entity routes use numeric IDs only (e.g., `/mks/532`)
+2. **Hub architecture**: Each Knesset session has one comprehensive page
+3. **Anchor navigation**: Within-page sections use URL fragments
+4. **Canonical entities**: Entities accessible globally, not tied to specific sessions
 
 ## Type Safety
 
