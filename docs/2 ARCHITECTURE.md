@@ -11,7 +11,7 @@ This document describes the data architecture for the Open Knesset frontend appl
 The system uses `PersonID` from the `KNS_Person` table as the unified identifier for members across all Knesset terms. This means:
 
 - Each member has a single `PersonID` that remains constant across all terms
-- Member data is fetched from `/members/{person_id}` endpoint
+- Member data is fetched from `/members/{person_id}` API endpoint (frontend route: `/members/person/[person_id]`)
 - Historical data (positions, parties, committees) is linked via `KNS_PersonToPosition`
 
 ### Data Sources
@@ -49,19 +49,26 @@ src/
 │   ├── data/
 │   │   ├── member-utils.ts    # Member data utilities
 │   │   ├── cache.ts           # Cache configuration
-│   │   └── fetch-historical-data.ts  # Historical data fetching utilities
+│   │   ├── fetch-historical-data.ts  # Historical data fetching utilities
+│   │   ├── knesset-data-fetcher.ts   # Unified knesset term data fetcher
+│   │   └── static-loader.ts   # Static data loading utilities
 │   └── utils.ts               # General utilities
 ├── hooks/
 │   ├── use-member.ts          # Member data hooks
 │   ├── use-bills.ts           # Bill data hooks
-│   └── use-api.ts             # Generic API hooks
+│   ├── use-api.ts             # Generic API hooks
+│   ├── use-mobile.tsx          # Mobile detection hook
+│   └── use-toast.ts           # Toast notification hook
 ├── app/
 │   └── members/
-│       └── [person_id]/
-│           └── page.tsx       # Unified member page
+│       ├── person/
+│       │   └── [person_id]/
+│       │       └── page.tsx    # Unified member page (by PersonID)
+│       └── [knesset_number]/
+│           └── page.tsx        # Knesset-specific member list
 └── components/
     └── members/
-        └── member-profile.tsx # Member profile component
+        └── member-profile.tsx  # Member profile component
 ```
 
 ## API Usage
@@ -94,6 +101,9 @@ const cacheOptions = getFetchCacheOptions(20); // Never revalidates
 
 // For current Knesset (25)
 const cacheOptions = getFetchCacheOptions(25); // Revalidates hourly
+
+// Function signature: getFetchCacheOptions(knessetNum?: number, currentKnessetNum?: number)
+// Automatically determines cache strategy based on Knesset number
 ```
 
 ## Environment Variables
@@ -117,14 +127,18 @@ The fetched data will be saved to `src/app/knesset-data/members_data/` as JSON f
 ## Member Page Routes
 
 ### Unified Member Page
-- Route: `/members/[person_id]`
-- Example: `/members/532` (Yuli Edelstein)
+- Route: `/members/person/[person_id]`
+- Example: `/members/person/532` (Yuli Edelstein)
+- File: `src/app/members/person/[person_id]/page.tsx`
 - Displays all terms, positions, committees, votes, bills
+- Uses API endpoints: `membersApi.getById()` and `membersApi.getPositions()`
 
 ### Knesset-Specific Member List
 - Route: `/members/[knesset_number]`
 - Example: `/members/25`
+- File: `src/app/members/[knesset_number]/page.tsx`
 - Lists all members for a specific Knesset term
+- **Note**: Currently uses static JSON files from `src/app/knesset-data/members_data/`. Migration to API is planned.
 
 ## Type Safety
 
@@ -144,7 +158,7 @@ All API responses are typed using TypeScript interfaces in `src/lib/api/types.ts
 | Historical Members | Static (build time) | ∞ | Manual |
 | Current Members | ISR | 1 hour | Automatic |
 | Historical Votes | Static | ∞ | Manual |
-| Recent Votes | API + Client | 5 min | Automatic |
+| Recent Votes | API + Client | 5 min | tic |
 | Bills (passed) | Static | ∞ | Manual |
 | Bills (active) | API + Client | 5 min | Automatic |
 
@@ -158,10 +172,32 @@ All API responses are typed using TypeScript interfaces in `src/lib/api/types.ts
 
 ## Migration Notes
 
-The existing JSON files in `src/app/knesset-data/members_data/` are not accurate and should not be used as a data source. They will be replaced with API-fetched data.
+### Current Status
 
-To migrate:
-1. Fetch historical data via API using the provided scripts
-2. Update components to use API endpoints instead of file system
-3. Gradually remove dependency on static JSON files
+The project is in a transitional state with both static and API-based data sources:
+
+**API-Based (Implemented):**
+- Unified member pages (`/members/person/[person_id]`) - Uses API endpoints
+- Member profile components - Fetch from API
+- Member utilities and hooks - API-ready
+
+**Static JSON Files (Legacy):**
+- Knesset-specific member lists (`/members/[knesset_number]`) - Still uses static JSON
+- Historical data in `src/app/knesset-data/members_data/` - Used by legacy routes
+- Static loaders (`static-loader.ts`, `knesset-data-fetcher.ts`) - Support legacy data
+
+### Migration Path
+
+To complete the migration to API-only:
+1. Update `/members/[knesset_number]` route to use `membersApi.list({ knesset: knessetNum })`
+2. Replace static JSON file reads with API calls
+3. Remove or deprecate `static-loader.ts` and related utilities
+4. Update `knesset-data-fetcher.ts` to use API endpoints instead of static files
+5. Remove static JSON files from `src/app/knesset-data/members_data/` (or keep as backup)
+
+### Data Fetching Scripts
+
+- **TypeScript utilities**: `src/lib/data/fetch-historical-data.ts` - For programmatic fetching
+- **Node.js script**: `scripts/fetch-historical-data.mjs` - For batch historical data fetching
+- Both can be used to populate static files during migration or for backup purposes
 

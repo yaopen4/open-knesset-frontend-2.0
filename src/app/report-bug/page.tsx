@@ -20,12 +20,6 @@ export default function ReportBugPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Implement actual submission logic (e.g., send to an API endpoint)
-    console.log({
-      url,
-      description,
-      name,
-      email,
-    });
     toast({
       title: "הדיווח נשלח בהצלחה!",
       description: "תודה שעזרת לנו להשתפר.",

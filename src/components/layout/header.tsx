@@ -1,7 +1,7 @@
-
 "use client"
 
-import { Search, Bug, CircleDollarSign, Globe, Github } from 'lucide-react'
+import * as React from 'react'
+import { Search, Bug, CircleDollarSign, Globe } from 'lucide-react'
 import { useTheme } from "next-themes"
 import {
   DropdownMenu,

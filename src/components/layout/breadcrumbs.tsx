@@ -10,6 +10,9 @@ const breadcrumbNameMap: { [key: string]: string } = {
   '/': 'ראשי',
   '/current-knesset': 'הכנסת הנוכחית',
   '/members': 'ח״כים וסיעות',
+  '/past-knessets': 'כל כנסות ישראל',
+  '/ministry': 'משרדים',
+  '/knesset': 'כנסות',
   '/bills': 'הצעות חוק',
   '/committees': 'ועדות',
   '/votes': 'מליאות והצבעות',
@@ -34,9 +37,28 @@ const Breadcrumbs = ({ className }: { className?: string }) => {
     const isLast = index === pathSegments.length - 1;
     
     let label = breadcrumbNameMap[href] || segment;
-    if (href.startsWith('/members/')) {
-        const knessetNumber = segment;
-        label = `הכנסת ה-${knessetNumber}`;
+    
+    // Handle Knesset term routes
+    if (href.startsWith('/knesset/') && !href.includes('/members') && !href.includes('/committees') && !href.includes('/bills')) {
+      const knessetNumber = pathSegments[index];
+      label = `כנסת ${knessetNumber}`;
+    } else if (href.startsWith('/knesset/') && href.includes('/members')) {
+      label = 'חברים';
+    } else if (href.startsWith('/knesset/') && href.includes('/committees')) {
+      label = 'ועדות';
+    } else if (href.startsWith('/knesset/') && href.includes('/bills')) {
+      label = 'הצעות חוק';
+    }
+    
+    // Handle member person routes
+    if (href.startsWith('/members/person/')) {
+      label = 'חבר כנסת';
+    }
+    
+    // Handle old knesset-data routes (legacy)
+    if (href.startsWith('/members/') && !href.startsWith('/members/person')) {
+      const knessetNumber = segment;
+      label = `הכנסת ה-${knessetNumber}`;
     }
 
     return { href, label, isLast };

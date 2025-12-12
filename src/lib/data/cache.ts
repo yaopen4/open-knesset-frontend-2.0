@@ -28,7 +28,7 @@ export const cacheConfig = {
 /**
  * Get current Knesset number from environment variable
  */
-function getCurrentKnessetNum(): number {
+export function getCurrentKnessetNum(): number {
   const envValue = process.env.NEXT_PUBLIC_CURRENT_KNESSET_NUM;
   return envValue ? parseInt(envValue, 10) : 25; // Default to 25
 }

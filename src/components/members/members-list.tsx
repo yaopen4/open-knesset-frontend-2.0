@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import { loadKnessetIndex, loadStaticKnesset } from '@/lib/data/static-loader';
+import { getCurrentKnessetNum } from '@/lib/data/cache';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
@@ -10,18 +10,36 @@ interface KnessetInfo {
 }
 
 async function getKnessetSummary(): Promise<KnessetInfo[]> {
-  const dataDir = path.join(process.cwd(), 'src', 'app', 'members', 'members_data');
-  const summaryPath = path.join(dataDir, 'scraping_summary.json');
+  const currentKnesset = getCurrentKnessetNum();
+  const index = loadKnessetIndex();
   
-  try {
-    const summaryContent = await fs.promises.readFile(summaryPath, 'utf-8');
-    const summary = JSON.parse(summaryContent);
-
-    return summary.extracted_data.sort((a: any, b: any) => b.knesset - a.knesset); // Sort descending
-  } catch (error) {
-    console.error(`Error reading or parsing summary file ${summaryPath}:`, error);
-    return [];
+  // Use index data if available
+  if (index && index.knessets.length > 0) {
+    return index.knessets
+      .map((k: { knessetNum: number; totalMembers: number; totalParties: number }) => ({
+        knesset: k.knessetNum,
+        total_members: k.totalMembers,
+        total_parties: k.totalParties,
+      }))
+      .sort((a: KnessetInfo, b: KnessetInfo) => b.knesset - a.knesset);
   }
+
+  // If no index, try to load from static files for recent knessets
+  const recentKnessets = Array.from({ length: Math.min(10, currentKnesset) }, (_, i) => currentKnesset - i);
+  const knessetsData: KnessetInfo[] = [];
+
+  for (const knessetNum of recentKnessets) {
+    const staticData = loadStaticKnesset(knessetNum);
+    if (staticData) {
+      knessetsData.push({
+        knesset: staticData.knessetNum,
+        total_members: staticData.totalMembers,
+        total_parties: staticData.totalParties,
+      });
+    }
+  }
+
+  return knessetsData.sort((a, b) => b.knesset - a.knesset);
 }
 
 export default async function MembersList() {
@@ -30,7 +48,7 @@ export default async function MembersList() {
   return (
     <div className="flex flex-col gap-4">
       {knessetList.map((knesset) => (
-        <Link href={`/members/${knesset.knesset}`} key={knesset.knesset}>
+        <Link href={`/knesset/${knesset.knesset}`} key={knesset.knesset}>
           <Card className="h-full transform transition-transform hover:-translate-y-1 hover:shadow-lg">
             <CardHeader>
               <CardTitle className="font-headline text-xl">הכנסת ה-{knesset.knesset}</CardTitle>
