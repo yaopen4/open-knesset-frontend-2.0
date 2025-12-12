@@ -239,16 +239,6 @@ export default function KnessetCard({ knessetNum, summary, isCurrent = false }: 
 
             {/* Links */}
             <div className="pt-4 border-t flex flex-row gap-3 justify-center flex-wrap">
-              {isCurrentKnesset && (
-                <Button 
-                  asChild
-                  className="bg-primary text-white hover:bg-primary/90 rounded-md px-6 py-2"
-                >
-                  <Link href="/current-knesset">
-                    הכנסת הנוכחית
-                  </Link>
-                </Button>
-              )}
               <Button 
                 asChild
                 className="bg-primary text-white hover:bg-primary/90 rounded-md px-6 py-2"
@@ -261,7 +251,7 @@ export default function KnessetCard({ knessetNum, summary, isCurrent = false }: 
                 asChild
                 className="bg-primary text-white hover:bg-primary/90 rounded-md px-6 py-2"
               >
-                <Link href={`/knesset/${knessetNum}/members`}>
+                <Link href={`/knesset/${knessetNum}#members`}>
                   רשימת חברי הכנסת
                 </Link>
               </Button>

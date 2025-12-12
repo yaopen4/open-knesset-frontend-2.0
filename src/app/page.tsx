@@ -8,9 +8,9 @@ import ConditionalFooter from '@/components/layout/conditional-footer';
 
 const features = [
   {
-    title: 'חברי הכנסת והמפלגות',
+    title: 'חברי הכנסת',
     icon: Users,
-    href: '/members',
+    href: '/mks',
   },
   {
     title: 'ועדות הכנסת',

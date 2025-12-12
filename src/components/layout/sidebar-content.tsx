@@ -15,14 +15,12 @@ import { usePathname } from 'next/navigation'
 
 const menuItems = [
     { href: "/", icon: Home, label: "ראשי", tooltip: "ראשי" },
-    { href: "/current-knesset", icon: LayoutDashboard, label: "הכנסת הנוכחית", tooltip: "הכנסת הנוכחית" },
-    { href: "/members", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
-    { href: "/past-knessets", icon: Landmark, label: "כל כנסות ישראל", tooltip: "כל כנסות ישראל" },
-    { href: "/ministry", icon: Building, label: "משרדים", tooltip: "משרדים" },
+    { href: "/knesset/25", icon: LayoutDashboard, label: "הכנסת הנוכחית", tooltip: "הכנסת הנוכחית" },
+    { href: "/mks", icon: Users, label: "ח״כים", tooltip: "ח״כים" },
+    { href: "/knesset", icon: Landmark, label: "כל כנסות ישראל", tooltip: "כל כנסות ישראל" },
     { href: "/committees", icon: Gavel, label: "ועדות", tooltip: "ועדות" },
     { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
     { href: "/votes", icon: Vote, label: "מליאות והצבעות", tooltip: "מליאות והצבעות" },
-    { href: "/lobbyists", icon: UsersRound, label: "לוביסטים", tooltip: "לוביסטים" },
     { href: "/laws", icon: BookCheck, label: "חוקים", tooltip: "חוקים" },
     { href: "/search", icon: Search, label: "חיפוש מתקדם", tooltip: "חיפוש מתקדם" },
     { href: "/developers", icon: Code, label: "למפתחים", tooltip: "למפתחים" },
