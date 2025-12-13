@@ -29,3 +29,4 @@ export default async function PartyPage({ params }: PartyPageParams) {
     </div>
   );
 }
+

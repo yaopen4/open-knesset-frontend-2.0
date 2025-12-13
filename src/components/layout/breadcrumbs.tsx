@@ -10,6 +10,7 @@ const breadcrumbNameMap: { [key: string]: string } = {
   '/': 'ראשי',
   '/current-knesset': 'הכנסת הנוכחית',
   '/members': 'ח״כים וסיעות',
+  '/mks': 'ח"כים וסיעות',
   '/past-knessets': 'כל כנסות ישראל',
   '/ministry': 'משרדים',
   '/knesset': 'כנסות',

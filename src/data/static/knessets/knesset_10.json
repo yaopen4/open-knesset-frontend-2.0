@@ -1,0 +1,1380 @@
+{
+  "knessetNum": 10,
+  "startDate": null,
+  "finishDate": null,
+  "members": [
+    {
+      "personId": 104,
+      "name": {
+        "firstName": "שמעון",
+        "lastName": "פרס"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 115,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "רמון"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 126,
+      "name": {
+        "firstName": "יוסי",
+        "lastName": "שריד"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 27,
+      "name": {
+        "firstName": "עוזי",
+        "lastName": "ברעם"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 236,
+      "name": {
+        "firstName": "אבא",
+        "lastName": "אבן"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2,
+      "name": {
+        "firstName": "רפאל",
+        "lastName": "אדרי"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 132,
+      "name": {
+        "firstName": "שולמית",
+        "lastName": "אלוני"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 261,
+      "name": {
+        "firstName": "עדיאל",
+        "lastName": "אמוראי"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 262,
+      "name": {
+        "firstName": "יעקב-ז'אק",
+        "lastName": "אמיר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 269,
+      "name": {
+        "firstName": "שושנה",
+        "lastName": "ארבלי-אלמוזלינו"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2164,
+      "name": {
+        "firstName": "נאוה",
+        "lastName": "ארד"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 280,
+      "name": {
+        "firstName": "תמר",
+        "lastName": "אשל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 293,
+      "name": {
+        "firstName": "נפתלי",
+        "lastName": "בלומנטל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 299,
+      "name": {
+        "firstName": "דב",
+        "lastName": "בן-מאיר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 309,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "בר-זהר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 311,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "בר-לב"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 140,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "גור"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 338,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "גיל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 353,
+      "name": {
+        "firstName": "אלעזר",
+        "lastName": "גרנות"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 377,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "הכהן"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 380,
+      "name": {
+        "firstName": "שלמה",
+        "lastName": "הלל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 384,
+      "name": {
+        "firstName": "אהרן",
+        "lastName": "הראל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 391,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "הרצוג"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 49,
+      "name": {
+        "firstName": "שבח",
+        "lastName": "וייס"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 401,
+      "name": {
+        "firstName": "מחמד",
+        "lastName": "ותד"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 411,
+      "name": {
+        "firstName": "יחזקאל",
+        "lastName": "זכאי"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2342,
+      "name": {
+        "firstName": "דב",
+        "lastName": "זכין"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 418,
+      "name": {
+        "firstName": "חמד",
+        "lastName": "חלאילה"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 424,
+      "name": {
+        "firstName": "משה",
+        "lastName": "חריף"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 149,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "חריש"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 425,
+      "name": {
+        "firstName": "יהודה",
+        "lastName": "חשאי"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 193,
+      "name": {
+        "firstName": "גד",
+        "lastName": "יעקבי"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2413,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "כץ-עוז"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2437,
+      "name": {
+        "firstName": "אמנון",
+        "lastName": "לין"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 514,
+      "name": {
+        "firstName": "ירוחם",
+        "lastName": "משל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2481,
+      "name": {
+        "firstName": "אהרן",
+        "lastName": "נחמיאס"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2483,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "נחמקין"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 158,
+      "name": {
+        "firstName": "אורה",
+        "lastName": "נמיר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2491,
+      "name": {
+        "firstName": "רענן",
+        "lastName": "נעים"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2496,
+      "name": {
+        "firstName": "אורי",
+        "lastName": "סבג"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2501,
+      "name": {
+        "firstName": "רפאל",
+        "lastName": "סויסה"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2502,
+      "name": {
+        "firstName": "עדנה",
+        "lastName": "סולודר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 2530,
+      "name": {
+        "firstName": "נפתלי",
+        "lastName": "פדר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 582,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "פרץ"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 165,
+      "name": {
+        "firstName": "יאיר",
+        "lastName": "צבן"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 587,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "צור"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 168,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "רבין"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 614,
+      "name": {
+        "firstName": "דניאל",
+        "lastName": "רוזוליו"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 618,
+      "name": {
+        "firstName": "אמרי",
+        "lastName": "רון"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 621,
+      "name": {
+        "firstName": "נחמן",
+        "lastName": "רז"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 118,
+      "name": {
+        "firstName": "משה",
+        "lastName": "שחל"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 654,
+      "name": {
+        "firstName": "ויקטור",
+        "lastName": "שם-טוב"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 661,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "שפייזר"
+      },
+      "image": null,
+      "factionName": "מערך",
+      "positions": []
+    },
+    {
+      "personId": 278,
+      "name": {
+        "firstName": "משה",
+        "lastName": "ארנס"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 42,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "הירשזון"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 119,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "שטרית"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 125,
+      "name": {
+        "firstName": "אריאל",
+        "lastName": "שרון"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 72,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "לוי"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 82,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "מגן"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 155,
+      "name": {
+        "firstName": "רוני",
+        "lastName": "מילוא"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 109,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "קליינר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 110,
+      "name": {
+        "firstName": "משה",
+        "lastName": "קצב"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 3,
+      "name": {
+        "firstName": "אהוד",
+        "lastName": "אולמרט"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 274,
+      "name": {
+        "firstName": "יורם",
+        "lastName": "ארידור"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 275,
+      "name": {
+        "firstName": "שמחה",
+        "lastName": "ארליך"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 692,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "בגין"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 21,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "בן-אלישר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 317,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "ברמן"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 330,
+      "name": {
+        "firstName": "פנחס",
+        "lastName": "גולדשטיין"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 341,
+      "name": {
+        "firstName": "מרים",
+        "lastName": "גלזר-תעסה"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 348,
+      "name": {
+        "firstName": "פסח",
+        "lastName": "גרופר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 359,
+      "name": {
+        "firstName": "שרה",
+        "lastName": "דורון"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 368,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "דקל"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 144,
+      "name": {
+        "firstName": "אריאל",
+        "lastName": "ויינשטיין"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 406,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "זיגר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 407,
+      "name": {
+        "firstName": "דרור",
+        "lastName": "זייגרמן"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2394,
+      "name": {
+        "firstName": "יגאל",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 450,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "כהן-אבידב"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 451,
+      "name": {
+        "firstName": "יגאל",
+        "lastName": "כהן-אורגד"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2419,
+      "name": {
+        "firstName": "איתן",
+        "lastName": "לבני"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2437,
+      "name": {
+        "firstName": "אמנון",
+        "lastName": "לין"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2451,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "מודעי"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2471,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "מרידור"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 516,
+      "name": {
+        "firstName": "עקיבא",
+        "lastName": "נוף"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 159,
+      "name": {
+        "firstName": "משה",
+        "lastName": "נסים"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2490,
+      "name": {
+        "firstName": "אמל",
+        "lastName": "נסראלדין"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2497,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "סבידור"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 574,
+      "name": {
+        "firstName": "יהודה",
+        "lastName": "פרח"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 582,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "פרץ"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 164,
+      "name": {
+        "firstName": "גדעון",
+        "lastName": "פת"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 592,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "צפורי-הנדין"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 594,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "קולס"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 166,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "קופמן"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 598,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "קורפו"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 617,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "רום"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 623,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "רייסר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 629,
+      "name": {
+        "firstName": "צבי",
+        "lastName": "רנר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 638,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "שוסטק"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 173,
+      "name": {
+        "firstName": "דב",
+        "lastName": "שילנסקי"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2644,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "שיפמן"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 653,
+      "name": {
+        "firstName": "בני",
+        "lastName": "שליטא"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 175,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "שמיר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 670,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "שריר"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 2672,
+      "name": {
+        "firstName": "דן",
+        "lastName": "תיכון"
+      },
+      "image": null,
+      "factionName": "הליכוד",
+      "positions": []
+    },
+    {
+      "personId": 113,
+      "name": {
+        "firstName": "אמנון",
+        "lastName": "רובינשטיין"
+      },
+      "image": null,
+      "factionName": "שינוי",
+      "positions": []
+    },
+    {
+      "personId": 396,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "וירשובסקי"
+      },
+      "image": null,
+      "factionName": "שינוי",
+      "positions": []
+    },
+    {
+      "personId": 202,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "דרוקמן"
+      },
+      "image": null,
+      "factionName": "חזית דתית לאומית",
+      "positions": []
+    },
+    {
+      "personId": 234,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "אבטבי"
+      },
+      "image": null,
+      "factionName": "חזית דתית לאומית",
+      "positions": []
+    },
+    {
+      "personId": 288,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "בורג"
+      },
+      "image": null,
+      "factionName": "חזית דתית לאומית",
+      "positions": []
+    },
+    {
+      "personId": 300,
+      "name": {
+        "firstName": "יהודה",
+        "lastName": "בן-מאיר"
+      },
+      "image": null,
+      "factionName": "חזית דתית לאומית",
+      "positions": []
+    },
+    {
+      "personId": 44,
+      "name": {
+        "firstName": "זבולון",
+        "lastName": "המר"
+      },
+      "image": null,
+      "factionName": "חזית דתית לאומית",
+      "positions": []
+    },
+    {
+      "personId": 508,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "מלמד"
+      },
+      "image": null,
+      "factionName": "חזית דתית לאומית",
+      "positions": []
+    },
+    {
+      "personId": 202,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "דרוקמן"
+      },
+      "image": null,
+      "factionName": "חה\"כ חיים דרוקמן",
+      "positions": []
+    },
+    {
+      "personId": 43,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "הלפרט"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 481,
+      "name": {
+        "firstName": "שלמה",
+        "lastName": "לורינץ"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 686,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "פרוש"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 177,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "שפירא"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 178,
+      "name": {
+        "firstName": "אהרן",
+        "lastName": "אבוחצירא"
+      },
+      "image": null,
+      "factionName": "תנועה למסורת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 242,
+      "name": {
+        "firstName": "אהרן",
+        "lastName": "אוזן"
+      },
+      "image": null,
+      "factionName": "תנועה למסורת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 612,
+      "name": {
+        "firstName": "בן-ציון",
+        "lastName": "רובין"
+      },
+      "image": null,
+      "factionName": "תנועה למסורת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 132,
+      "name": {
+        "firstName": "שולמית",
+        "lastName": "אלוני"
+      },
+      "image": null,
+      "factionName": "ר\"ץ",
+      "positions": []
+    },
+    {
+      "personId": 132,
+      "name": {
+        "firstName": "שולמית",
+        "lastName": "אלוני"
+      },
+      "image": null,
+      "factionName": "ר\"ץ",
+      "positions": []
+    },
+    {
+      "personId": 292,
+      "name": {
+        "firstName": "צ'רלי",
+        "lastName": "ביטון"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 395,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "וילנר"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 147,
+      "name": {
+        "firstName": "תופיק",
+        "lastName": "זיאד"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 2363,
+      "name": {
+        "firstName": "תופיק",
+        "lastName": "טובי"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 300,
+      "name": {
+        "firstName": "יהודה",
+        "lastName": "בן-מאיר"
+      },
+      "image": null,
+      "factionName": "גשר - מרכז ציוני דתי",
+      "positions": []
+    },
+    {
+      "personId": 44,
+      "name": {
+        "firstName": "זבולון",
+        "lastName": "המר"
+      },
+      "image": null,
+      "factionName": "גשר - מרכז ציוני דתי",
+      "positions": []
+    },
+    {
+      "personId": 303,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "בן-פורת"
+      },
+      "image": null,
+      "factionName": "תנועה להתחדשות ממלכתית",
+      "positions": []
+    },
+    {
+      "personId": 688,
+      "name": {
+        "firstName": "משה",
+        "lastName": "דיין"
+      },
+      "image": null,
+      "factionName": "תנועה להתחדשות ממלכתית",
+      "positions": []
+    },
+    {
+      "personId": 375,
+      "name": {
+        "firstName": "יגאל",
+        "lastName": "הורביץ"
+      },
+      "image": null,
+      "factionName": "תנועה להתחדשות ממלכתית",
+      "positions": []
+    },
+    {
+      "personId": 303,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "בן-פורת"
+      },
+      "image": null,
+      "factionName": "התנועה להתחדשות ציונית חברתית",
+      "positions": []
+    },
+    {
+      "personId": 375,
+      "name": {
+        "firstName": "יגאל",
+        "lastName": "הורביץ"
+      },
+      "image": null,
+      "factionName": "רפ\"י - הרשימה הממלכתית",
+      "positions": []
+    },
+    {
+      "personId": 2392,
+      "name": {
+        "firstName": "גאולה",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "תחייה",
+      "positions": []
+    },
+    {
+      "personId": 515,
+      "name": {
+        "firstName": "יובל",
+        "lastName": "נאמן"
+      },
+      "image": null,
+      "factionName": "תחייה",
+      "positions": []
+    },
+    {
+      "personId": 99,
+      "name": {
+        "firstName": "חנן",
+        "lastName": "פורת"
+      },
+      "image": null,
+      "factionName": "תחייה",
+      "positions": []
+    },
+    {
+      "personId": 648,
+      "name": {
+        "firstName": "צבי",
+        "lastName": "שילוח"
+      },
+      "image": null,
+      "factionName": "תחייה",
+      "positions": []
+    }
+  ],
+  "totalMembers": 137,
+  "totalParties": 15,
+  "lastUpdated": "2025-12-13T17:46:02.701Z"
+}

@@ -70,8 +70,8 @@ export default async function KnessetsIndexPage() {
         <p className="text-sm text-muted-foreground mt-2">חיפוש יתווסף בקרוב</p>
       </div>
 
-      {/* Knesset Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Knesset Cards List */}
+      <div className="flex flex-col gap-6">
         {knessetsList.map((knesset) => (
           <KnessetCard
             key={knesset.knessetNum}
@@ -93,4 +93,5 @@ export default async function KnessetsIndexPage() {
     </div>
   );
 }
+
 

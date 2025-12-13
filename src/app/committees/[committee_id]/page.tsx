@@ -29,3 +29,4 @@ export default async function CommitteePage({ params }: CommitteePageParams) {
     </div>
   );
 }
+

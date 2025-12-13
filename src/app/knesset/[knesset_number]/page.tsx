@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { fetchUnifiedKnessetData } from '@/lib/data/knesset-data-fetcher';
 import { getCurrentKnessetNum } from '@/lib/data/cache';
 import { Metadata } from 'next';
-import SectionNavigation from '@/components/knesset/section-navigation';
+import TableOfContents from '@/components/knesset/table-of-contents';
 import OverviewSection from '@/components/knesset/sections/overview-section';
 import TimelineSection from '@/components/knesset/sections/timeline-section';
 import PartiesSection from '@/components/knesset/sections/parties-section';
@@ -10,6 +10,8 @@ import MembersSection from '@/components/knesset/sections/members-section';
 import CommitteesSection from '@/components/knesset/sections/committees-section';
 import BillsSection from '@/components/knesset/sections/bills-section';
 import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
+import ScrollToTopButton from '@/components/knesset/scroll-to-top-button';
 
 interface KnessetHubPageParams {
   params: {
@@ -56,31 +58,60 @@ export default async function KnessetHubPage({ params }: KnessetHubPageParams) {
 
   return (
     <div className="container mx-auto py-8 px-4" dir="rtl">
-      {/* Header */}
-      <div className="mb-8 text-right border-b pb-6">
-        <div className="flex items-center justify-end gap-3 mb-4">
-          <h1 className="text-4xl font-bold">הכנסת ה-{knessetNum}</h1>
-          {isCurrent && (
-            <Badge variant="default" className="text-lg px-3 py-1">
-              נוכחית
-            </Badge>
-          )}
-        </div>
-        <div className="text-lg text-muted-foreground space-y-1">
-          <p>{knessetData.totalParties} סיעות • {knessetData.totalMembers} חברי כנסת</p>
-          {knessetData.startDate && (
-            <p className="text-sm">
-              {new Date(knessetData.startDate).toLocaleDateString('he-IL', { year: 'numeric', month: 'long', day: 'numeric' })}
-              {knessetData.finishDate && ` - ${new Date(knessetData.finishDate).toLocaleDateString('he-IL', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-              {!knessetData.finishDate && ' - עד היום'}
-            </p>
-          )}
-        </div>
-      </div>
+      {/* Header with Table of Contents */}
+      <div className="mb-8 border-b pb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_300px] gap-6">
+          {/* Main Header Content */}
+          <div className="text-right">
+            <div className="flex items-center gap-3 mb-4 justify-end flex-row-reverse">
+              <h1 className="text-4xl font-bold">הכנסת ה-{knessetNum}</h1>
+              {isCurrent && (
+                <Badge variant="default" className="text-lg px-3 py-1">
+                  נוכחית
+                </Badge>
+              )}
+            </div>
+            <div className="text-lg text-muted-foreground space-y-1 text-right">
+              <p>{knessetData.totalParties} סיעות • {knessetData.totalMembers} חברי כנסת</p>
+            </div>
+            
+            {/* Period Dates */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4 text-right">
+              <div className="p-3 bg-muted rounded-lg">
+                <p className="text-xs text-muted-foreground mb-1">תאריך התחלה</p>
+                <p className="text-sm font-medium">
+                  {knessetData.startDate 
+                    ? new Date(knessetData.startDate).toLocaleDateString('he-IL', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                      })
+                    : 'לא זמין'}
+                </p>
+              </div>
+              <div className="p-3 bg-muted rounded-lg">
+                <p className="text-xs text-muted-foreground mb-1">תאריך סיום</p>
+                <p className="text-sm font-medium">
+                  {knessetData.finishDate 
+                    ? new Date(knessetData.finishDate).toLocaleDateString('he-IL', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                      })
+                    : 'עדיין פעילה'}
+                </p>
+              </div>
+            </div>
+          </div>
 
-      {/* Section Navigation */}
-      <div className="mb-8">
-        <SectionNavigation sections={sections} />
+          {/* Vertical Divider - Hidden on mobile */}
+          <Separator orientation="vertical" className="hidden lg:block h-auto" />
+
+          {/* Table of Contents */}
+          <div className="lg:min-w-[280px]">
+            <TableOfContents sections={sections} />
+          </div>
+        </div>
       </div>
 
       {/* Sections */}
@@ -123,6 +154,9 @@ export default async function KnessetHubPage({ params }: KnessetHubPageParams) {
           הנתונים מתעדכנים באופן יומי ממקורות רשמיים של הכנסת
         </p>
       </div>
+
+      {/* Scroll to Top Button */}
+      <ScrollToTopButton />
     </div>
   );
 }
@@ -136,4 +170,5 @@ export async function generateStaticParams() {
     knesset_number: String(i + 1),
   }));
 }
+
 

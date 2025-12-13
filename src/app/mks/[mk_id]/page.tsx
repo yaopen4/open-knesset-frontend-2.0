@@ -191,3 +191,4 @@ export default async function MemberPage({ params }: MemberPageParams) {
 export async function generateStaticParams() {
   return [];
 }
+

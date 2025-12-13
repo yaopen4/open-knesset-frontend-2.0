@@ -46,3 +46,4 @@ export default function BillsSection({ knessetData }: BillsSectionProps) {
     </div>
   );
 }
+

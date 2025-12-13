@@ -51,16 +51,16 @@ export default function MembersSection({ knessetData }: MembersSectionProps) {
                 <Link
                   key={member.personId}
                   href={`/mks/${member.personId}`}
-                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors flex-row-reverse"
                 >
-                  <Avatar>
-                    <AvatarImage src={member.image || undefined} />
-                    <AvatarFallback><User className="h-4 w-4" /></AvatarFallback>
-                  </Avatar>
                   <div className="flex-1 text-right">
                     <p className="font-medium">{member.name.firstName} {member.name.lastName}</p>
                     <p className="text-sm text-muted-foreground">{member.factionName}</p>
                   </div>
+                  <Avatar>
+                    <AvatarImage src={member.image || undefined} />
+                    <AvatarFallback><User className="h-4 w-4" /></AvatarFallback>
+                  </Avatar>
                 </Link>
               ))}
             </div>
@@ -88,3 +88,4 @@ export default function MembersSection({ knessetData }: MembersSectionProps) {
     </div>
   );
 }
+

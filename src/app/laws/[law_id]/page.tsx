@@ -29,3 +29,4 @@ export default async function LawPage({ params }: LawPageParams) {
     </div>
   );
 }
+

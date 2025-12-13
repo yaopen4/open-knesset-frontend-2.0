@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard, ChevronsRightLeft, Landmark, Building } from 'lucide-react'
+import { Home, Users, FileText, Vote, Gavel, BookCheck, UsersRound, Search, Code, LayoutDashboard, ChevronsRightLeft, Landmark, Building, Briefcase, Scale } from 'lucide-react'
 import {
   SidebarContent,
   SidebarHeader,
@@ -16,12 +16,14 @@ import { usePathname } from 'next/navigation'
 const menuItems = [
     { href: "/", icon: Home, label: "ראשי", tooltip: "ראשי" },
     { href: "/knesset/25", icon: LayoutDashboard, label: "הכנסת הנוכחית", tooltip: "הכנסת הנוכחית" },
-    { href: "/mks", icon: Users, label: "ח״כים", tooltip: "ח״כים" },
     { href: "/knesset", icon: Landmark, label: "כל כנסות ישראל", tooltip: "כל כנסות ישראל" },
-    { href: "/committees", icon: Gavel, label: "ועדות", tooltip: "ועדות" },
+    { href: "/ministry", icon: Building, label: "משרדי הממשלה", tooltip: "משרדי הממשלה" },
+    { href: "/committees", icon: Gavel, label: "ועדות הכנסת", tooltip: "ועדות הכנסת" },
+    { href: "/mks", icon: Users, label: "ח״כים וסיעות", tooltip: "ח״כים וסיעות" },
     { href: "/bills", icon: FileText, label: "הצעות חוק", tooltip: "הצעות חוק" },
     { href: "/votes", icon: Vote, label: "מליאות והצבעות", tooltip: "מליאות והצבעות" },
     { href: "/laws", icon: BookCheck, label: "חוקים", tooltip: "חוקים" },
+    { href: "/lobbyists", icon: Briefcase, label: "לוביסטים", tooltip: "לוביסטים" },
     { href: "/search", icon: Search, label: "חיפוש מתקדם", tooltip: "חיפוש מתקדם" },
     { href: "/developers", icon: Code, label: "למפתחים", tooltip: "למפתחים" },
 ]

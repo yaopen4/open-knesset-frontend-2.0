@@ -106,51 +106,8 @@ export default function TimelineSection({ knessetData }: TimelineSectionProps) {
           )}
         </CardContent>
       </Card>
-
-      {/* Period Information */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-right">תקופת הכהונה</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4" dir="rtl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-right">
-            <div className="p-4 bg-muted rounded-lg">
-              <p className="text-sm text-muted-foreground mb-1">תאריך התחלה</p>
-              <p className="text-lg font-semibold">
-                {knessetData.startDate 
-                  ? formatDate(knessetData.startDate)
-                  : 'לא זמין'}
-              </p>
-            </div>
-            <div className="p-4 bg-muted rounded-lg">
-              <p className="text-sm text-muted-foreground mb-1">תאריך סיום</p>
-              <p className="text-lg font-semibold">
-                {knessetData.finishDate 
-                  ? formatDate(knessetData.finishDate)
-                  : 'עדיין פעילה'}
-              </p>
-            </div>
-          </div>
-          
-          {knessetData.startDate && knessetData.finishDate && (
-            <div className="p-4 bg-muted rounded-lg text-right">
-              <p className="text-sm text-muted-foreground mb-1">משך הכהונה</p>
-              <p className="text-lg font-semibold">
-                {(() => {
-                  const start = new Date(knessetData.startDate);
-                  const end = new Date(knessetData.finishDate);
-                  const diffTime = Math.abs(end.getTime() - start.getTime());
-                  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                  const years = Math.floor(diffDays / 365);
-                  const months = Math.floor((diffDays % 365) / 30);
-                  return `${years > 0 ? `${years} שנים ` : ''}${months} חודשים`;
-                })()}
-              </p>
-            </div>
-          )}
-        </CardContent>
-      </Card>
     </div>
   );
 }
+
 

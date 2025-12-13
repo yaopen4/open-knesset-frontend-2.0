@@ -1,0 +1,1340 @@
+{
+  "knessetNum": 1,
+  "startDate": null,
+  "finishDate": null,
+  "members": [
+    {
+      "personId": 672,
+      "name": {
+        "firstName": "משה",
+        "lastName": "שרת"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 247,
+      "name": {
+        "firstName": "ברוך",
+        "lastName": "אזניה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 248,
+      "name": {
+        "firstName": "בבה",
+        "lastName": "אידלסון"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 266,
+      "name": {
+        "firstName": "עמי",
+        "lastName": "אסף"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 268,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "אפרתי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 270,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "ארגוב"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 277,
+      "name": {
+        "firstName": "זלמן",
+        "lastName": "ארן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 286,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "בהיר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 296,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "בן-אשר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 684,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "בן-גוריון"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 680,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "בן-צבי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 313,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "בר-רב-האי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 314,
+      "name": {
+        "firstName": "הרצל",
+        "lastName": "ברגר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 320,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "ברץ"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 322,
+      "name": {
+        "firstName": "רפאל",
+        "lastName": "בש"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2235,
+      "name": {
+        "firstName": "עקיבא",
+        "lastName": "גוברין"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 334,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "גורי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 335,
+      "name": {
+        "firstName": "שרגא",
+        "lastName": "גורן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 356,
+      "name": {
+        "firstName": "יחיאל",
+        "lastName": "דובדבני"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 362,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "דיין"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 363,
+      "name": {
+        "firstName": "בן-ציון",
+        "lastName": "דינור"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 371,
+      "name": {
+        "firstName": "חסיה",
+        "lastName": "דרורי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 376,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "הכהן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 378,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "הכרמלי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 390,
+      "name": {
+        "firstName": "נטע",
+        "lastName": "הרפז"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 392,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "הרצפלד"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 415,
+      "name": {
+        "firstName": "אבא",
+        "lastName": "חושי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2360,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "טביב"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 429,
+      "name": {
+        "firstName": "ז'ניה",
+        "lastName": "טברסקי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 186,
+      "name": {
+        "firstName": "צבי",
+        "lastName": "יהודה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 188,
+      "name": {
+        "firstName": "דב",
+        "lastName": "יוסף"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2389,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "ישעיהו-שרעבי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2396,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2407,
+      "name": {
+        "firstName": "יונה",
+        "lastName": "כסה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2416,
+      "name": {
+        "firstName": "פנחס",
+        "lastName": "לבון"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2417,
+      "name": {
+        "firstName": "שלמה",
+        "lastName": "לביא"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2433,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "ליבנה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2440,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "לם"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 685,
+      "name": {
+        "firstName": "גולדה",
+        "lastName": "מאיר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2461,
+      "name": {
+        "firstName": "עדה",
+        "lastName": "מימון"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 529,
+      "name": {
+        "firstName": "פרץ",
+        "lastName": "נפתלי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 530,
+      "name": {
+        "firstName": "דבורה",
+        "lastName": "נצר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 2508,
+      "name": {
+        "firstName": "יזהר",
+        "lastName": "סמילנסקי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 573,
+      "name": {
+        "firstName": "השל",
+        "lastName": "פרומקין"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 604,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "קנב"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 606,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "קפלן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 628,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "רמז"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 681,
+      "name": {
+        "firstName": "זלמן",
+        "lastName": "שזר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 655,
+      "name": {
+        "firstName": "יהודית",
+        "lastName": "שמחונית"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 660,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "שפטל"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 668,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "שפרינצק"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 669,
+      "name": {
+        "firstName": "ראובן",
+        "lastName": "שרי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 675,
+      "name": {
+        "firstName": "אפרים",
+        "lastName": "תבורי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלי ארץ-ישראל",
+      "positions": []
+    },
+    {
+      "personId": 245,
+      "name": {
+        "firstName": "משה",
+        "lastName": "אונא"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 288,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "בורג"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 328,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "גולדרט"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 344,
+      "name": {
+        "firstName": "אליהו-משה",
+        "lastName": "גנחובסקי"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 350,
+      "name": {
+        "firstName": "אהרן-יעקב",
+        "lastName": "גרינברג"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 398,
+      "name": {
+        "firstName": "זרח",
+        "lastName": "ורהפטיג"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2404,
+      "name": {
+        "firstName": "קלמן",
+        "lastName": "כהנא"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2422,
+      "name": {
+        "firstName": "מאיר-דוד",
+        "lastName": "לוונשטיין"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2427,
+      "name": {
+        "firstName": "יצחק-מאיר",
+        "lastName": "לוין"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2456,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "מזור"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2460,
+      "name": {
+        "firstName": "יהודה לייב",
+        "lastName": "מימון"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2462,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "מינץ"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2478,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "נורוק"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 571,
+      "name": {
+        "firstName": "דוד-צבי",
+        "lastName": "פנקס"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 602,
+      "name": {
+        "firstName": "משה",
+        "lastName": "קלמר"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 634,
+      "name": {
+        "firstName": "אברהם חיים",
+        "lastName": "שאג"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 663,
+      "name": {
+        "firstName": "חיים משה",
+        "lastName": "שפירא"
+      },
+      "image": null,
+      "factionName": "חזית דתית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 251,
+      "name": {
+        "firstName": "סיף-אלדין",
+        "lastName": "אלזועבי"
+      },
+      "image": null,
+      "factionName": "רשימה דמוקרטית של נצרת",
+      "positions": []
+    },
+    {
+      "personId": 345,
+      "name": {
+        "firstName": "אמין",
+        "lastName": "ג'רג'ורה"
+      },
+      "image": null,
+      "factionName": "רשימה דמוקרטית של נצרת",
+      "positions": []
+    },
+    {
+      "personId": 258,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "אלישר"
+      },
+      "image": null,
+      "factionName": "ספרדים ועדות מזרח",
+      "positions": []
+    },
+    {
+      "personId": 260,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "אלמליח"
+      },
+      "image": null,
+      "factionName": "ספרדים ועדות מזרח",
+      "positions": []
+    },
+    {
+      "personId": 302,
+      "name": {
+        "firstName": "משה",
+        "lastName": "בן-עמי"
+      },
+      "image": null,
+      "factionName": "ספרדים ועדות מזרח",
+      "positions": []
+    },
+    {
+      "personId": 643,
+      "name": {
+        "firstName": "בכור-שלום",
+        "lastName": "שיטרית"
+      },
+      "image": null,
+      "factionName": "ספרדים ועדות מזרח",
+      "positions": []
+    },
+    {
+      "personId": 276,
+      "name": {
+        "firstName": "משה",
+        "lastName": "ארם"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 285,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "בדר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 294,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "בן-אהרן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 305,
+      "name": {
+        "firstName": "מרדכי",
+        "lastName": "בנטוב"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 310,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "בר-יהודה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 312,
+      "name": {
+        "firstName": "דב",
+        "lastName": "בר-ניר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 342,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "גלילי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 416,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "חזן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 428,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "טבנקין"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2381,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "יערי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2434,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "ליבשיץ"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2441,
+      "name": {
+        "firstName": "חנה",
+        "lastName": "למדן"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2486,
+      "name": {
+        "firstName": "נחום",
+        "lastName": "ניר-רפאלקס"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 2509,
+      "name": {
+        "firstName": "משה",
+        "lastName": "סנה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 250,
+      "name": {
+        "firstName": "אילנית",
+        "lastName": "פייגה"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 575,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "פרי"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 579,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "פרמינגר"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 590,
+      "name": {
+        "firstName": "אהרן",
+        "lastName": "ציזלינג"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 613,
+      "name": {
+        "firstName": "חנן",
+        "lastName": "רובין"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 625,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "ריפתין"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 631,
+      "name": {
+        "firstName": "ברל",
+        "lastName": "רפטור"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 632,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "רצון"
+      },
+      "image": null,
+      "factionName": "מפלגת פועלים מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 692,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "בגין"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 284,
+      "name": {
+        "firstName": "יוחנן",
+        "lastName": "בדר"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 295,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "בן-אליעזר"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 351,
+      "name": {
+        "firstName": "אורי-צבי",
+        "lastName": "גרינברג"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 402,
+      "name": {
+        "firstName": "ערי",
+        "lastName": "ז'בוטינסקי"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 2401,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "כהן-מגורי"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 2412,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "כץ"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 489,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "לנדאו"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 2443,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "לנקין"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 2471,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "מרידור"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 2472,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "מרלין"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 595,
+      "name": {
+        "firstName": "הלל",
+        "lastName": "קוק"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 622,
+      "name": {
+        "firstName": "אסתר",
+        "lastName": "רזיאל-נאור"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 633,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "רקנטי"
+      },
+      "image": null,
+      "factionName": "תנועת החרות",
+      "positions": []
+    },
+    {
+      "personId": 318,
+      "name": {
+        "firstName": "פרץ",
+        "lastName": "ברנשטיין"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 339,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "גיל"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 2512,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "ספיר"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 2516,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "סרלין"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 581,
+      "name": {
+        "firstName": "שושנה",
+        "lastName": "פרסיץ"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 600,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "קליבנוב"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 620,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "רוקח"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 5983,
+      "name": {
+        "firstName": "משה",
+        "lastName": "טצה"
+      },
+      "image": null,
+      "factionName": "ציונים כלליים",
+      "positions": []
+    },
+    {
+      "personId": 340,
+      "name": {
+        "firstName": "זכריה",
+        "lastName": "גלוסקא"
+      },
+      "image": null,
+      "factionName": "התאחדות התימנים בישראל",
+      "positions": []
+    },
+    {
+      "personId": 352,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "גרנות"
+      },
+      "image": null,
+      "factionName": "מפלגה פרוגרסיבית",
+      "positions": []
+    },
+    {
+      "personId": 393,
+      "name": {
+        "firstName": "יזהר",
+        "lastName": "הררי"
+      },
+      "image": null,
+      "factionName": "מפלגה פרוגרסיבית",
+      "positions": []
+    },
+    {
+      "personId": 2390,
+      "name": {
+        "firstName": "אידוב",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "מפלגה פרוגרסיבית",
+      "positions": []
+    },
+    {
+      "personId": 2531,
+      "name": {
+        "firstName": "ישעיהו",
+        "lastName": "פורדר"
+      },
+      "image": null,
+      "factionName": "מפלגה פרוגרסיבית",
+      "positions": []
+    },
+    {
+      "personId": 615,
+      "name": {
+        "firstName": "פנחס",
+        "lastName": "רוזן"
+      },
+      "image": null,
+      "factionName": "מפלגה פרוגרסיבית",
+      "positions": []
+    },
+    {
+      "personId": 395,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "וילנר"
+      },
+      "image": null,
+      "factionName": "מפלגה קומוניסטית ישראלית",
+      "positions": []
+    },
+    {
+      "personId": 2363,
+      "name": {
+        "firstName": "תופיק",
+        "lastName": "טובי"
+      },
+      "image": null,
+      "factionName": "מפלגה קומוניסטית ישראלית",
+      "positions": []
+    },
+    {
+      "personId": 2464,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "מיקוניס"
+      },
+      "image": null,
+      "factionName": "מפלגה קומוניסטית ישראלית",
+      "positions": []
+    },
+    {
+      "personId": 579,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "פרמינגר"
+      },
+      "image": null,
+      "factionName": "מפלגה קומוניסטית ישראלית",
+      "positions": []
+    },
+    {
+      "personId": 192,
+      "name": {
+        "firstName": "נתן",
+        "lastName": "ילין-מור"
+      },
+      "image": null,
+      "factionName": "רשימת הלוחמים",
+      "positions": []
+    },
+    {
+      "personId": 452,
+      "name": {
+        "firstName": "רחל",
+        "lastName": "כהן-כגן"
+      },
+      "image": null,
+      "factionName": "ויצ\"ו",
+      "positions": []
+    },
+    {
+      "personId": 579,
+      "name": {
+        "firstName": "אליעזר",
+        "lastName": "פרמינגר"
+      },
+      "image": null,
+      "factionName": "הקומוניסטים העברים",
+      "positions": []
+    }
+  ],
+  "totalMembers": 133,
+  "totalParties": 13,
+  "lastUpdated": "2025-12-13T17:46:02.698Z"
+}

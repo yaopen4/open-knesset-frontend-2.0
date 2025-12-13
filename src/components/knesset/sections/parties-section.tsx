@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { UnifiedKnessetData } from '@/lib/data/knesset-data-fetcher';
-import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import { Users } from 'lucide-react';
 
@@ -37,15 +36,14 @@ export default function PartiesSection({ knessetData }: PartiesSectionProps) {
         {parties.map((party, index) => (
           <Card key={index}>
             <CardHeader>
-              <CardTitle className="text-right flex items-center justify-between">
-                <Badge variant="secondary">{party.memberCount} חברים</Badge>
-                <span>{party.name}</span>
+              <CardTitle className="text-right">
+                {party.name}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-right">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Users className="h-4 w-4" />
+              <div className="flex items-center gap-2 text-muted-foreground flex-row-reverse justify-end">
                 <span className="text-sm">{party.memberCount} חברי כנסת</span>
+                <Users className="h-4 w-4" />
               </div>
             </CardContent>
           </Card>
@@ -54,3 +52,4 @@ export default function PartiesSection({ knessetData }: PartiesSectionProps) {
     </div>
   );
 }
+

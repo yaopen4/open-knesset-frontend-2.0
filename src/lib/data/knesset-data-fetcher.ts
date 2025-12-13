@@ -44,21 +44,21 @@ export interface UnifiedKnessetData {
 export async function fetchUnifiedKnessetData(knessetNum: number): Promise<UnifiedKnessetData | null> {
   try {
     const currentKnesset = getCurrentKnessetNum();
-    const isHistorical = knessetNum < currentKnesset;
+    const isCurrent = knessetNum === currentKnesset;
 
-    // For historical knessets, try static data first
-    if (isHistorical && hasStaticKnessetData(knessetNum)) {
+    // Try static data first (for both historical and current)
+    if (hasStaticKnessetData(knessetNum)) {
       const staticData = loadStaticKnesset(knessetNum);
       if (staticData) {
         return {
           ...staticData,
-          isCurrent: false,
+          isCurrent,
         };
       }
     }
 
-    // For current knesset, return null if no static data available
-    // API integration can be added here later
+    // For current knesset, API integration can be added here later
+    // For now, return null if no static data available
     return null;
   } catch (error) {
     console.error(`Error fetching unified knesset data for ${knessetNum}:`, error);

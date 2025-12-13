@@ -1,7 +1,180 @@
 {
-  "totalKnessets": 0,
-  "knessets": []
+  "totalKnessets": 25,
+  "knessets": [
+    {
+      "knessetNum": 1,
+      "totalMembers": 133,
+      "totalParties": 13,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 2,
+      "totalMembers": 147,
+      "totalParties": 18,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 3,
+      "totalMembers": 164,
+      "totalParties": 15,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 4,
+      "totalMembers": 146,
+      "totalParties": 15,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 5,
+      "totalMembers": 179,
+      "totalParties": 16,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 6,
+      "totalMembers": 265,
+      "totalParties": 22,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 7,
+      "totalMembers": 140,
+      "totalParties": 18,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 8,
+      "totalMembers": 175,
+      "totalParties": 25,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 9,
+      "totalMembers": 190,
+      "totalParties": 36,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 10,
+      "totalMembers": 137,
+      "totalParties": 15,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 11,
+      "totalMembers": 148,
+      "totalParties": 21,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 12,
+      "totalMembers": 191,
+      "totalParties": 24,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 13,
+      "totalMembers": 150,
+      "totalParties": 21,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 14,
+      "totalMembers": 210,
+      "totalParties": 31,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 15,
+      "totalMembers": 193,
+      "totalParties": 27,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 16,
+      "totalMembers": 256,
+      "totalParties": 34,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 17,
+      "totalMembers": 181,
+      "totalParties": 22,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 18,
+      "totalMembers": 158,
+      "totalParties": 18,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 19,
+      "totalMembers": 167,
+      "totalParties": 17,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 20,
+      "totalMembers": 184,
+      "totalParties": 17,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 21,
+      "totalMembers": 141,
+      "totalParties": 18,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 22,
+      "totalMembers": 148,
+      "totalParties": 17,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 23,
+      "totalMembers": 236,
+      "totalParties": 26,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 24,
+      "totalMembers": 181,
+      "totalParties": 27,
+      "startDate": null,
+      "finishDate": null
+    },
+    {
+      "knessetNum": 25,
+      "totalMembers": 166,
+      "totalParties": 15,
+      "startDate": null,
+      "finishDate": null
+    }
+  ]
 }
-
-
-

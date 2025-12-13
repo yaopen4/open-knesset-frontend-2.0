@@ -1,0 +1,1820 @@
+{
+  "knessetNum": 17,
+  "startDate": null,
+  "finishDate": null,
+  "members": [
+    {
+      "personId": 12,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "אלון"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 46,
+      "name": {
+        "firstName": "צבי",
+        "lastName": "הנדל"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 194,
+      "name": {
+        "firstName": "זבולון",
+        "lastName": "אורלב"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 713,
+      "name": {
+        "firstName": "אורי",
+        "lastName": "אריאל"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 715,
+      "name": {
+        "firstName": "אפי",
+        "lastName": "איתם"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 73,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "לוי"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 752,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "אלדד"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 92,
+      "name": {
+        "firstName": "ניסן",
+        "lastName": "סלומינסקי"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 30,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "גבאי"
+      },
+      "image": null,
+      "factionName": "איחוד לאומי-מפד\"ל רשימה יהודית לאומית מאוחדת",
+      "positions": []
+    },
+    {
+      "personId": 12,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "אלון"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 46,
+      "name": {
+        "firstName": "צבי",
+        "lastName": "הנדל"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 194,
+      "name": {
+        "firstName": "זבולון",
+        "lastName": "אורלב"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 713,
+      "name": {
+        "firstName": "אורי",
+        "lastName": "אריאל"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 715,
+      "name": {
+        "firstName": "אפי",
+        "lastName": "איתם"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 73,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "לוי"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 752,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "אלדד"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 92,
+      "name": {
+        "firstName": "ניסן",
+        "lastName": "סלומינסקי"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 30,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "גבאי"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל והאיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 12,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "אלון"
+      },
+      "image": null,
+      "factionName": "מולדת האיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 752,
+      "name": {
+        "firstName": "אריה",
+        "lastName": "אלדד"
+      },
+      "image": null,
+      "factionName": "מולדת האיחוד הלאומי",
+      "positions": []
+    },
+    {
+      "personId": 46,
+      "name": {
+        "firstName": "צבי",
+        "lastName": "הנדל"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל",
+      "positions": []
+    },
+    {
+      "personId": 194,
+      "name": {
+        "firstName": "זבולון",
+        "lastName": "אורלב"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל",
+      "positions": []
+    },
+    {
+      "personId": 713,
+      "name": {
+        "firstName": "אורי",
+        "lastName": "אריאל"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל",
+      "positions": []
+    },
+    {
+      "personId": 92,
+      "name": {
+        "firstName": "ניסן",
+        "lastName": "סלומינסקי"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל",
+      "positions": []
+    },
+    {
+      "personId": 30,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "גבאי"
+      },
+      "image": null,
+      "factionName": "הבית היהודי מיסודם של המפד\"ל",
+      "positions": []
+    },
+    {
+      "personId": 214,
+      "name": {
+        "firstName": "אביגדור",
+        "lastName": "ליברמן"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 121,
+      "name": {
+        "firstName": "יורי",
+        "lastName": "שטרן"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 78,
+      "name": {
+        "firstName": "סופה",
+        "lastName": "לנדבר"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 764,
+      "name": {
+        "firstName": "אסתרינה",
+        "lastName": "טרטמן"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 781,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "חסון"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 802,
+      "name": {
+        "firstName": "ליה",
+        "lastName": "שמטוב"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 785,
+      "name": {
+        "firstName": "אלכס",
+        "lastName": "מילר"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 801,
+      "name": {
+        "firstName": "יוסף",
+        "lastName": "שגל"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 786,
+      "name": {
+        "firstName": "סטס",
+        "lastName": "מיסז'ניקוב"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 793,
+      "name": {
+        "firstName": "רוברט",
+        "lastName": "אילטוב"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 790,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "אהרונוביץ'"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 805,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "רותם"
+      },
+      "image": null,
+      "factionName": "ישראל ביתנו בראשות אביגדור ליברמן",
+      "positions": []
+    },
+    {
+      "personId": 704,
+      "name": {
+        "firstName": "קולט",
+        "lastName": "אביטל"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 20,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "בן-אליעזר"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 64,
+      "name": {
+        "firstName": "איתן",
+        "lastName": "כבל"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 220,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "מלכיאור"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 94,
+      "name": {
+        "firstName": "אפרים",
+        "lastName": "סנה"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 100,
+      "name": {
+        "firstName": "אופיר",
+        "lastName": "פינס-פז"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 123,
+      "name": {
+        "firstName": "שלום",
+        "lastName": "שמחון"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 105,
+      "name": {
+        "firstName": "עמיר",
+        "lastName": "פרץ"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 717,
+      "name": {
+        "firstName": "אורית",
+        "lastName": "נוקד"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 697,
+      "name": {
+        "firstName": "יולי",
+        "lastName": "תמיר"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 740,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "הרצוג"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 741,
+      "name": {
+        "firstName": "דני",
+        "lastName": "יתום"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 204,
+      "name": {
+        "firstName": "מתן",
+        "lastName": "וילנאי"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 758,
+      "name": {
+        "firstName": "ראלב",
+        "lastName": "מג'אדלה"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 788,
+      "name": {
+        "firstName": "יורם",
+        "lastName": "מרציאנו"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 779,
+      "name": {
+        "firstName": "נאדיה",
+        "lastName": "חילו"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 782,
+      "name": {
+        "firstName": "שלי",
+        "lastName": "יחימוביץ'"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 792,
+      "name": {
+        "firstName": "עמיחי",
+        "lastName": "אילון"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 797,
+      "name": {
+        "firstName": "אבישי",
+        "lastName": "ברוורמן"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 812,
+      "name": {
+        "firstName": "שכיב מוראד",
+        "lastName": "שנאן"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 813,
+      "name": {
+        "firstName": "לאון",
+        "lastName": "ליטינצקי"
+      },
+      "image": null,
+      "factionName": "העבודה-מימד בראשות עמיר פרץ",
+      "positions": []
+    },
+    {
+      "personId": 704,
+      "name": {
+        "firstName": "קולט",
+        "lastName": "אביטל"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 20,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "בן-אליעזר"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 64,
+      "name": {
+        "firstName": "איתן",
+        "lastName": "כבל"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 100,
+      "name": {
+        "firstName": "אופיר",
+        "lastName": "פינס-פז"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 123,
+      "name": {
+        "firstName": "שלום",
+        "lastName": "שמחון"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 105,
+      "name": {
+        "firstName": "עמיר",
+        "lastName": "פרץ"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 717,
+      "name": {
+        "firstName": "אורית",
+        "lastName": "נוקד"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 697,
+      "name": {
+        "firstName": "יולי",
+        "lastName": "תמיר"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 740,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "הרצוג"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 204,
+      "name": {
+        "firstName": "מתן",
+        "lastName": "וילנאי"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 758,
+      "name": {
+        "firstName": "ראלב",
+        "lastName": "מג'אדלה"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 788,
+      "name": {
+        "firstName": "יורם",
+        "lastName": "מרציאנו"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 779,
+      "name": {
+        "firstName": "נאדיה",
+        "lastName": "חילו"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 782,
+      "name": {
+        "firstName": "שלי",
+        "lastName": "יחימוביץ'"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 792,
+      "name": {
+        "firstName": "עמיחי",
+        "lastName": "אילון"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 797,
+      "name": {
+        "firstName": "אבישי",
+        "lastName": "ברוורמן"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 812,
+      "name": {
+        "firstName": "שכיב מוראד",
+        "lastName": "שנאן"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 813,
+      "name": {
+        "firstName": "לאון",
+        "lastName": "ליטינצקי"
+      },
+      "image": null,
+      "factionName": "העבודה בראשות אהוד ברק",
+      "positions": []
+    },
+    {
+      "personId": 8,
+      "name": {
+        "firstName": "דליה",
+        "lastName": "איציק"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 104,
+      "name": {
+        "firstName": "שמעון",
+        "lastName": "פרס"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 115,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "רמון"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 16,
+      "name": {
+        "firstName": "זאב",
+        "lastName": "בוים"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 42,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "הירשזון"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 45,
+      "name": {
+        "firstName": "צחי",
+        "lastName": "הנגבי"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 213,
+      "name": {
+        "firstName": "ציפי",
+        "lastName": "לבני"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 96,
+      "name": {
+        "firstName": "גדעון",
+        "lastName": "עזרא"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 119,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "שטרית"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 58,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "טל"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 91,
+      "name": {
+        "firstName": "מרינה",
+        "lastName": "סולודקין"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 89,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "נודלמן"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 720,
+      "name": {
+        "firstName": "שאול",
+        "lastName": "מופז"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 724,
+      "name": {
+        "firstName": "רוחמה",
+        "lastName": "אברהם-בלילא"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 727,
+      "name": {
+        "firstName": "מגלי",
+        "lastName": "והבה"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 728,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "אדרי"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 730,
+      "name": {
+        "firstName": "אלי",
+        "lastName": "אפללו"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 735,
+      "name": {
+        "firstName": "רוני",
+        "lastName": "בר-און"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 3,
+      "name": {
+        "firstName": "אהוד",
+        "lastName": "אולמרט"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 772,
+      "name": {
+        "firstName": "יואל",
+        "lastName": "חסון"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 770,
+      "name": {
+        "firstName": "עמירה",
+        "lastName": "דותן"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 771,
+      "name": {
+        "firstName": "אבי",
+        "lastName": "דיכטר"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 775,
+      "name": {
+        "firstName": "אוריאל",
+        "lastName": "רייכמן"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 768,
+      "name": {
+        "firstName": "זאב",
+        "lastName": "אלקין"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 767,
+      "name": {
+        "firstName": "מנחם",
+        "lastName": "בן-ששון"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 769,
+      "name": {
+        "firstName": "שלמה",
+        "lastName": "ברזניץ"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 774,
+      "name": {
+        "firstName": "רונית",
+        "lastName": "תירוש"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 776,
+      "name": {
+        "firstName": "עתניאל",
+        "lastName": "שנלר"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 773,
+      "name": {
+        "firstName": "אביגדור",
+        "lastName": "יצחקי"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 804,
+      "name": {
+        "firstName": "שי",
+        "lastName": "חרמש"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 808,
+      "name": {
+        "firstName": "ישראל יצחק",
+        "lastName": "בן"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 809,
+      "name": {
+        "firstName": "יוחנן",
+        "lastName": "פלסנר"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 810,
+      "name": {
+        "firstName": "שלמה",
+        "lastName": "מולה"
+      },
+      "image": null,
+      "factionName": "קדימה-עם אהוד אולמרט לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 220,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "מלכיאור"
+      },
+      "image": null,
+      "factionName": "מימד",
+      "positions": []
+    },
+    {
+      "personId": 9,
+      "name": {
+        "firstName": "מיכאל",
+        "lastName": "איתן"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 69,
+      "name": {
+        "firstName": "ישראל",
+        "lastName": "כץ"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 70,
+      "name": {
+        "firstName": "לימור",
+        "lastName": "לבנת"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 223,
+      "name": {
+        "firstName": "דני",
+        "lastName": "נוה"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 114,
+      "name": {
+        "firstName": "ראובן",
+        "lastName": "ריבלין"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 695,
+      "name": {
+        "firstName": "יובל",
+        "lastName": "שטייניץ"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 1142,
+      "name": {
+        "firstName": "סילבן",
+        "lastName": "שלום"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 1,
+      "name": {
+        "firstName": "יולי יואל",
+        "lastName": "אדלשטיין"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 127,
+      "name": {
+        "firstName": "נתן",
+        "lastName": "שרנסקי"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 212,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "כץ"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 90,
+      "name": {
+        "firstName": "בנימין",
+        "lastName": "נתניהו"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 725,
+      "name": {
+        "firstName": "גדעון",
+        "lastName": "סער"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 731,
+      "name": {
+        "firstName": "משה",
+        "lastName": "כחלון"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 734,
+      "name": {
+        "firstName": "גלעד",
+        "lastName": "ארדן"
+      },
+      "image": null,
+      "factionName": "הליכוד עם בנימין נתניהו לראשות הממשלה",
+      "positions": []
+    },
+    {
+      "personId": 7,
+      "name": {
+        "firstName": "דוד",
+        "lastName": "אזולאי"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 25,
+      "name": {
+        "firstName": "שלמה",
+        "lastName": "בניזרי"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 50,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "וקנין"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 206,
+      "name": {
+        "firstName": "נסים",
+        "lastName": "זאב"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 63,
+      "name": {
+        "firstName": "אליהו",
+        "lastName": "ישי"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 210,
+      "name": {
+        "firstName": "אמנון",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 222,
+      "name": {
+        "firstName": "משולם",
+        "lastName": "נהרי"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 65,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 751,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "מרגי"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 791,
+      "name": {
+        "firstName": "אריאל",
+        "lastName": "אטיאס"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 795,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "אמסלם"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 784,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "מיכאלי"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 811,
+      "name": {
+        "firstName": "מזור",
+        "lastName": "בהיינה"
+      },
+      "image": null,
+      "factionName": "ש\"ס-התאחדות הספרדים העולמית שומרי תורה",
+      "positions": []
+    },
+    {
+      "personId": 201,
+      "name": {
+        "firstName": "זהבה",
+        "lastName": "גלאון"
+      },
+      "image": null,
+      "factionName": "מרצ-ישראל חברתית דמוקרטית",
+      "positions": []
+    },
+    {
+      "personId": 203,
+      "name": {
+        "firstName": "אבשלום",
+        "lastName": "וילן"
+      },
+      "image": null,
+      "factionName": "מרצ-ישראל חברתית דמוקרטית",
+      "positions": []
+    },
+    {
+      "personId": 66,
+      "name": {
+        "firstName": "רן",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "מרצ-ישראל חברתית דמוקרטית",
+      "positions": []
+    },
+    {
+      "personId": 5,
+      "name": {
+        "firstName": "חיים",
+        "lastName": "אורון"
+      },
+      "image": null,
+      "factionName": "מרצ-ישראל חברתית דמוקרטית",
+      "positions": []
+    },
+    {
+      "personId": 18,
+      "name": {
+        "firstName": "יוסי",
+        "lastName": "ביילין"
+      },
+      "image": null,
+      "factionName": "מרצ-ישראל חברתית דמוקרטית",
+      "positions": []
+    },
+    {
+      "personId": 815,
+      "name": {
+        "firstName": "צביה",
+        "lastName": "גרינפילד"
+      },
+      "image": null,
+      "factionName": "מרצ-ישראל חברתית דמוקרטית",
+      "positions": []
+    },
+    {
+      "personId": 35,
+      "name": {
+        "firstName": "משה",
+        "lastName": "גפני"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 43,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "הלפרט"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 216,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "ליצמן"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 112,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "רביץ"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 103,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "פרוש"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 783,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "כהן"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 814,
+      "name": {
+        "firstName": "אורי",
+        "lastName": "מקלב"
+      },
+      "image": null,
+      "factionName": "יהדות התורה והשבת אגודת ישראל-דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 35,
+      "name": {
+        "firstName": "משה",
+        "lastName": "גפני"
+      },
+      "image": null,
+      "factionName": "דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 112,
+      "name": {
+        "firstName": "אברהם",
+        "lastName": "רביץ"
+      },
+      "image": null,
+      "factionName": "דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 814,
+      "name": {
+        "firstName": "אורי",
+        "lastName": "מקלב"
+      },
+      "image": null,
+      "factionName": "דגל התורה",
+      "positions": []
+    },
+    {
+      "personId": 43,
+      "name": {
+        "firstName": "שמואל",
+        "lastName": "הלפרט"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 216,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "ליצמן"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 103,
+      "name": {
+        "firstName": "מאיר",
+        "lastName": "פרוש"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 816,
+      "name": {
+        "firstName": "יהושע מנחם",
+        "lastName": "פולק"
+      },
+      "image": null,
+      "factionName": "אגודת ישראל",
+      "positions": []
+    },
+    {
+      "personId": 197,
+      "name": {
+        "firstName": "מוחמד",
+        "lastName": "ברכה"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 789,
+      "name": {
+        "firstName": "חנא",
+        "lastName": "סוייד"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 780,
+      "name": {
+        "firstName": "דב",
+        "lastName": "חנין"
+      },
+      "image": null,
+      "factionName": "חזית דמוקרטית לשלום ושוויון",
+      "positions": []
+    },
+    {
+      "personId": 13,
+      "name": {
+        "firstName": "טלב",
+        "lastName": "אלסאנע"
+      },
+      "image": null,
+      "factionName": "הרשימה הערבית המאוחדת התנועה הערבית להתחדשות",
+      "positions": []
+    },
+    {
+      "personId": 208,
+      "name": {
+        "firstName": "אחמד",
+        "lastName": "טיבי"
+      },
+      "image": null,
+      "factionName": "הרשימה הערבית המאוחדת התנועה הערבית להתחדשות",
+      "positions": []
+    },
+    {
+      "personId": 800,
+      "name": {
+        "firstName": "אברהים",
+        "lastName": "צרצור"
+      },
+      "image": null,
+      "factionName": "הרשימה הערבית המאוחדת התנועה הערבית להתחדשות",
+      "positions": []
+    },
+    {
+      "personId": 778,
+      "name": {
+        "firstName": "עבאס",
+        "lastName": "זכור"
+      },
+      "image": null,
+      "factionName": "הרשימה הערבית המאוחדת התנועה הערבית להתחדשות",
+      "positions": []
+    },
+    {
+      "personId": 29,
+      "name": {
+        "firstName": "עזמי",
+        "lastName": "בשארה"
+      },
+      "image": null,
+      "factionName": "אלתג'מוע אלווטני אל דימוקרטי-בל\"ד",
+      "positions": []
+    },
+    {
+      "personId": 756,
+      "name": {
+        "firstName": "ג'מאל",
+        "lastName": "זחאלקה"
+      },
+      "image": null,
+      "factionName": "אלתג'מוע אלווטני אל דימוקרטי-בל\"ד",
+      "positions": []
+    },
+    {
+      "personId": 757,
+      "name": {
+        "firstName": "ואסל",
+        "lastName": "טאהא"
+      },
+      "image": null,
+      "factionName": "אלתג'מוע אלווטני אל דימוקרטי-בל\"ד",
+      "positions": []
+    },
+    {
+      "personId": 807,
+      "name": {
+        "firstName": "סעיד",
+        "lastName": "נפאע"
+      },
+      "image": null,
+      "factionName": "אלתג'מוע אלווטני אל דימוקרטי-בל\"ד",
+      "positions": []
+    },
+    {
+      "personId": 715,
+      "name": {
+        "firstName": "אפי",
+        "lastName": "איתם"
+      },
+      "image": null,
+      "factionName": "אח\"י - ארץ, חברה, יהדות",
+      "positions": []
+    },
+    {
+      "personId": 73,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "לוי"
+      },
+      "image": null,
+      "factionName": "אח\"י - ארץ, חברה, יהדות",
+      "positions": []
+    },
+    {
+      "personId": 794,
+      "name": {
+        "firstName": "רפי",
+        "lastName": "איתן"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 796,
+      "name": {
+        "firstName": "יעקב",
+        "lastName": "בן-יזרי"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 803,
+      "name": {
+        "firstName": "משה",
+        "lastName": "שרוני"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 777,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "זיו"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 799,
+      "name": {
+        "firstName": "יצחק",
+        "lastName": "גלנטי"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 798,
+      "name": {
+        "firstName": "אלחנן",
+        "lastName": "גלזר"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 787,
+      "name": {
+        "firstName": "שלו שרה",
+        "lastName": "מרום"
+      },
+      "image": null,
+      "factionName": "גיל-גימלאי ישראל לכנסת",
+      "positions": []
+    },
+    {
+      "personId": 803,
+      "name": {
+        "firstName": "משה",
+        "lastName": "שרוני"
+      },
+      "image": null,
+      "factionName": "צדק לזקן",
+      "positions": []
+    },
+    {
+      "personId": 798,
+      "name": {
+        "firstName": "אלחנן",
+        "lastName": "גלזר"
+      },
+      "image": null,
+      "factionName": "צדק לזקן",
+      "positions": []
+    },
+    {
+      "personId": 787,
+      "name": {
+        "firstName": "שלו שרה",
+        "lastName": "מרום"
+      },
+      "image": null,
+      "factionName": "צדק לזקן",
+      "positions": []
+    },
+    {
+      "personId": 798,
+      "name": {
+        "firstName": "אלחנן",
+        "lastName": "גלזר"
+      },
+      "image": null,
+      "factionName": "הדרך הטובה",
+      "positions": []
+    }
+  ],
+  "totalMembers": 181,
+  "totalParties": 22,
+  "lastUpdated": "2025-12-13T17:46:02.724Z"
+}

@@ -1,27 +1,24 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 interface Section {
   id: string;
   title: string;
 }
 
-interface SectionNavigationProps {
+interface TableOfContentsProps {
   sections: Section[];
 }
 
-export default function SectionNavigation({ sections }: SectionNavigationProps) {
+export default function TableOfContents({ sections }: TableOfContentsProps) {
   const [activeSection, setActiveSection] = useState<string>(sections[0]?.id || '');
 
   useEffect(() => {
     // Handle scroll to update active section
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150; // Offset for sticky nav
+      const scrollPosition = window.scrollY + 150;
 
       for (const section of sections) {
         const element = document.getElementById(section.id);
@@ -51,7 +48,7 @@ export default function SectionNavigation({ sections }: SectionNavigationProps) 
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 100; // Offset for sticky header
+      const offset = 100;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: elementPosition - offset,
@@ -61,25 +58,28 @@ export default function SectionNavigation({ sections }: SectionNavigationProps) 
   };
 
   return (
-    <Card className="sticky top-20 z-10 p-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <nav className="flex flex-wrap gap-2 justify-center" dir="rtl">
-        {sections.map((section) => (
-          <Button
-            key={section.id}
-            variant={activeSection === section.id ? 'default' : 'outline'}
-            size="sm"
-            onClick={() => handleClick(section.id)}
-            className={cn(
-              "transition-all",
-              activeSection === section.id && "shadow-md"
-            )}
-          >
-            {section.title}
-          </Button>
-        ))}
+    <div className="border rounded-lg p-4 bg-background" dir="rtl">
+      <div className="text-sm font-semibold mb-3 text-foreground text-right">תוכן עניינים</div>
+      <nav dir="rtl">
+        <ul className="space-y-2 text-sm" dir="rtl">
+          {sections.map((section, index) => (
+            <li key={section.id} dir="rtl">
+              <button
+                onClick={() => handleClick(section.id)}
+                className={cn(
+                  "text-right w-full hover:underline transition-colors",
+                  activeSection === section.id 
+                    ? "text-primary font-medium" 
+                    : "text-muted-foreground hover:text-foreground"
+                )}
+                dir="rtl"
+              >
+                {index + 1}. {section.title}
+              </button>
+            </li>
+          ))}
+        </ul>
       </nav>
-    </Card>
+    </div>
   );
 }
-
-

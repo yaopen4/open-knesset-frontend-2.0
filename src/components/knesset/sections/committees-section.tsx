@@ -34,9 +34,9 @@ export default function CommitteesSection({ knessetData }: CommitteesSectionProp
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {officeholders.committeeChairs.map((chair, index) => (
                 <div key={index} className="p-4 border rounded-lg text-right">
-                  <div className="flex items-start justify-between mb-2">
-                    <Badge variant="outline">יו״ר</Badge>
+                  <div className="flex items-start justify-between mb-2 flex-row-reverse">
                     <h3 className="font-semibold text-lg">{chair.committeeName}</h3>
+                    <Badge variant="outline">יו״ר</Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
                     יו״ר: {chair.name}
@@ -55,3 +55,4 @@ export default function CommitteesSection({ knessetData }: CommitteesSectionProp
     </div>
   );
 }
+
