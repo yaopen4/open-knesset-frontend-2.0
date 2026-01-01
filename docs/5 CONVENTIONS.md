@@ -60,3 +60,28 @@ Follow this organization for new files:
 | **סיעה (Party)** | Political grouping | `Party` / `Faction` |
 | **הצעת חוק** | Proposed bill | `Bill` |
 | **ועדה** | Committee | `Committee` |
+
+## 6. GitHub Issue Tagging
+To maintain an organized workflow and help volunteers find tasks, we use a structured labeling system.
+
+### Category: Type (What is it?)
+- `type:bug`: Something isn't working correctly.
+- `type:feature`: New functionality or page request.
+- `type:enhancement`: Improving an existing feature.
+- `type:refactor`: Code cleanup or architectural change.
+- `type:documentation`: Updates to PRD, site map, or dev guides.
+
+### Category: Domain (Where is it?)
+- `domain:members`: MK profile pages, list of members.
+- `domain:bills`: Legislation, bill tables.
+- `domain:committees`: Committee protocols, meeting summaries.
+- `domain:votes`: Plenary sessions, voting records.
+- `domain:search`: Advanced search, data filters.
+- `domain:ui-ux`: General layout, RTL support, theme, icons.
+- `domain:api`: Backend connectivity, OData integration.
+
+### Category: Contribution & Priority
+- `prio:critical` / `prio:high` / `prio:low`: Urgency levels.
+- `good-first-issue`: Easy tasks for new volunteers.
+- `help-wanted`: Tasks needing specific expertise.
+- `needs-data`: Waiting on API or static JSON info.

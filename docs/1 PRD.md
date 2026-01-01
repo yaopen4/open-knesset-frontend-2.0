@@ -1,75 +1,51 @@
 # Product Requirements Document (PRD)
 
-## Project: כנסת פתוחה Open Knesset – Website Revamp
+## Project: כנסת פתוחה Open Knesset
 
-[[File Goal: The WHAT and WHY]]
 ---
 
 ## 1. Project Overview
 
 ### Summary
-The project is a comprehensive revamp of the "Open Knesset" platform (https://oknesset.org/). The primary goal is to make Israeli parliamentary data accessible and provide behavioral insights for citizens, empowering them to understand and track the actions of their elected officials.
+Open Knesset translates Israeli parliamentary data into clear, accessible information for citizens. By presenting votes, bills, attendance, and committee work in understandable formats, the platform enables voters to evaluate their elected officials based on facts rather than media narratives or gut feelings.
 
-### Target Personas
-- **Citizens**: To track elected officials, understand bills, and stay informed on parliamentary activity.
-- **Journalists**: To gather data-driven insights and historical context for reporting.
-- **Researchers**: To access structured data for political and legislative analysis.
+### Target Persona
+The average Israeli voter: someone who participates in elections, follows politics through mainstream media, and wants to understand what their MK actually does—but lacks the time or expertise to navigate official Knesset sources.
 
 ### Problem Statement
-The current platform provides rich datasets but suffers from dated UI and inconsistent visual hierarchy. Parliamentary data is often complex and difficult for the average citizen to interpret without proper context and visualization.
+Citizens vote without knowing what their representatives do. Official Knesset data exists but is fragmented and inaccessible. Media coverage focuses on scandals and partisan framing, not daily legislative work. Voters cannot answer basic questions: Did my MK show up? How did they vote on issues I care about? What have they accomplished?
 
 ### Value Proposition
-- **Clarity**: Translating complex parliamentary procedures and data into intuitive, human-readable insights.
-- **Daily Transparency**: Providing a daily-updated interface that tracks legislative progress and member activity in real-time.
-- **Civic Empowerment**: Tools that allow citizens to hold members of parliament accountable through clear data on attendance, voting, and committee work.
+Open Knesset bridges the gap between raw parliamentary data and citizen understanding. The platform is strictly non-partisan—it presents facts without commentary, letting users draw their own conclusions. The goal is informed voting decisions and fact-based public discourse.
 
-### Success Metrics (KPIs)
-- **User Engagement**:
-    - Average session duration target: > 3 minutes.
-    - Pages per session target: > 5 pages.
-- **Accessibility & Understanding**:
-    - Achievement of a 100/100 Lighthouse score for technical accessibility.
-    - Positive qualitative feedback on data clarity.
-- **Performance**:
-    - Largest Contentful Paint (LCP) < 2.5 seconds.
-- **Civic Impact**:
-    - Growth in usage of API documentation.
-    - Volume of community-submitted bug reports and data corrections.
+### Theory of Change
+Raw Knesset data → translated into understandable formats → citizens discover what MKs do → facts enter public discourse → voters make informed decisions → accountability through the ballot box.
+
+### Success Metrics
+
+**Engagement:** Session duration > 3 min, return visitors > 20%, MK profiles viewed per session > 2.
+
+**Comprehension:** Bounce rate on profiles < 40%, scroll depth > 70%, social shares of data pages.
+
+**Reach:** Organic traffic growth, backlinks from news/blogs, social media mentions.
+
+**Technical:** Lighthouse Accessibility 100/100, LCP < 2.5s.
 
 ---
 
-## 2. Capabilities (Key Features)
+## 2. Capabilities
 
-### Parliamentary Intelligence (Knesset Hubs)
-- **Power Structure**: Dynamic visualizations of coalition vs. opposition groupings and government composition.
-- **Session Timelines**: Interactive timelines of key events like formation, reshuffles, and dissolution.
-- **Activity Stats**: Quick-glance statistics on active committees and bills during a specific term.
+### Bills & Laws
+Track the status of any bill through the legislative process. See where it stands, who proposed it, and its full history from proposal to law.
 
-### Legislative Lifecycle (Bills & Laws)
-- **Status Tracking**: Visual indicators of where a bill stands in the legislative process.
-- **Historical Database**: A comprehensive, searchable database of laws with full text and legislative history.
-- **Contextual Connections**: Linking bills to relevant members, committees, and voting records.
+### Voting Records
+See how any MK voted on any bill. Understand voting patterns and compare votes across party lines.
 
-### Member Accountability (MK Profiles)
-- **Voting Records**: Visual breakdown of voting history and alignment with party or stated positions.
-- **Role Transparency**: Detailed lists of committee memberships and specific roles held over time.
-- **Participation Metrics**: Clear data on attendance and legislative initiative.
+### Committee Activity
+Follow what happens in Knesset committees—attendance, discussions, and decisions that rarely make the news.
 
----
+### MK Profiles
+Understand who your MK is: their roles, party affiliation, committee memberships, attendance, and overall legislative activity.
 
-## 3. Milestones
-
-### v1.0 Foundation
-- Implementation of the gov.il visual identity.
-- Launch of core MK profiles and Knesset term hubs.
-- Basic search and discovery functionality.
-
-### v1.1 Legislative Hub
-- Deep integration of Bills and Laws tracking.
-- Interactive legislative timelines.
-- Advanced committee activity views.
-
-### v1.2 Deep Analytics
-- Complex voting trend visualizations.
-- Comparative member analytics.
-- Integration of community-driven bug reporting and feedback loops.
+### Knesset Structure
+Visualize the current and historical parliaments: coalition vs. opposition, government composition, key positions, and how these evolved across Knesset terms.

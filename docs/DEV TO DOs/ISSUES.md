@@ -1,8 +1,8 @@
-- [] no images 
-- [] Changes in the Knesset during a term will not be visible. historical data that will be visible is the state of the Knesset on it's last day. 
-- [] Knesset term UI, drill down into parties and member. - architecture change
-- [] Messegaes and forms have only front -> Success toast shown without actual submission in bug report form -> FIX: Made handleSubmit async, added loading state, wrapped API call in try/catch, only show success toast after successful API response, show error toast on failure, only reset form on success. Created API route at /api/report-bug/route.ts for actual submission.
-- [] 
+- [ ] no images 
+- [ ] Changes in the Knesset during a term will not be visible. historical data that will be visible is the state of the Knesset on it's last day. 
+- [ ] Knesset term UI, drill down into parties and member. - architecture change
+- [ ] Messegaes and forms have only front -> Success toast shown without actual submission in bug report form -> FIX: Made handleSubmit async, added loading state, wrapped API call in try/catch, only show success toast after successful API response, show error toast on failure, only reset form on success. Created API route at /api/report-bug/route.ts for actual submission.
+- [ ] Discuss and develop direct measurement methods for "informed citizen" outcomes (e.g., user surveys, election-time polls, qualitative interviews). Current KPIs in PRD are proxy metrics only. 
 
 
 

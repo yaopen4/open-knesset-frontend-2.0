@@ -41,7 +41,7 @@ export function DonateDialog() {
             </div>
           </div>
           <Button asChild size="lg" className="w-full text-xl py-7 mt-auto">
-            <a href="https://www.jgive.com/new/he/ils/donation-targets/326#donation-modal" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.jgive.com/new/he/ils/charity-organizations/652" target="_blank" rel="noopener noreferrer">
               לתרום לסדנא
             </a>
           </Button>
