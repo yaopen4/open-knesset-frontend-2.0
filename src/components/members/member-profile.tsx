@@ -1,20 +1,26 @@
 'use client';
 
-import type { Person, PersonToPosition } from '@/lib/api/types';
-import { getFullNameHebrew, getKnessetTerms, getPartyAffiliations, isCurrentlyServing } from '@/lib/data/member-utils';
+import type { Member } from '@/lib/api/types';
+import {
+  getFullNameHebrew,
+  getKnessetTerms,
+  getPartyAffiliations,
+  getGovMinistries,
+  isCurrentlyServing,
+} from '@/lib/data/member-utils';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 
 interface MemberProfileProps {
-  member: Person;
-  positions: PersonToPosition[];
+  member: Member;
 }
 
-export default function MemberProfile({ member, positions }: MemberProfileProps) {
-  const knessetTerms = getKnessetTerms(positions);
-  const partyAffiliations = getPartyAffiliations(positions);
-  const currentlyServing = isCurrentlyServing(member, positions);
+export default function MemberProfile({ member }: MemberProfileProps) {
+  const knessetTerms = getKnessetTerms(member);
+  const partyAffiliations = getPartyAffiliations(member);
+  const govMinistries = getGovMinistries(member);
+  const currentlyServing = isCurrentlyServing(member);
 
   return (
     <div className="space-y-6">
@@ -28,11 +34,11 @@ export default function MemberProfile({ member, positions }: MemberProfileProps)
             <h3 className="font-semibold mb-2">שם מלא</h3>
             <p>{getFullNameHebrew(member)}</p>
           </div>
-          
-          {member.Email && (
+
+          {member.mk_individual_email && (
             <div>
               <h3 className="font-semibold mb-2">דוא"ל</h3>
-              <p>{member.Email}</p>
+              <p>{member.mk_individual_email}</p>
             </div>
           )}
 
@@ -99,45 +105,38 @@ export default function MemberProfile({ member, positions }: MemberProfileProps)
         </Card>
       )}
 
-      {/* Positions Summary */}
-      <Card>
-        <CardHeader>
-          <CardTitle>תפקידים</CardTitle>
-          <CardDescription>סיכום התפקידים שמילא</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-2">
-            {positions.slice(0, 10).map((position) => (
-              <div key={position.PersonToPositionID} className="flex items-start gap-2">
-                <div className="flex-1">
-                  <p className="font-medium">
-                    {position.DutyDesc || position.CommitteeName || 'חבר כנסת'}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    כנסת {position.KnessetNum}
-                    {position.StartDate && (
-                      <span className="mr-2">
-                        {' • '}
-                        {new Date(position.StartDate).toLocaleDateString('he-IL')}
-                        {position.FinishDate && ` - ${new Date(position.FinishDate).toLocaleDateString('he-IL')}`}
-                      </span>
-                    )}
-                  </p>
+      {/* Government Ministry Roles */}
+      {govMinistries.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>תפקידי ממשלה</CardTitle>
+            <CardDescription>תפקידים במשרדי ממשלה</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-2">
+              {govMinistries.map((gov, index) => (
+                <div key={`${gov.govMinistryId}-${gov.knessetNum}-${index}`} className="flex items-start gap-2">
+                  <div className="flex-1">
+                    <p className="font-medium">
+                      {gov.positionName} — {gov.govMinistryName}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      כנסת {gov.knessetNum}
+                      {gov.startDate && (
+                        <span className="mr-2">
+                          {' • '}
+                          {new Date(gov.startDate).toLocaleDateString('he-IL')}
+                          {gov.finishDate && ` - ${new Date(gov.finishDate).toLocaleDateString('he-IL')}`}
+                        </span>
+                      )}
+                    </p>
+                  </div>
                 </div>
-                {position.IsCurrent && (
-                  <Badge variant="default" className="text-xs">פעיל</Badge>
-                )}
-              </div>
-            ))}
-            {positions.length > 10 && (
-              <p className="text-sm text-muted-foreground mt-4">
-                ועוד {positions.length - 10} תפקידים...
-              </p>
-            )}
-          </div>
-        </CardContent>
-      </Card>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
-
