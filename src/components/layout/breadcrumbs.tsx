@@ -51,11 +51,11 @@ const Breadcrumbs = ({ className }: { className?: string }) => {
       label = 'הצעות חוק';
     }
     
-    // Handle member person routes
-    if (href.startsWith('/members/person/')) {
+    // Handle canonical member profile routes (/mks/[mk_id])
+    if (href.startsWith('/mks/') && href !== '/mks') {
       label = 'חבר כנסת';
     }
-    
+
     // Handle old knesset-data routes (legacy)
     if (href.startsWith('/members/') && !href.startsWith('/members/person')) {
       const knessetNumber = segment;

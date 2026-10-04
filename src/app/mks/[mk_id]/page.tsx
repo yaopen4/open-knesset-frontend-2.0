@@ -1,13 +1,20 @@
 import { notFound } from 'next/navigation';
-import { membersApi } from '@/lib/api/endpoints';
-import { getFullNameHebrew, getKnessetTerms, getPartyAffiliations, getCommitteeMemberships, getServicePeriod } from '@/lib/data/member-utils';
+import { loadMemberProfile } from '@/lib/data/member-loader';
+import {
+  getFullNameHebrew,
+  getKnessetTerms,
+  getPartyAffiliations,
+  getCommitteeMemberships,
+  getRolesForTerm,
+  getServicePeriod,
+} from '@/lib/data/member-utils';
 import MemberProfile from '@/components/members/member-profile';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { User } from 'lucide-react';
-import type { Person, PersonToPosition } from '@/lib/api/types';
+import type { Member } from '@/lib/api/types';
 
 interface MemberPageParams {
   params: {
@@ -16,41 +23,33 @@ interface MemberPageParams {
 }
 
 export default async function MemberPage({ params }: MemberPageParams) {
-  const personId = parseInt(params.mk_id, 10);
+  const mkIndividualId = parseInt(params.mk_id, 10);
 
-  if (isNaN(personId)) {
+  if (isNaN(mkIndividualId)) {
     notFound();
   }
 
-  // Fetch member data with positions
-  let member: Person;
-  let positions: PersonToPosition[];
+  let member: Member | null;
 
   try {
-    const memberResponse = await membersApi.getById(personId);
-    const positionsResponse = await membersApi.getPositions(personId);
-    
-    const memberData = Array.isArray(memberResponse.data) ? memberResponse.data[0] : memberResponse.data;
-    const positionsData = positionsResponse.data;
-    positions = Array.isArray(positionsData) ? positionsData : positionsData ? [positionsData] : [];
-    
-    if (!memberData) {
-      notFound();
-    }
-    
-    member = memberData;
+    member = await loadMemberProfile(mkIndividualId);
   } catch (error) {
     console.error('Error fetching member data:', error);
     notFound();
   }
 
-  const knessetTerms = getKnessetTerms(positions);
-  const partyAffiliations = getPartyAffiliations(positions);
-  const committeeMemberships = getCommitteeMemberships(positions);
-  const servicePeriod = getServicePeriod(positions);
+  if (!member || !member.mk_individual_id) {
+    notFound();
+  }
+
+  const knessetTerms = getKnessetTerms(member);
+  const partyAffiliations = getPartyAffiliations(member);
+  const committeeMemberships = getCommitteeMemberships(member);
+  const servicePeriod = getServicePeriod(member);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-6xl">
+    <div className="container mx-auto py-8 px-4 max-w-6xl" dir="rtl">
+      {/* Header Section */}
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <Avatar className="h-24 w-24">
@@ -61,7 +60,9 @@ export default async function MemberPage({ params }: MemberPageParams) {
           </Avatar>
           <div>
             <h1 className="text-4xl font-bold mb-2">{getFullNameHebrew(member)}</h1>
-            {member.Email && <p className="text-muted-foreground">{member.Email}</p>}
+            {member.mk_individual_email && (
+              <p className="text-muted-foreground">{member.mk_individual_email}</p>
+            )}
             {servicePeriod.startDate && (
               <p className="text-sm text-muted-foreground mt-1">
                 שירות: {new Date(servicePeriod.startDate).getFullYear()} - {servicePeriod.finishDate ? new Date(servicePeriod.finishDate).getFullYear() : 'היום'}
@@ -69,9 +70,15 @@ export default async function MemberPage({ params }: MemberPageParams) {
             )}
           </div>
         </div>
-        {member.IsCurrent && <Badge variant="default" className="mb-4">מכהן כעת</Badge>}
+
+        {member.IsCurrent && (
+          <Badge variant="default" className="mb-4">
+            מכהן כעת
+          </Badge>
+        )}
       </div>
 
+      {/* Main Content Tabs */}
       <Tabs defaultValue="overview" className="w-full">
         <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="overview">סקירה כללית</TabsTrigger>
@@ -81,7 +88,7 @@ export default async function MemberPage({ params }: MemberPageParams) {
         </TabsList>
 
         <TabsContent value="overview" className="mt-6">
-          <MemberProfile member={member} positions={positions || []} />
+          <MemberProfile member={member} />
         </TabsContent>
 
         <TabsContent value="terms" className="mt-6">
@@ -93,9 +100,9 @@ export default async function MemberPage({ params }: MemberPageParams) {
             <CardContent>
               <div className="space-y-4">
                 {knessetTerms.map((term) => {
-                  const termPositions = positions.filter((p) => p.KnessetNum === term);
+                  const termRoles = getRolesForTerm(member, term);
                   const termParties = partyAffiliations.filter((p) => p.knessetNum === term);
-                  
+
                   return (
                     <Card key={term}>
                       <CardHeader>
@@ -107,29 +114,32 @@ export default async function MemberPage({ params }: MemberPageParams) {
                             <h4 className="font-semibold mb-2">סיעות:</h4>
                             <div className="flex flex-wrap gap-2">
                               {termParties.map((party) => (
-                                <Badge key={party.factionId} variant="secondary">
+                                <Badge key={`${party.factionId}-${party.knessetNum}`} variant="secondary">
                                   {party.factionName}
                                 </Badge>
                               ))}
                             </div>
                           </div>
                         )}
-                        <div>
-                          <h4 className="font-semibold mb-2">תפקידים:</h4>
-                          <ul className="list-disc list-inside space-y-1">
-                            {termPositions.map((pos) => (
-                              <li key={pos.PersonToPositionID}>
-                                {pos.DutyDesc || pos.CommitteeName || 'חבר כנסת'}
-                                {pos.StartDate && (
-                                  <span className="text-muted-foreground text-sm mr-2">
-                                    ({new Date(pos.StartDate).toLocaleDateString('he-IL')}
-                                    {pos.FinishDate && ` - ${new Date(pos.FinishDate).toLocaleDateString('he-IL')}`})
-                                  </span>
-                                )}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                        {termRoles.length > 0 && (
+                          <div>
+                            <h4 className="font-semibold mb-2">תפקידים:</h4>
+                            <ul className="list-disc list-inside space-y-1">
+                              {termRoles.map((role, index) => (
+                                <li key={`${term}-${index}`}>
+                                  {role.label}
+                                  {role.detail && ` — ${role.detail}`}
+                                  {role.startDate && (
+                                    <span className="text-muted-foreground text-sm mr-2">
+                                      ({new Date(role.startDate).toLocaleDateString('he-IL')}
+                                      {role.finishDate && ` - ${new Date(role.finishDate).toLocaleDateString('he-IL')}`})
+                                    </span>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   );
@@ -148,11 +158,13 @@ export default async function MemberPage({ params }: MemberPageParams) {
             <CardContent>
               {committeeMemberships.length > 0 ? (
                 <div className="space-y-4">
-                  {committeeMemberships.map((membership) => (
-                    <Card key={`${membership.committeeId}-${membership.knessetNum}`}>
+                  {committeeMemberships.map((membership, index) => (
+                    <Card key={`${membership.committeeId}-${membership.knessetNum}-${index}`}>
                       <CardHeader>
                         <CardTitle className="text-lg">{membership.committeeName}</CardTitle>
-                        <CardDescription>כנסת {membership.knessetNum}</CardDescription>
+                        <CardDescription>
+                          {membership.positionName} • כנסת {membership.knessetNum}
+                        </CardDescription>
                       </CardHeader>
                       <CardContent>
                         {membership.startDate && (
@@ -191,4 +203,3 @@ export default async function MemberPage({ params }: MemberPageParams) {
 export async function generateStaticParams() {
   return [];
 }
-

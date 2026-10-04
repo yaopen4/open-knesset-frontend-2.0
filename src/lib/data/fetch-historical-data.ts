@@ -5,8 +5,7 @@
  * Usage: This is a reference implementation. Run via Node.js script or Next.js API route
  */
 
-import { membersApi, factionsApi, committeesApi } from '../api/endpoints';
-import { getFetchCacheOptions } from './cache';
+import { membersApi } from '../api/endpoints';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -19,22 +18,20 @@ export async function fetchAndSaveKnessetMembers(knessetNum: number): Promise<vo
   try {
     console.log(`Fetching members for Knesset ${knessetNum}...`);
     
-    // Fetch members with positions filtered by Knesset number
-    const response = await membersApi.list({
-      knesset: knessetNum,
-      pageSize: 1000, // Adjust based on API limits
+    // Fetch members for the given Knesset term (raw array).
+    const members = await membersApi.list({
+      knesset_term: knessetNum,
     });
 
-    const members = Array.isArray(response.data) ? response.data : [response.data];
-    
-    // Transform to match expected structure (if needed)
+    // Transform to a compact static structure.
     const knessetData = {
       knesset_number: knessetNum,
       members: members.map((member) => ({
+        mk_individual_id: member.mk_individual_id,
         PersonID: member.PersonID,
-        FirstName: member.FirstName,
-        LastName: member.LastName,
-        Email: member.Email,
+        first_name: member.mk_individual_first_name,
+        last_name: member.mk_individual_name,
+        email: member.mk_individual_email,
         IsCurrent: member.IsCurrent,
       })),
       fetchedAt: new Date().toISOString(),

@@ -3,7 +3,7 @@
  * Base URL: https://backend.oknesset.org
  */
 
-import type { ApiResponse, ListQueryParams } from './types';
+import type { ListQueryParams } from './types';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://backend.oknesset.org';
 
@@ -43,12 +43,16 @@ function buildQueryString(params: ListQueryParams): string {
 }
 
 /**
- * Fetch wrapper with error handling and type safety
+ * Fetch wrapper with error handling and type safety.
+ * Returns the raw parsed JSON typed as `T` — the live backend responds with
+ * bare objects/arrays, so callers specify the concrete shape (e.g. `Member`
+ * or `Member[]`). Cache behaviour is controlled by passing Next.js fetch
+ * options (e.g. `{ next: { revalidate } }`) via `options`.
  */
 async function fetchApi<T>(
   endpoint: string,
   options: RequestOptions = {}
-): Promise<ApiResponse<T>> {
+): Promise<T> {
   const { params, ...fetchOptions } = options;
   
   const url = `${API_BASE_URL}${endpoint}${params ? buildQueryString(params) : ''}`;
@@ -87,7 +91,7 @@ export async function get<T>(
   endpoint: string,
   params?: ListQueryParams,
   options?: RequestInit
-): Promise<ApiResponse<T>> {
+): Promise<T> {
   return fetchApi<T>(endpoint, {
     method: 'GET',
     params,
@@ -102,7 +106,7 @@ export async function post<T>(
   endpoint: string,
   data?: unknown,
   options?: RequestInit
-): Promise<ApiResponse<T>> {
+): Promise<T> {
   return fetchApi<T>(endpoint, {
     method: 'POST',
     body: data ? JSON.stringify(data) : undefined,
@@ -117,7 +121,7 @@ export async function put<T>(
   endpoint: string,
   data?: unknown,
   options?: RequestInit
-): Promise<ApiResponse<T>> {
+): Promise<T> {
   return fetchApi<T>(endpoint, {
     method: 'PUT',
     body: data ? JSON.stringify(data) : undefined,
@@ -131,7 +135,7 @@ export async function put<T>(
 export async function del<T>(
   endpoint: string,
   options?: RequestInit
-): Promise<ApiResponse<T>> {
+): Promise<T> {
   return fetchApi<T>(endpoint, {
     method: 'DELETE',
     ...options,

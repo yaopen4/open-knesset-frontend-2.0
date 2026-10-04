@@ -3,7 +3,11 @@
  * Based on Knesset OData v2 structure
  */
 
-// Base API response structure
+// Base API response structure.
+// NOTE: the live backend (backend.oknesset.org) returns bare JSON — a single
+// object or a raw array — NOT a { data } envelope. This wrapper is retained
+// only for the unverified scaffold endpoints below; the member endpoints
+// (see Member/membersApi) return the raw shapes directly.
 export interface ApiResponse<T> {
   data: T | T[];
   meta?: {
@@ -13,6 +17,110 @@ export interface ApiResponse<T> {
     lastUpdated?: string;
   };
 }
+
+// ---------------------------------------------------------------------------
+// Live /members contract (backend.oknesset.org) — verified against the API
+// and documented in `docs/members api endpoint.md`. Members are keyed on
+// `mk_individual_id`; `PersonID` is present as a stable cross-term field.
+// ---------------------------------------------------------------------------
+
+// A committee role held by a member in a given Knesset term.
+export interface CommitteePosition {
+  mk_individual_id: number;
+  committee_id: number;
+  committee_name: string;
+  position_id: number;
+  position_name: string;
+  start_date: string | null;
+  finish_date: string | null;
+  knesset: number;
+}
+
+// A member's membership in a faction for a given term.
+export interface MemberFaction {
+  mk_individual_id: number;
+  faction_id: number;
+  faction_name: string;
+  start_date: string | null;
+  finish_date: string | null;
+  knesset: number;
+}
+
+// A faction-chairperson role (same shape as MemberFaction).
+export interface FactionChairperson {
+  mk_individual_id: number;
+  faction_id: number;
+  faction_name: string;
+  start_date: string | null;
+  finish_date: string | null;
+  knesset: number;
+}
+
+// A government-ministry role held by a member.
+export interface Govministry {
+  mk_individual_id: number;
+  govministry_id: number;
+  govministry_name: string;
+  position_id: number;
+  position_name: string;
+  start_date: string | null;
+  finish_date: string | null;
+  knesset: number;
+}
+
+// A Knesset member as returned by GET /members and GET /members/{id}.
+// The nested arrays may be empty or contain null entries (per the API docs),
+// so consumers must guard against null — see src/lib/data/member-utils.ts.
+export interface Member {
+  mk_individual_id: number;
+  mk_individual_first_name: string;
+  mk_individual_name: string;
+  PersonID: number;
+  GenderID: number;
+  GenderDesc: string;
+  IsCurrent: boolean;
+  mk_individual_email: string | null;
+  altnames: string[];
+  committee_positions: Array<CommitteePosition | null>;
+  factions: Array<MemberFaction | null>;
+  faction_chairpersons: Array<FactionChairperson | null>;
+  govministries: Array<Govministry | null>;
+}
+
+// A single plenum vote cast by a member — GET /members/{id}/votes.
+export interface MemberVote {
+  knesset_num: number;
+  session_id: number;
+  sess_item_id: number;
+  sess_item_dscr: string;
+  vote_item_id: number;
+  vote_item_dscr: string;
+  vote_date: string;
+  vote_time: string;
+  is_elctrnc_vote: number;
+  is_accepted: number;
+  total_for: number;
+  total_against: number;
+  total_abstain: number;
+  mk_vote: string;
+}
+
+// A daily attendance record — GET /members/{id}/presence.
+export interface MemberPresence {
+  mk_id: number;
+  mk_name: string;
+  date: string;
+  year: number;
+  month: number;
+  day: number;
+  year_week_number: number;
+  total_attended_hours: number;
+}
+
+// ---------------------------------------------------------------------------
+// OData KNS_* scaffold types (UNVERIFIED against the live wrapper). These back
+// the bills/committees/votes endpoints that are not yet wired to real data.
+// ---------------------------------------------------------------------------
 
 // KNS_Person - Unified Member Entity
 export interface Person {

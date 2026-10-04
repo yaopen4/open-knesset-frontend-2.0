@@ -5,10 +5,11 @@
 
 import { get } from './client';
 import type {
-  Person,
-  PersonWithPositions,
-  PersonToPosition,
+  Member,
+  MemberVote,
+  MemberPresence,
   Faction,
+  PersonToPosition,
   Bill,
   BillWithInitiators,
   BillInitiator,
@@ -25,54 +26,44 @@ import type {
 } from './types';
 
 // Member Endpoints
+// Keyed on `mk_individual_id`. The member object already embeds factions,
+// committee_positions, faction_chairpersons and govministries, so there is no
+// separate "positions" endpoint — derive those from the member via
+// src/lib/data/member-utils.ts.
 export const membersApi = {
   /**
-   * List all members
+   * List members. Optional query params: `is_current` (boolean) and
+   * `knesset_term` (number). Returns a raw array.
    */
   list: (params?: ListQueryParams) =>
-    get<Person>('/members', params),
+    get<Member[]>('/members', params),
 
   /**
-   * Get unified member profile by PersonID
+   * Get a single member profile by mk_individual_id. Returns a single object.
+   * NOTE: without a knesset_term the nested role arrays come back as [null];
+   * use `getByTerm` (and the cross-term loader) to populate roles.
    */
-  getById: (personId: number) =>
-    get<PersonWithPositions>(`/members/${personId}`),
+  getById: (mkIndividualId: number, options?: RequestInit) =>
+    get<Member>(`/members/${mkIndividualId}`, undefined, options),
 
   /**
-   * Get all positions/roles across terms for a member
+   * Get a member scoped to a single Knesset term. The nested role arrays
+   * (factions, committee_positions, …) are populated only for that term.
    */
-  getPositions: (personId: number, params?: ListQueryParams) =>
-    get<PersonToPosition>(`/members/${personId}/positions`, params),
+  getByTerm: (mkIndividualId: number, knessetTerm: number, options?: RequestInit) =>
+    get<Member>(`/members/${mkIndividualId}`, { knesset_term: knessetTerm }, options),
 
   /**
-   * Get all votes by member
+   * Get a member's plenum votes. Returns a raw array.
    */
-  getVotes: (personId: number, params?: ListQueryParams) =>
-    get<PlenumVoteResult>(`/members/${personId}/votes`, params),
+  getVotes: (mkIndividualId: number, params?: ListQueryParams) =>
+    get<MemberVote[]>(`/members/${mkIndividualId}/votes`, params),
 
   /**
-   * Get bills proposed/sponsored by member
+   * Get a member's attendance records. Returns a raw array.
    */
-  getBills: (personId: number, params?: ListQueryParams) =>
-    get<BillInitiator>(`/members/${personId}/bills`, params),
-
-  /**
-   * Get committee memberships for member
-   */
-  getCommittees: (personId: number, params?: ListQueryParams) =>
-    get<PersonToPosition>(`/members/${personId}/committees`, params),
-
-  /**
-   * Get parliamentary queries submitted by member
-   */
-  getQueries: (personId: number, params?: ListQueryParams) =>
-    get<Query>(`/members/${personId}/queries`, params),
-
-  /**
-   * Get agenda items submitted by member
-   */
-  getAgendaItems: (personId: number, params?: ListQueryParams) =>
-    get<Agenda>(`/members/${personId}/agenda-items`, params),
+  getPresence: (mkIndividualId: number, params?: ListQueryParams) =>
+    get<MemberPresence[]>(`/members/${mkIndividualId}/presence`, params),
 };
 
 // Faction/Party Endpoints
