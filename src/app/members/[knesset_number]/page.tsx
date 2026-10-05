@@ -8,26 +8,7 @@ import {
 } from "@/components/ui/accordion"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { User } from "lucide-react"
-
-interface Member {
-  name: string;
-  position: string | null;
-  contact: string | null;
-  image_url: string | null;
-  additional_info: {
-    profile_url: string;
-  };
-}
-
-interface Party {
-  party_name: string;
-  members: Member[];
-}
-
-interface KnessetData {
-  knesset_number: number;
-  parties: Party[];
-}
+import type { MembersDataFile, ScrapingSummary } from "@/lib/data/members-data-types"
 
 interface KnessetPageParams {
   params: {
@@ -35,13 +16,13 @@ interface KnessetPageParams {
   };
 }
 
-async function getKnessetData(knessetNumber: string): Promise<KnessetData | null> {
+async function getKnessetData(knessetNumber: string): Promise<MembersDataFile | null> {
   const dataDir = path.join(process.cwd(), 'src', 'app', 'knesset-data', '[knesset_number]', 'members_data');
   const filePath = path.join(dataDir, `knesset_${knessetNumber}.json`);
   
   try {
     const fileContent = await fs.promises.readFile(filePath, 'utf-8');
-    return JSON.parse(fileContent);
+    return JSON.parse(fileContent) as MembersDataFile;
   } catch (error) {
     console.error(`Error reading or parsing ${filePath}:`, error);
     return null;
@@ -109,9 +90,9 @@ export async function generateStaticParams() {
   
   try {
     const summaryContent = await fs.promises.readFile(summaryPath, 'utf-8');
-    const summary = JSON.parse(summaryContent);
+    const summary = JSON.parse(summaryContent) as ScrapingSummary;
 
-    return summary.extracted_data.map((knesset: any) => ({
+    return summary.extracted_data.map((knesset) => ({
       knesset_number: knesset.knesset.toString(),
     }));
   } catch (error) {

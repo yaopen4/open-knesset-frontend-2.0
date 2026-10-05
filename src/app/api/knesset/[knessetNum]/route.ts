@@ -5,6 +5,7 @@ import { getCurrentKnessetNum } from '@/lib/data/cache';
 import fs from 'fs';
 import path from 'path';
 import { StaticKnessetData } from '@/lib/data/static-loader';
+import type { MembersDataFile } from '@/lib/data/members-data-types';
 
 /**
  * Extract the mk_individual_id from an oknesset.org profile URL
@@ -15,12 +16,12 @@ function parseMkIndividualId(profileUrl: string | undefined): number | null {
   return match ? parseInt(match[1], 10) : null;
 }
 
-function transformMembersData(data: any): StaticKnessetData {
+function transformMembersData(data: MembersDataFile): StaticKnessetData {
   // Transform members_data format to StaticKnessetData format
   const members: StaticKnessetData['members'] = [];
   
-  data.parties.forEach((party: any) => {
-    party.members.forEach((member: any) => {
+  data.parties.forEach((party) => {
+    party.members.forEach((member) => {
       // Parse name (format: "LastName FirstName")
       const nameParts = member.name.split(' ');
       const lastName = nameParts[0] || '';
@@ -79,7 +80,7 @@ export async function GET(
     
     try {
       const membersDataContent = await fs.promises.readFile(membersDataPath, 'utf-8');
-      const membersData = JSON.parse(membersDataContent);
+      const membersData = JSON.parse(membersDataContent) as MembersDataFile;
       const transformedData = transformMembersData(membersData);
       return NextResponse.json(transformedData);
     } catch (membersDataError) {
