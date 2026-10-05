@@ -9,7 +9,7 @@ interface PartiesSectionProps {
 
 export default function PartiesSection({ knessetData }: PartiesSectionProps) {
   // Extract unique parties from members data
-  const partiesMap = new Map<string, { name: string; memberCount: number; members: any[] }>();
+  const partiesMap = new Map<string, { name: string; memberCount: number; members: UnifiedKnessetData['members'] }>();
   
   knessetData.members.forEach(member => {
     const factionName = member.factionName || 'לא ידוע';

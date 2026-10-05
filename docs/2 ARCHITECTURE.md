@@ -31,7 +31,7 @@ The system uses `PersonID` from the `KNS_Person` table as the constant identifie
 
 ### Data Strategy: API-First
 - **API as Source of Truth**: All parliamentary entities (Members, Parties, Bills, Committees, Votes) for all Knesset terms (1-25+) are fetched via the Custom Backend API.
-- **Supplementary Static Data**: Data that does not exist in the Knesset OData API (e.g., historical context, lists of wars, or community-added metadata) is stored locally as JSON files in `src/data/static/`.
+- **Supplementary Static Data**: Data that does not exist in the Knesset OData API (e.g., historical context, lists of wars, or community-added metadata) is stored locally as JSON files in `src/data/static/`. Member data is API-only; there is no static member store.
 
 ### Routing Patterns
 - **Canonical Routes**: Entities like members (`/mks/[id]`) or bills (`/bills/[id]`) use their global unique identifiers.
@@ -53,3 +53,5 @@ All API responses are typed using TypeScript interfaces in `src/lib/api/types.ts
 ## 5. Environment Variables
 - `NEXT_PUBLIC_API_BASE_URL`: Base URL for the FastAPI backend.
 - `NEXT_PUBLIC_CURRENT_KNESSET_NUM`: The numeric ID of the active Knesset term.
+
+See `.env.example` at the repo root for defaults; copy it to `.env.local` to override.

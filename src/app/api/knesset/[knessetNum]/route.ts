@@ -5,35 +5,35 @@ import { getCurrentKnessetNum } from '@/lib/data/cache';
 import fs from 'fs';
 import path from 'path';
 import { StaticKnessetData } from '@/lib/data/static-loader';
+import type { MembersDataFile } from '@/lib/data/members-data-types';
 
-function transformMembersData(data: any): StaticKnessetData {
+/**
+ * Extract the mk_individual_id from an oknesset.org profile URL
+ * (e.g. "https://oknesset.org/members/214.html" -> 214).
+ */
+function parseMkIndividualId(profileUrl: string | undefined): number | null {
+  const match = profileUrl?.match(/members\/(\d+)\.html$/);
+  return match ? parseInt(match[1], 10) : null;
+}
+
+function transformMembersData(data: MembersDataFile): StaticKnessetData {
   // Transform members_data format to StaticKnessetData format
   const members: StaticKnessetData['members'] = [];
   
-  data.parties.forEach((party: any) => {
-    party.members.forEach((member: any) => {
+  data.parties.forEach((party) => {
+    party.members.forEach((member) => {
       // Parse name (format: "LastName FirstName")
       const nameParts = member.name.split(' ');
       const lastName = nameParts[0] || '';
       const firstName = nameParts.slice(1).join(' ') || '';
       
-      // Extract personId from profile_url if available
-      let personId = 0;
-      if (member.additional_info?.profile_url) {
-        const match = member.additional_info.profile_url.match(/\/(\d+)\.html/);
-        if (match) {
-          personId = parseInt(match[1], 10);
-        }
+      // Never fabricate an ID: skip members without a real mk_individual_id
+      const personId = parseMkIndividualId(member.additional_info?.profile_url);
+      if (personId === null) {
+        console.warn(`Skipping member without mk_individual_id: ${member.name}`);
+        return;
       }
-      
-      // Generate a stable personId if not found (hash of name)
-      if (!personId) {
-        const nameHash = member.name.split('').reduce((acc: number, char: string) => {
-          return ((acc << 5) - acc) + char.charCodeAt(0);
-        }, 0);
-        personId = Math.abs(nameHash);
-      }
-      
+
       members.push({
         personId,
         name: {
@@ -80,7 +80,7 @@ export async function GET(
     
     try {
       const membersDataContent = await fs.promises.readFile(membersDataPath, 'utf-8');
-      const membersData = JSON.parse(membersDataContent);
+      const membersData = JSON.parse(membersDataContent) as MembersDataFile;
       const transformedData = transformMembersData(membersData);
       return NextResponse.json(transformedData);
     } catch (membersDataError) {
