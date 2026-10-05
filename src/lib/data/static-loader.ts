@@ -48,6 +48,7 @@ export interface StaticKnessetData {
   startDate: string | null;
   finishDate: string | null;
   members: Array<{
+    /** The member's mk_individual_id (not the Knesset PersonID) */
     personId: number;
     name: {
       firstName: string;
