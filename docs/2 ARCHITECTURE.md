@@ -53,3 +53,5 @@ All API responses are typed using TypeScript interfaces in `src/lib/api/types.ts
 ## 5. Environment Variables
 - `NEXT_PUBLIC_API_BASE_URL`: Base URL for the FastAPI backend.
 - `NEXT_PUBLIC_CURRENT_KNESSET_NUM`: The numeric ID of the active Knesset term.
+
+See `.env.example` at the repo root for defaults; copy it to `.env.local` to override.

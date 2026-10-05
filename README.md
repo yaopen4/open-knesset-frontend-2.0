@@ -27,3 +27,11 @@ Modern Next.js frontend for the Open Knesset platform, making Israeli parliament
 
 We welcome contributions! 
 Please review **[5 CONVENTIONS.md](docs/5%20CONVENTIONS.md)** before starting any work to ensure alignment with our coding standards.
+
+### Local setup
+
+```bash
+npm install
+cp .env.example .env.local   # optional: defaults work out of the box
+npm run dev
+```
